@@ -1,0 +1,152 @@
+[
+    {
+        "title": "INTRODUCTION TO C++",
+        "topics": [
+            "History",
+            "Object Oriented Programming (OOPS) Concepts",
+            "C and C++ Differences",
+            "C++ Program Structure",
+            "Variables and Constants"
+        ]
+    },
+    {
+        "title": "DATA TYPES AND OPERATORS",
+        "topics": [
+            "Integer",
+            "Float",
+            "Character",
+            "Boolean",
+            "Double",
+            "String",
+            "Data Type modifiers",
+            "Type Casting",
+            "Operators"
+        ]
+    },
+    {
+        "title": "CONDITIONAL STATEMENTS",
+        "topics": [
+            "If else block",
+            "Else if block",
+            "Nested if block",
+            "Ternary operator",
+            "Switch case"
+        ]
+    },
+    {
+        "title": "LOOPING STATEMENTS",
+        "topics": [
+            "For loop",
+            "While loop",
+            "Do while loop",
+            "Nested loop",
+            "Break and continue"
+        ]
+    },
+    {
+        "title": "ARRAY",
+        "topics": [
+            "Array Introduction",
+            "Declaration of Array",
+            "Multidimensional array",
+            "Character array and String"
+        ]
+    },
+    {
+        "title": "STRUCTURE",
+        "topics": [
+            "Structure",
+            "Functions and Structure",
+            "Pointers to Structure"
+        ]
+    },
+    {
+        "title": "FUNCTIONS",
+        "topics": [
+            "Functions",
+            "Parameterized function",
+            "Return values",
+            "Passing array to function",
+            "Forward Declaration",
+            "Default value of Parameters",
+            "Inline Function",
+            "Recursive Function",
+            "Scope resolution operator",
+            "Namespaces"
+        ]
+    },
+    {
+        "title": "POINTERS",
+        "topics": [
+            "Address of operator",
+            "Pointer Variable",
+            "Dereference operator",
+            "NULL pointer",
+            "Reference variable",
+            "Pass by reference using reference variable"
+        ]
+    },
+    {
+        "title": "CLASSES AND OBJECTS IN C++",
+        "topics": [
+            "Procedural Programming & Object Oriented Programming",
+            "Class and object",
+            "Accessing class members",
+            "Member Functions",
+            "Object as Function argument",
+            "Returning Objects",
+            "Array of Objects",
+            "Constructor declaration",
+            "Constructor types",
+            "Multiple constructors and initialization lists",
+            "Copy constructor",
+            "C++ Header files"
+        ]
+    },
+    {
+        "title": "INHERITANCE",
+        "topics": [
+            "Overview of Inheritance",
+            "Defining Base and Derived Classes",
+            "Types of Inheritances",
+            "Friend Function and Friend Class"
+        ]
+    },
+    {
+        "title": "POLYMORPHISM",
+        "topics": [
+            "Overview of Polymorphism",
+            "Method overloading",
+            "Method overriding",
+            "Operator overloading",
+            "Virtual base class"
+        ]
+    },
+    {
+        "title": "ABSTRACTION",
+        "topics": [
+            "Pure virtual function",
+            "This pointer",
+            "Templates in c++"
+        ]
+    },
+    {
+        "title": "STREAMS AND FILES",
+        "topics": [
+            "File Input/Output Classes In C++",
+            "Reading from a File",
+            "Writing to a File",
+            "Closing a File"
+        ]
+    },
+    {
+        "title": "EXCEPTION HANDLING",
+        "topics": [
+            "Compile Time Errors",
+            "Run-Time Errors",
+            "Exception Handling Keywords",
+            "C++ Standard Exceptions",
+            "User-Defined Exceptions"
+        ]
+    }
+]

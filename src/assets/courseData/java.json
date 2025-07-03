@@ -1,0 +1,176 @@
+[
+    {
+        "title": "JAVA FUNDAMENTALS",
+        "topics": [
+            "Java - What, Where, and Why?",
+            "History and Features of Java",
+            "Internals of Java Program",
+            "Differencebetween JDK, JRE, and JVM",
+            "Internal Details of JVM",
+            "Run the first Program using Notepad and IDE",
+            "Variable",
+            "Naming Convention",
+            "Byte code interpretation",
+            "Data types",
+            "Primitive data type",
+            "Non-primitive data type",
+            "TypeCasting",
+            "Operators& their types"
+        ]
+    },
+    {
+        "title": "JAVA STATEMENTS",
+        "topics": [
+            "ConditionalStatement",
+            "If- else statement",
+            "If - else if, else statement",
+            "Nested if Statement",
+            "Switch case",
+            "For loop",
+            "While loop",
+            "Do-While loop",
+            "Nested Loop",
+            "Array & its Methods",
+            "For each loop"
+        ]
+    },
+    {
+        "title": "JAVA METHODS",
+        "topics": [
+            "Method& its types",
+            "A method with return type",
+            "Static variable, Method & Block",
+            "Final variable & method"
+        ]
+    },
+    {
+        "title": "OOP IN JAVA",
+        "topics": [
+            "Class and its benefits",
+            "Objects",
+            "Scanner class",
+            "Constructor",
+            "Default Constructor",
+            "Parameterized Constructor",
+            "“this” keyword",
+            "Garbage collection and packages",
+            "Creationof user-defined packages",
+            "Use and Benefits of Inheritance in OOP",
+            "Typesof Inheritance in Java",
+            "Inheriting Data Members and Methods",
+            "Role of Constructors in Inheritance",
+            "Use of “super” keyword",
+            "Access Modifiers & their scope",
+            "Encapsulation",
+            "Polymorphism",
+            "MethodOverloading & Overriding",
+            "Abstract class & methods",
+            "Understanding interface",
+            "Implementing interface"
+        ]
+    },
+    {
+        "title": "JAVA LAMBDA EXPRESSION",
+        "topics": [
+            "What is a Functional Interface?",
+            "Introduction to lambda expressions",
+            "Typesof LambdaBody",
+            "LambdaExpression",
+            "Lambda Expressions with parameters"
+        ]
+    },
+    {
+        "title": "STRING HANDLING",
+        "topics": [
+            "Needs of String",
+            "Immutable String",
+            "String Comparison",
+            "String Concatenation",
+            "Substring",
+            "Methodsof String class",
+            "toString method",
+            "StringBuffer class",
+            "StringTokenizer class"
+        ]
+    },
+    {
+        "title": "JAVA REGULAR EXPRESSION",
+        "topics": [
+            "Introduction to RegularExpressions",
+            "Matcher Class",
+            "Pattern Class",
+            "Regex Character Classes",
+            "Regex Quantifiers",
+            "Regex Metacharacters"
+        ]
+    },
+    {
+        "title": "EXCEPTION HANDLING",
+        "topics": [
+            "Importanceof Exception Handling",
+            "Exception Propagation",
+            "ExceptionTypes",
+            "Using try and catch",
+            "throw, throws, finally",
+            "Writing User-defined Exceptions"
+        ]
+    },
+    {
+        "title": "IO PACKAGE",
+        "topics": [
+            "Input streams & Output streams",
+            "Object serialization",
+            "Deserialization"
+        ]
+    },
+    {
+        "title": "WRAPPER CLASS",
+        "topics": []
+    },
+    {
+        "title": "GENERICS",
+        "topics": []
+    },
+    {
+        "title": "COLLECTIONS",
+        "topics": [
+            "Collection Framework",
+            "ArrayList class",
+            "LinkedList class",
+            "HashSet class",
+            "LinkedHashSet class",
+            "Map Interface and its Classes"
+        ]
+    },
+    {
+        "title": "MULTITHREADING",
+        "topics": [
+            "Introduction to Multi-Threading",
+            "Understanding Threads and its States",
+            "Thread class and Runnable Interface",
+            "Thread Synchronization",
+            "Interthread Communication"
+        ]
+    },
+    {
+        "title": "DATABASE CONNECTIVITY",
+        "topics": [
+            "JDBCarchitecture",
+            "Establishingconnectivity and working with the connection interface",
+            "Working with statements",
+            "Creating and executing SQL statements",
+            "Working with Result Set"
+        ]
+    },
+    {
+        "title": "GIT AND GITHUB",
+        "topics": [
+            "IntroductiontoVersion Control",
+            "Introduction to Git",
+            "Installing Git",
+            "Basic Git Commands",
+            "Branching and Merging",
+            "Working with remote repositories on GitHub"
+        ]
+    }
+]

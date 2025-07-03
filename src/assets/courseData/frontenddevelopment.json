@@ -1,0 +1,477 @@
+[
+    {
+      "title": "Internet Introduction",
+      "topics": [
+        "Internet",
+        "How does the internet work?",
+        "What is HTTP?",
+        "What is a Domain Name?",
+        "What is hosting?",
+        "DNS and how it works?"
+      ]
+    },
+    {
+      "title": "HTML Introduction",
+      "topics": [
+        "History of browser",
+        "Why HTML?",
+        "Structure of Hypertext Markup language"
+      ]
+    },
+    {
+      "title": "Parts of HTML document",
+      "topics": [
+        "Head",
+        "Body"
+      ]
+    },
+    {
+      "title": "Tags",
+      "topics": [
+        "Paragraph",
+        "Heading",
+        "List (unordered, ordered, description list)",
+        "Layout elements",
+        "Exploring elements",
+        "Table"
+      ]
+    },
+    {
+      "title": "Form tags",
+      "topics": [
+        "Input Types",
+        "Text Area",
+        "Dropdown"
+      ]
+    },
+    {
+      "title": "CSS Introduction",
+      "topics": [
+        "Importance of CSS",
+        "Advantages",
+        "Structure of a CSS rule"
+      ]
+    },
+    {
+      "title": "CSS Type",
+      "topics": [
+        "Inline CSS",
+        "Internal/Embedded CSS",
+        "External CSS"
+      ]
+    },
+    {
+      "title": "CSS Properties and Values",
+      "topics": [
+        "Display and visibility properties",
+        "Text related properties",
+        "Font related properties",
+        "Border related properties",
+        "Background related properties"
+      ]
+    },
+    {
+      "title": "Introduction of Selector",
+      "topics": [
+        "Simple selectors",
+        "Combinator selectors",
+        "Pseudo class selectors",
+        "Pseudo elements selectors",
+        "Attribute selectors"
+      ]
+    },
+    {
+      "title": "Position",
+      "topics": [
+        "Static",
+        "Relative",
+        "Absolute",
+        "Sticky",
+        "Fixed"
+      ]
+    },
+    {
+      "title": "Flexbox Layout",
+      "topics": [
+        "Introduction",
+        "Basic and Terminology",
+        "Flexbox properties",
+        "Examples",
+        "Flexbox Tricks"
+      ]
+    },
+    {
+      "title": "Grid Layout",
+      "topics": [
+        "Introduction",
+        "Basic and Terminology",
+        "Grid properties",
+        "Examples",
+        "Grid Tricks"
+      ]
+    },
+    {
+      "title": "Media Query",
+      "topics": [
+        "Introduction",
+        "Using media queries",
+        "Examples"
+      ]
+    },
+    {
+      "title": "Keyframes",
+      "topics": [
+        "Introduction",
+        "Creating animations",
+        "Keyframes properties"
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "topics": [
+        "Introduction",
+        "CSS units",
+        "Methods",
+        "Tips & Tricks"
+      ]
+    },
+    {
+      "title": "Sass",
+      "topics": [
+        "Nesting",
+        "Variables",
+        "Partials and Imports",
+        "Mixins",
+        "Extend/Inheritance"
+      ]
+    },
+    {
+      "title": "Bootstrap",
+      "topics": [
+        "Introduction of Bootstrap",
+        "BootStrap Introduction and Installation",
+        "How to use Documentation"
+      ]
+    },
+    {
+      "title": "Bootstrap concepts - Basic to Advanced",
+      "topics": [
+        "Bootstrap Progress Bar",
+        "Bootstrap Grid System",
+        "Bootstrap Buttons, Glyphicons, Tables",
+        "Bootstrap Vertical Forms, Horizontal Forms, Inline Forms",
+        "Bootstrap DropDowns and Responsive Tabs and Jumbotron",
+        "Bootstrap Alerts, Wells, Pagination and Pager"
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "topics": [
+        "Introduction to JavaScript",
+        "Difference types of Javascript engine?",
+        "Where is Javascript used?",
+        "Difference between Javascript and Java?",
+        "Who introduced Javascript language?",
+        "Official name of Javascript?",
+        "What is ECMAScript?"
+      ]
+    },
+    {
+      "title": "Fundamentals of JavaScript",
+      "topics": [
+        "Basic syntax",
+        "JS in <head> or <body>",
+        "Comments",
+        "JS Outputs"
+      ]
+    },
+    {
+      "title": "Variables & Data Types",
+      "topics": [
+        "Variable Declarations",
+        "Variable Naming Rules",
+        "Variable Scopes",
+        "Reserved words"
+      ]
+    },
+    {
+      "title": "Operators",
+      "topics": [
+        "Arithmetic Operators",
+        "Assignment Operators",
+        "Comparison Operators",
+        "String Operators",
+        "Logical Operators",
+        "Bitwise Operators",
+        "Ternary Operators",
+        "Type Operators"
+      ]
+    },
+    {
+      "title": "Type Casting",
+      "topics": [
+        "Difference between Type conversion vs Type coercion",
+        "Explicit Type Casting",
+        "Implicit Type Casting"
+      ]
+    },
+    {
+      "title": "Conditional Statement",
+      "topics": [
+        "if else",
+        "else if",
+        "nested if",
+        "Switch"
+      ]
+    },
+    {
+      "title": "Looping Statement",
+      "topics": [
+        "For",
+        "While",
+        "DO While"
+      ]
+    },
+    {
+      "title": "Control Statement",
+      "topics": [
+        "Break",
+        "Continue"
+      ]
+    },
+    {
+      "title": "Strings",
+      "topics": [
+        "Length",
+        "IndexOf",
+        "LastindexOf",
+        "Substring",
+        "Substr",
+        "To uppercase",
+        "To lowercase",
+        "Slice"
+      ]
+    },
+    {
+      "title": "Number",
+      "topics": [
+        "Number properties",
+        "Number methods"
+      ]
+    },
+    {
+      "title": "Array",
+      "topics": [
+        "Introduction to array",
+        "Accessing elements",
+        "Array methods"
+      ]
+    },
+    {
+      "title": "Objects",
+      "topics": [
+        "Object definition",
+        "Object properties",
+        "Accessing properties and methods",
+        "Object methods"
+      ]
+    },
+    {
+      "title": "ES6 Concepts",
+      "topics": [
+        "Destructing",
+        "Spread operator",
+        "Rest operator"
+      ]
+    },
+    {
+      "title": "JS primitive type and reference type",
+      "topics": []
+    },
+    {
+      "title": "Function",
+      "topics": [
+        "Function Statement / Function Definition",
+        "Difference between arguments and parameters",
+        "Default Params/Rest Params",
+        "Function return",
+        "Function Expression",
+        "Anonymous function",
+        "Arrow function"
+      ]
+    },
+    {
+      "title": "Scopes",
+      "topics": [
+        "Global",
+        "Block",
+        "Script",
+        "Function / Local"
+      ]
+    },
+    {
+      "title": "Looping through array and object",
+      "topics": [
+        "Array iteration methods",
+        "For each",
+        "Map",
+        "Filter",
+        "Reduce",
+        "For of",
+        "Object iteration methods",
+        "Entries",
+        "Keys",
+        "Values",
+        "For in"
+      ]
+    },
+    {
+      "title": "Built-in-methods",
+      "topics": [
+        "Math",
+        "Dates"
+      ]
+    },
+    {
+      "title": "Regular expression",
+      "topics": []
+    },
+    {
+      "title": "Exception Handling",
+      "topics": [
+        "Try",
+        "Catch",
+        "Throw",
+        "Finally"
+      ]
+    },
+    {
+      "title": "Javascript Async",
+      "topics": [
+        "setTimeout",
+        "setInterval"
+      ]
+    },
+    {
+      "title": "Working with API",
+      "topics": [
+        "XMLHTTPRequest",
+        "Fetch(CRUD)"
+      ]
+    },
+    {
+      "title": "Window object",
+      "topics": [
+        "About window object",
+        "DOM (Document object module)",
+        "HTML DOM elements",
+        "HTML Attributes",
+        "HTML Events",
+        "HTML Events Objects",
+        "Difference between HTML collections and Node List",
+        "HTML Styles",
+        "BOM (Browse Object Module)",
+        "Screen",
+        "Location",
+        "Popup alert",
+        "Cookies",
+        "History",
+        "Navigator",
+        "Timing"
+      ]
+    },
+    {
+      "title": "Advanced Concepts"
+
+    },
+    {
+      "title": "topics to know",
+      "topics": [
+        "How does Js work?",
+        "Difference between Var | Let | Const",
+        "What is the TDZ?",
+        "What is Hoisting?"
+      ]
+    },
+    {
+      "title": "Functions",
+      "topics": [
+        "Lexical Scoping",
+        "IIFE",
+        "Recursive function",
+        "Argument object",
+        "Scope & Stack",
+        "HOF",
+        "Closures",
+        "First Class Function"
+      ]
+    },
+    {
+      "title": "Using This keyword",
+      "topics": [
+        "In a method(object)",
+        "In a function",
+        "Using it alone",
+        "In event handlers",
+        "In arrow functions"
+      ]
+    },
+    {
+      "title": "Explicit Binding",
+      "topics": [
+        "call",
+        "apply",
+        "bind"
+      ]
+    },
+    {
+      "title": "Javascript Asynchronous",
+      "topics": [
+        "Callbacks",
+        "Callback Hell",
+        "Promises",
+        "async/await",
+        "Brower Environment"
+      ]
+    },
+      {
+        "title": "Prototype",
+        "topics": [
+          "Prototypal Inheritance",
+          "Examples"
+        ]
+      },
+      {
+        "title": "Modules in JavaScript",
+        "topics": [
+          "Common JS",
+          "ECMAScript Modules"
+        ]
+      },
+      {
+        "title": "Classes",
+        "topics": [
+          "Inheritance",
+          "Polymorphism",
+          "Encapsulation",
+          "Abstraction"
+        ]
+      },
+      {
+        "title": "Memory Management in JavaScript",
+        "topics": [
+          "Memory LifeCycle",
+          "Garbage Collection"
+        ]
+      },
+      {
+        "title": "Using Dev Tools",
+        "topics": [
+          "Debugging Memory Leaks",
+          "Debugging Performance"
+        ]
+      }
+    ]
+    
+     
+  

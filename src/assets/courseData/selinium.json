@@ -1,0 +1,253 @@
+[
+    {
+        "title": "JAVAFUNDAMENTALS",
+        "topics": [
+            "Java - What, Where, and Why?",
+            "History and Features of Java",
+            "Internals of Java Program",
+            "Difference between JDK, JRE, and JVM",
+            "InternalDetails of JVM",
+            "Run the first Program using Notepad and IDE.",
+            "Variable",
+            "Naming Convention",
+            "Byte code interpretation",
+            "Data types",
+            "Primitive data type",
+            "Nonprimitive data type",
+            "TypeCasting",
+            "Operators& their types",
+            "Conditional Statement",
+            "If- else statement",
+            "If- else if, else statement",
+            "Nested if Statement",
+            "Switch case",
+            "For loop",
+            "Whileloop",
+            "Do-While loop",
+            "Nested Loop",
+            "Array & its Methods",
+            "For each loop",
+            "Method & its types",
+            "A method with return type",
+            "Static variable, Method & Block, Final variable & method."
+        ]
+    },
+    {
+        "title": "OOP IN JAVA",
+        "topics": [
+            "Class and its benefits",
+            "Objects",
+            "Scanner class",
+            "Constructor",
+            "DefaultConstructor",
+            "Parameterized Constructor",
+            "“this” keyword",
+            "Garbage collection",
+            "Package",
+            "Creation of user-defined packages",
+            "Use and Benefits of Inheritance in OOP",
+            "Types of Inheritance in Java",
+            "Inheriting Data Members and Methods",
+            "Roleof Constructors in Inheritance.",
+            "Use of “super” keyword.",
+            "Access Modifiers & their scope.",
+            "Encapsulation",
+            "Polymorphism",
+            "MethodOverloading",
+            "MethodOverriding",
+            "Abstract class & methods.",
+            "Understanding interface",
+            "Implementinginterface"
+        ]
+    },
+    {
+        "title": "STRING HANDLING",
+        "topics": [
+            "Needs of String",
+            "ImmutableString",
+            "String Comparison",
+            "String Concatenation",
+            "Substring",
+            "Methods of String class",
+            "toString method",
+            "StringBuffer class",
+            "StringTokenizer class"
+        ]
+    },
+    {
+        "title": "EXCEPTION HANDLING",
+        "topics": [
+            "Importance of Exception Handling",
+            "Exception Propagation",
+            "Exception Types",
+            "Using try and catch",
+            "throw, throws, finally",
+            "Writing User-definedExceptions"
+        ]
+    },
+    {
+        "title": "IO PACKAGE",
+        "topics": [
+            "Input streams",
+            "Output streams",
+            "Object serialization",
+            "Deserialization"
+        ]
+    },
+    {
+        "title": "WRAPPER CLASS",
+        "topics": []
+    },
+    {
+        "title": "GENERICS CONCEPT",
+        "topics": []
+    },
+    {
+        "title": "COLLECTION",
+        "topics": [
+            "Collection Framework",
+            "ArrayList class",
+            "LinkedList class",
+            "HashSet class",
+            "LinkedHashSet class",
+            "Map Interface and its Classes"
+        ]
+    },
+    {
+        "title": "MANUAL TESTING",
+        "topics": [
+            "Basic introduction about Testing",
+            "Difference between Manual and Automation Testing",
+            "Hierarchical structure of roles and responsibilities in a project",
+            "TestingTypes and TestingTeam",
+            "STLC process",
+            "Reporting process",
+            "Bug life cycle",
+            "SDLC process",
+            "Software development model",
+            "Whatis SCRUM and overview about SCRUM?",
+            "Whatis Sprint and Sprint backlog?",
+            "Whatis SCRUM call?",
+            "Whatis Sprint planning?",
+            "Simple form validation check example?",
+            "TestScenario vs Test Case",
+            "Whatis Traceablity matrix and how to create it?",
+            "What are the levels of Testing?",
+            "ManualTesting types?"
+        ]
+    },
+    {
+        "title": "AUTOMATION TESTING",
+        "topics": [
+            "Introduction to Selenium",
+            "History of selenium?",
+            "aboutAutomation Testing",
+            "AboutSelenium web driver architecture",
+            "How to install Java, Eclipse",
+            "MavenIntroduction and Installation",
+            "How to create maven project and project structure",
+            "How to manage dependencies with maven",
+            "How to use webDriverManager?",
+            "ToOpen the browser and Close the browser and Maximize the browser",
+            "How to navigate to url?",
+            "VerifyPage Title in Selenium Webdriver",
+            "How to locate element and what action to be performed?",
+            "How to findElement using Id and class?",
+            "Understandingselenium webdriver interface?",
+            "Whatare locators in selenium webdriver?",
+            "Whatare relative locators in selenium webdriver?",
+            "Introduction to Xpath?",
+            "what is the difference between relative and absolute Xpath?",
+            "What are different ways of writing relative Xpath",
+            "What are basic methods available in Selenium webDriver interface",
+            "What are webElement methods in selenium",
+            "How to handle dropdown in selenium",
+            "How to perform actions in selenium?",
+            "Types of waits in selenium",
+            "what are implicit wait?",
+            "What are explicit wait?",
+            "How to perform Mouse Hover action in selenium?",
+            "How to handle multiple windows in selenium?",
+            "How to handle frames in selenium?",
+            "How to handle Alert Popup in selenium?",
+            "What is javascript executor?",
+            "How to scroll to specific element using javascript executor?",
+            "How to take screenshot in selenium?"
+        ]
+    },
+    {
+        "title": "TestNG FRAMEWORK",
+        "topics": [
+            "Whatis TestNg framework?",
+            "To install TestNG framework in eclipse",
+            "To write the first program using TestNG",
+            "What are the parameter available in the @Test annotation",
+            "Annotations in TestNG framework",
+            "To group test methods,classes?",
+            "How to create TestNg.xml for test suites?",
+            "Managing multiple Test Suites",
+            "To include and exclude groups in TestNg framework",
+            "To include parameter in TestNg.xml and access it into Class",
+            "Dataproviders in TestNG framework",
+            "How to retrieve data from an external Excelsheet?",
+            "To move dataproviders into different file and access",
+            "What are Assertions and its types?",
+            "What is difference between Hard and soft assertion?",
+            "What is TestNG Listeners and how to implement TestNG Listener in Selenium Webdriver",
+            "To take screenshot on failed Test cases using TestNg",
+            "FetchingTestNg report.",
+            "TestNG maven configuration Maven-surefire-report-plugin with TestNg",
+            "Executing testng.xml from maven on Command prompt",
+            "Generating Maven Surefire Reports",
+            "GeneratingXSLT Reports with Maven",
+            "Extent Reports Introduction",
+            "Extent Reports Generation",
+            "CapturingScreenshots and Including in Extent Reports"
+        ]
+    },
+    {
+        "title": "GIT AND GITHUB",
+        "topics": [
+            "Introduction to Version Control",
+            "Introduction toGit",
+            "Installing Git",
+            "Basic Git Commands",
+            "Branching and Merging",
+            "Working with remote repositories on GitHub"
+       
+        ]
+    },
+    {
+        "title": "CUCUMBER FRAMEWORK",
+        "topics": [
+            "Introduction to Cucumber frameworks?",
+            "How to install cucumber ?",
+            "Cucumberfeature file creation",
+            "CreatingStepDefinition file creation",
+            "Creating RunnerClass file",
+            "Mapping the Feature file with Step definition file",
+            "Parameterisation in Cumcumber framework",
+            "CreatingScenario Outline in cucumber framework",
+            "Defaultreport generation with cucumber framework",
+            "BackgroundOption in Feature file",
+            "Using tags in Cucumber framework to group",
+            "Hooks concept in Cucumber framework",
+            "To create DriverInstance and to take screenshot on Failure",
+            "To cleanup data with hooks in Cucumber framework",
+            "Methodsavailable in Scenario interface",
+            "Extent Report with the Cucumber framework",
+            "Creating properties file for configuring properties instead of XML configuration",
+            "How to clean, verify and run using build in cucumber ?"
+        ]
+    },
+    {
+        "title": "PAGE OBJECT MODEL",
+        "topics": [
+            "What is Page Object Model?",
+            "When to use POM",
+            "Examples to POM",
+            "POM using Page Factory",
+            "SampleExamples for POM"
+        ]
+    }
+]

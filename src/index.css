@@ -1,0 +1,100 @@
+@tailwind utilities;
+@import "tailwindcss";
+
+body {
+  background-color: #eff5f9;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-primary: #21d6cc;
+  --color-secondary: #188bf5;
+  --color-tertiary: #8843f8;
+}
+@layer utilities {
+  .text-grad {
+    @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-nowrap text-xl inline-block  font-semibold;
+  }
+  .bg-grad {
+    @apply bg-gradient-to-br from-tertiary via-secondary to-primary;
+  }
+}
+
+@layer components {
+  .course-btn {
+    background: linear-gradient(to right, #21d6cc, #8843f8);
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+    &:hover {
+      background: linear-gradient(to right, #21d6cc 10%, #8843f8 60%);
+    }
+  }
+}
+.carousel-status {
+  display: none;
+}
+.carousel .thumbs-wrapper {
+  display: none;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background-color: transparent !important;
+}
+.carousel .control-dots {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.custom-carousel > .custom-controls {
+  display: flex;
+  gap: 20px;
+  top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 99;
+}
+.custom-carousel {
+  /* background-image: url("./assets/oceanIcons/"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: #072a47c4; */
+  background-blend-mode: screen;
+}
+
+.slide-ani {
+  animation: slide-animation 9s linear infinite alternate;
+}
+.slide-ani-reverse {
+  animation: slide-animation-reverse 20s linear infinite alternate;
+}
+
+@keyframes slide-animation-reverse {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: 80%;
+    left: 60%;
+  }
+}
+
+@keyframes slide-animation {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    top: 80%;
+    right: 60%;
+  }
+}

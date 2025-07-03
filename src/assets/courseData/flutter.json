@@ -1,0 +1,188 @@
+[
+    {
+        "title": "BASIC",
+        "topics": [
+            "Introduction to Dart",
+            "SDK installation",
+            "Comments",
+            "Variables",
+            "Operators",
+            "Standard input and output",
+            "Null Safety",
+            "Basic attribute like(length,runtime Type)"
+        ]
+    },
+    {
+        "title": "DATA TYPES",
+        "topics": [
+            "Number",
+            "a) Int",
+            "b) Double",
+            "String",
+            "List",
+            "Set",
+            "Map",
+            "Queue",
+            "Enums"
+        ]
+    },
+    {
+        "title": "CONTROL FLOW",
+        "topics": [
+            "If else",
+            "Switch",
+            "Loops",
+            "a) For",
+            "b) While",
+            "c) Do While",
+            "Loop Controls (break,continue)",
+            "Labels for loops"
+        ]
+    },
+    {
+        "title": "FUNCTIONS",
+        "topics": [
+            "Type of Functions",
+            "Anonymous Functions",
+            "Async Functions"
+        ]
+    },
+    {
+        "title": "BUILT-IN-FUNCTION",
+        "topics": [
+            "Map",
+            "List Generate",
+            "Where (filter)"
+        ]
+    },
+    {
+        "title": "EXCEPTION HANDLING",
+        "topics": [
+            "Try",
+            "Catch",
+            "On",
+            "Finally",
+            "User Defined Exceptions"
+        ]
+    },
+    {
+        "title": "MODULE",
+        "topics": [
+            "User-created File",
+            "Date",
+            "Duration"
+        ]                                                                                                        
+
+    
+    },
+    {
+        "title":"FILE HANDLING"
+    },
+    {
+        "title": "OOPS CONCEPTS",
+        "topics": [
+            "Class and object",
+            "Constructor",
+            "This Keyword",
+            "Getter and Setter",
+            "Const and final",
+            "Inheritance",
+            "Encapsulation",
+            "Polymorphism",
+            "Abstract Class",
+            "Static Class",
+            "Interface",
+            "Extends vs with vs implements",
+            "Extension"
+        ]
+    },
+    {
+        "title": "INTRODUCTION TO FLUTTER"
+        
+    },
+    {
+        "title": "INSTALLATION GUIDELINES"
+        
+    },
+    {
+        "title": "UI WIDGETS(Level 1)",
+        "topics": [
+            "Text",
+            "Container and Icons",
+            "Layout Widgets",
+            "a) Scaffold",
+            "b) SafeArea",
+            "c) Column,Row,and Wrap",
+            "d) Expanded,SizeBox,Spacer",
+            "e) Stack,Positioned",
+            "Buttons,GeusterDetector,Incwell",
+            "AppBar,Bottom Nav",
+            "Drawer and Endrawer",
+            "Image Widget"
+        ]
+    },
+    {
+        "title": "PUBSPEC",
+        "topics": [
+            "Package",
+            "Assets",
+            "Fonts"
+        ]
+    },
+    {
+        "title": "UI WIDGETS(Level 2)",
+        "topics": [
+            "Form Inputs",
+            "ListView,GridView,and PageView",
+            "Stateful and Stateless Widget",
+            "ListTail,ExpansionTail,and Dismisable",
+            "Navigation",
+            "Dialogs",
+            "a) Alert",
+            "b) Bottom",
+            "c) Date and time picker",
+            "Layout Builder",
+            "Screen Utility Package",
+            "Velocity_x packag"
+        ]
+    },
+    {
+        "title": "FLUTTER SILVER",
+        "topics": [
+            "AppBar",
+            "ListView",
+            "GridView"
+        ]
+    },
+    {
+        "title": "UI WIDGETS(Level 3)",
+        "topics": [
+            "Snackbar",
+            "Overlay",
+            "Animation"
+        ]
+    },
+    {
+        "title": "BUSINESS LOGIC",
+        "topics": [
+            "State management",
+            "Local storage",
+            "AIP Calls",
+            "Firebase connectivity",
+            "Firebase Authentication",
+            "Firebase Firestore",
+            "StreemBuilder"
+        ]
+    },
+    {
+        "title": "PROJECTS",
+        "topics": [
+            "Timer",
+            "TODO",
+            "Money Tracker",
+            "Instagram Clone",
+            "Whatsapp Clone",
+            "E-Commerce App"
+        ]
+    }
+]

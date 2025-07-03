@@ -1,0 +1,198 @@
+[
+    {
+        "title": "React JS",
+        "topics": [
+            "What is React?",
+            "What is Virtual DOM?",
+            "Difference between Virtual DOM and Real DOM"
+
+        ]
+    },{
+        "title": "Using Preferred CLI Tools",
+        "topics": [
+            "vite(recommened)",
+            "create react app(cra)"
+        ]
+    },
+    {
+        "title":  "Start with Vite from scratch" 
+        
+    
+    },
+    {
+        "title":  "Using react & react dom library",  
+        "topics": [
+            "How to create an element?",
+            "How to create components?",
+            "How to render it?"
+        ]
+    },
+    {
+        "title": "JSX",
+        "topics":  [
+            
+            "Introduction to JSX?",
+            "Why JSX?",
+            "How does it convert JSX to JS?"
+        ]
+    },
+    {
+        "title":  "Components",
+        "topics": [
+            "Functional Components(Recommended)",
+            "Class Components",
+            "Class Lifecycle methods"
+        ]
+    },
+    {
+        "title":    "Topic to know",
+        "topics": [
+            
+            "How to create and nest components",
+            "How to add markup and styles",
+            "How to display data",
+            "How to render conditions and lists",
+            "How to respond to events and update the screen",
+            "How to share data between components"
+        ]
+    },
+    {
+        "title":"Data sharing",
+         "topics": [
+            
+            "What is Props?",
+            "How to use it?",
+            "Pros & Cons"
+        ]
+    },
+    {
+        "title": "Hooks",
+        "topics": [
+            "What is Hooks?",
+            "UseState",
+            "useEffect",
+            "useContext",
+            "useReducer",
+            "useCallback",
+            "useRef"
+        ]
+    },
+    {
+        "title": "Understanding of react(In-Depth)",
+        "topics": [
+             
+            "React components",
+            "React elements",
+            "Component instances"
+        ]
+    },
+    {
+        "title": "How does react work behind the scenes?", 
+        "topics":  [
+            "Reconciliation",
+            "Virtual DOM",
+            "Rendering",
+            "Diffing Algorithm"
+        ]
+    },
+    {
+        "title": "Forms"
+    },
+    {
+        "title":   "React Router"
+    },
+    {
+        "title": "Tailwind CSS",
+        "topics": [
+            "Introduction of Tailwind CSS",
+            "What is Tailwind CSS?",
+            "Setting up the development Environment",
+            "Install Tailwind CSS using CDN link",
+            "Install Tailwind using PostCSS",
+            "Add build watcher script"
+        ]
+    },
+    {
+        "title": "Tailwind CSS concepts - Basic to Advanced",
+        "topics": [
+            "How to use Documentation",
+            "Most Used Classes in Tailwind CSS",
+            "Hover, focus & active effect",
+            "Responsive Design",
+            "Dark Mode",
+            "Customize default style",
+            "Directives and function"
+        ]
+    },
+    {
+        "title":  "Libraries to Explore",
+        "topics": [
+            "shadcn/ui",
+            "Framer motion",
+            "Aceternity UI"
+        ]
+    },
+    {
+        "title":   "State Management"
+       
+    },
+    {
+        "title":  "Client side state",
+        "topics":  [
+            "Introduction",
+            "Flux Architecture",
+            "Redux"
+        ]
+    },
+    {
+        "title":  "Server side state",
+        "topics":  [
+           
+            "Introduction",
+            "React Query/Tanstack Query"
+        ]
+    },
+    {
+        "title":   "API Integration",
+        "topics":  [
+           
+            "Fetch / Axios",
+            "CRUD Operations"
+        ]
+    },
+    {
+        "title":    "Real Time Example",
+        "topics":  [
+           
+            "Student Management System",
+            "Deployment"
+        ]
+    }
+]
+            
+        
+            
+           
+           
+           
+          
+           
+           
+           
+          
+           
+           
+            
+           
+            
+           
+           
+           
+           
+           
+           
+            
+           
+           
+           
+    

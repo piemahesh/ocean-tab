@@ -1,0 +1,129 @@
+[
+    {
+      "title": "Angular Introduction",
+      "topics": [
+        "What is Angular",
+        "Why Angular",
+        "SPA (single page application)",
+        "Angular CLI",
+        "Setup a new Project",
+        "Create Your First App",
+        "Difference between the current angular version and before",
+        "Project structure and explanation"
+      ]
+    },
+    {
+      "title": "Typescript",
+      "topics": [
+        "What is Typescript?",
+        "Why do we use typescript?",
+        "Difference between typescript and javascript",
+        "Basic types, variables, and functions",
+        "Interfaces and classes",
+        "Communication between components using input, output, and viewchild",
+        "Generic components"
+      ]
+    },
+    {
+      "title": "Components",
+      "topics": [
+        "What is Component in Angular?",
+        "Create Components using CLI",
+        "Project structure",
+        "What is a nesting Component?",
+        "Component Styles and Selectors",
+        "Lifecycle hooks"
+      ]
+    },
+    {
+      "title": "Data Binding",
+      "topics": [
+        "What is Data binding?",
+        "String Interpolation",
+        "What are Binding Properties and Events",
+        "Splitting Application into Components",
+        "Two Way binding",
+        "What is Property Binding",
+        "Combine Forms with Data binding"
+      ]
+    },
+    {
+      "title": "Directives",
+      "topics": [
+        "What is Directives",
+        "Built-in directives ngIf, ngFor, ngStyle",
+        "Creating custom directives",
+        "Understanding Dependency Injection",
+        "What are services?",
+        "Injecting services into components",
+        "Sharing data between components using services"
+      ]
+    },
+    {
+      "title": "Forms",
+      "topics": [
+        "What is Reactive Forms",
+        "Syncing of HTML and Form",
+        "Form submission",
+        "Form validation",
+        "Form control name, form group, form array, form data"
+      ]
+    },
+    {
+      "title": "Routing and Navigation",
+      "topics": [
+        "What is Routing?",
+        "Navigation and its path",
+        "Route configuration",
+        "Config Query Parameters",
+        "Protect Routes with canActivate",
+        "Define parameters in Routing",
+        "Observables",
+        "Nested Routing",
+        "Route Guards"
+      ]
+    },
+    {
+      "title": "Pipes",
+      "topics": [
+        "What are Pipes in Angular",
+        "Filter Pipe",
+        "async Pipes",
+        "How we use pipes"
+      ]
+    },
+    {
+      "title": "Modules",
+      "topics": [
+        "What is a Module in Angular?",
+        "What is Lazy Loading",
+        "What is Core Module",
+        "What are App Modules"
+      ]
+    },
+    {
+      "title": "Angular Material",
+      "topics": [
+        "Introduction to angular material",
+        "Using pre-built components such as mat-buttons, mat-input, mat-table",
+        "Customizing themes and styles"
+      ]
+    },
+    {
+      "title": "HTTP Request",
+      "topics": [
+        "What is an HTTP request?",
+        "How it works, how to send requests, handling request headers",
+        "How to handle get and put methods",
+        "Catching HTTP errors"
+      ]
+    },
+    {
+      "title": "Deployment",
+      "topics": [
+        "Build an angular application for production",
+        "Deploying to a server or cloud platform & Optimizing performance"
+      ]
+    }
+  ]
+  

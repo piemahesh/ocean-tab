@@ -1,0 +1,314 @@
+[
+    {
+      "title": "JavaScript Introduction",
+      "topics": [
+        "Introduction to JavaScript",
+        "Difference types of JavaScript engines",
+        "Where is JavaScript used?",
+        "Difference between JavaScript and Java",
+        "Who introduced JavaScript language?",
+        "Official name of JavaScript",
+        "What is ECMAScript?"
+      ]
+    },
+    {
+      "title": "Fundamentals of JavaScript",
+      "topics": [
+        "Basic syntax",
+        "JS in <head> or <body>",
+        "Comments",
+        "JS Outputs"
+      ]
+    },
+    {
+      "title": "Variables & Data Types",
+      "topics": [
+        "Variable Declarations",
+        "Variable Naming Rules",
+        "Variable Scopes",
+        "Reserved words"
+      ]
+    },
+    {
+      "title": "Operators",
+      "topics": [
+        "Arithmetic Operators",
+        "Assignment Operators",
+        "Comparison Operators",
+        "String Operators",
+        "Logical Operators",
+        "Bitwise Operators",
+        "Ternary Operators",
+        "Type Operators"
+      ]
+    },
+    {
+      "title": "Type Casting",
+      "topics": [
+        "Difference between Type conversion vs Type coercion",
+        "Explicit Type Casting",
+        "Implicit Type Casting"
+      ]
+    },
+    {
+      "title": "Conditional Statement",
+      "topics": [
+        "if else",
+        "else if",
+        "nested if",
+        "Switch"
+      ]
+    },
+    {
+      "title": "Looping Statement",
+      "topics": [
+        "For",
+        "While",
+        "DO While"
+      ]
+    },
+    {
+      "title": "Control Statement",
+      "topics": [
+        "Break",
+        "Continue"
+      ]
+    },
+    {
+      "title": "Strings",
+      "topics": [
+        "Length",
+        "IndexOf",
+        "LastindexOf",
+        "Substring",
+        "Substr",
+        "To uppercase",
+        "To lowercase",
+        "Slice"
+      ]
+    },
+    {
+      "title": "Number",
+      "topics": [
+        "Number properties",
+        "Number methods"
+      ]
+    },
+    {
+      "title": "Array",
+      "topics": [
+        "Introduction to array",
+        "Accessing elements",
+        "Array methods"
+      ]
+    },
+    {
+      "title": "Objects",
+      "topics": [
+        "Object definition",
+        "Object properties",
+        "Accessing properties and methods",
+        "Object methods"
+      ]
+    },
+    {
+      "title": "ES6 Concepts",
+      "topics": [
+        "Destructing",
+        "Spread operator",
+        "Rest operator"
+      ]
+    },
+    {
+      "title": "JS primitive type and reference type",
+      "topics": []
+    },
+    {
+      "title": "Function",
+      "topics": [
+        "Function Statement / Function Definition",
+        "Difference between arguments and parameters",
+        "Default Params/Rest Params",
+        "Function return",
+        "Function Expression",
+        "Anonymous function",
+        "Arrow function"
+      ]
+    },
+    {
+      "title": "Scopes",
+      "topics": [
+        "Global",
+        "Block",
+        "Script",
+        "Function / Local"
+      ]
+    },
+    {
+      "title": "Looping through array and object",
+      "topics": [
+        "Array iteration methods",
+        "Object iteration methods"
+      ]
+    },
+    {
+      "title": "Array iteration methods",
+      "topics": [
+        "For each",
+        "Map",
+        "Filter",
+        "Reduce",
+        "For of"
+      ]
+    },
+    {
+      "title": "Object iteration methods",
+      "topics": [
+        "Entries",
+        "Keys",
+        "Values",
+        "For in"
+      ]
+    },
+    {
+      "title": "Built-in-methods",
+      "topics": [
+        "Math",
+        "Dates"
+      ]
+    },
+    {
+      "title": "Regular expression",
+      "topics": []
+    },
+    {
+      "title": "Exception Handling",
+      "topics": [
+        "Try",
+        "Catch",
+        "Throw",
+        "Finally"
+      ]
+    },
+    {
+      "title": "JavaScript Async",
+      "topics": [
+        "setTimeout",
+        "setInterval"
+      ]
+    },
+    {
+      "title": "Working with API",
+      "topics": [
+        "XMLHTTPRequest",
+        "Fetch(CRUD)"
+      ]
+    },
+    {
+      "title": "Window object",
+      "topics": [
+        "About window object",
+        "DOM (Document object module)"
+      ]
+    },
+    {
+      "title": "BOM (Browse Object Module)",
+      "topics": [
+        "Screen",
+        "Location",
+        "Popup alert",
+        "Cookies",
+        "History",
+        "Navigator",
+        "Timing"
+      ]
+    },
+    {
+      "title": "Advanced Concepts",
+      "topics": [
+        "How does JavaScript work?",
+        "Difference between Var | Let | Const",
+        "What is the TDZ?",
+        "What is Hoisting?"
+      ]
+    },
+    {
+      "title": "Functions",
+      "topics": [
+        "Lexical Scoping",
+        "IIFE",
+        "Recursive function",
+        "Argument object",
+        "Scope & Stack",
+        "HOF",
+        "Closures",
+        "First Class Function"
+      ]
+    },
+    {
+      "title": "Using This keyword",
+      "topics": [
+        "In a method(object)",
+        "In a function",
+        "Using it alone",
+        "In event handlers",
+        "In arrow functions"
+      ]
+    },
+    {
+      "title": "Explicit Binding",
+      "topics": [
+        "call",
+        "apply",
+        "bind"
+      ]
+    },
+    {
+      "title": "JavaScript Asynchronous",
+      "topics": [
+        "Callbacks",
+        "Callback Hell",
+        "Promises",
+        "async/await",
+        "Browser Environment"
+      ]
+    },
+    {
+      "title": "Prototype",
+      "topics": [
+        "Prototypal Inheritance",
+        "Examples"
+      ]
+    },
+    {
+      "title": "Modules in JavaScript",
+      "topics": [
+        "Common JS",
+        "ECMAScript Modules"
+      ]
+    },
+    {
+      "title": "Classes",
+      "topics": [
+        "Inheritance",
+        "Polymorphism",
+        "Encapsulation",
+        "Abstraction"
+      ]
+    },
+    {
+      "title": "Memory Management in JavaScript",
+      "topics": [
+        "Memory LifeCycle",
+        "Garbage Collection"
+      ]
+    },
+    {
+      "title": "Using Dev Tools",
+      "topics": [
+        "Debugging Memory Leaks",
+        "Debugging Performance"
+      ]
+    }
+  ]
+  

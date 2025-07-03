@@ -1,0 +1,402 @@
+[
+    {
+      "title": "Internet Introduction",
+      "topics": [
+        "Internet",
+        "How does the internet work?",
+        "What is HTTP?",
+        "What is a Domain Name?",
+        "What is hosting?",
+        "DNS and how it works?"
+      ]
+    },
+    {
+      "title": "HTML Introduction",
+      "topics": [
+        "History of browser",
+        "Why HTML?",
+        "Structure of Hypertext Markup language"
+      ]
+    },
+    {
+      "title": "Parts of HTML document",
+      "topics": [
+        "Head",
+        "Body"
+      ]
+    },
+    {
+      "title": "Tags",
+      "topics": [
+        "Paragraph",
+        "Heading",
+        "List (unordered, ordered, description list)",
+        "Layout elements",
+        "Exploring elements",
+        "Table"
+      ]
+    },
+    {
+      "title": "Form tags",
+      "topics": [
+        "Input Types",
+        "Text Area",
+        "Dropdown"
+      ]
+    },
+    {
+      "title": "CSS Introduction",
+      "topics": [
+        "Importance of CSS",
+        "Advantages",
+        "Structure of a CSS rule"
+      ]
+    },
+    {
+      "title": "CSS Type",
+      "topics": [
+        "Inline CSS",
+        "Internal/Embedded CSS",
+        "External CSS"
+      ]
+    },
+    {
+      "title": "CSS Properties and Values",
+      "topics": [
+        "Display and visibility properties",
+        "Text related properties",
+        "Font related properties",
+        "Border related properties",
+        "Background related properties"
+      ]
+    },
+    {
+      "title": "Introduction of Selector",
+      "topics": [
+        "Types of selectors",
+        "Position"
+      ]
+    },
+    {
+      "title": "Flexbox Layout",
+      "topics": [
+        "Introduction",
+        "Basic and Terminology",
+        "Flexbox properties",
+        "Examples",
+        "Flexbox Tricks"
+      ]
+    },
+    {
+      "title": "Grid Layout",
+      "topics": [
+        "Introduction",
+        "Basic and Terminology",
+        "Grid properties",
+        "Examples",
+        "Grid Tricks"
+      ]
+    },
+    {
+      "title": "Media Query",
+      "topics": [
+        "Introduction",
+        "Using media queries",
+        "Examples"
+      ]
+    },
+    {
+      "title": "Keyframes",
+      "topics": [
+        "Introduction",
+        "Creating animations",
+        "Keyframes properties"
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "topics": [
+        "Introduction",
+        "CSS units",
+        "Methods",
+        "Tips & Tricks"
+      ]
+    },
+    {
+      "title": "Sass",
+      "topics": [
+        "Nesting",
+        "Variables",
+        "Partials and Imports",
+        "Mixins",
+        "Extend/Inheritance"
+      ]
+    },
+    {
+      "title": "Bootstrap",
+      "topics": [
+        "Introduction of Bootstrap",
+        "BootStrap Introduction and Installation.",
+        "How to use Documentation",
+        "Bootstrap concepts - Basic to Advanced",
+        "Bootstrap Progress BarBootstrap Grid System.",
+        "Bootstrap Buttons, Glyphicons, Tables.",
+        "Bootstrap Vertical Forms, Horizontal Forms, Inline Forms.",
+        "Bootstrap DropDowns and Responsive Tabs and Jumbotron.",
+        "Bootstrap Alerts , Wells, Pagination and Pager."
+      ]
+    },
+    {
+      "title": "JavaScript Introduction",
+      "topics": [
+        "Introduction to JavaScript",
+        "Difference types of Javascript engine?",
+        "Where is Javascript used?",
+        "Difference between Javascript and Java?",
+        "Who introduced Javascript language?",
+        "Official name of Javascript?",
+        "What is ECMAScript?"
+      ]
+    },
+    {
+      "title": "Fundamentals of JavaScript",
+      "topics": [
+        "Basic syntax",
+        "JS in <head> or <body>",
+        "Comments",
+        "JS Outputs",
+        "Variables & Data Types",
+        "Operators",
+        "Type Casting",
+        "Conditional Statement",
+        "Looping Statement",
+        "Control Statement",
+        "Strings",
+        "Number",
+        "Array",
+        "Objects",
+        "ES6 Concepts",
+        "JS primitive type and reference type",
+        "Function",
+        "Scopes",
+        "Looping through array and object",
+        "Built-in-methods",
+        "Regular expression",
+        "Exception Handling",
+        "Javascript Async",
+        "Working with API",
+        "Window object"
+      ]
+    },
+    {
+      "title": "Advanced Concepts",
+      "topics": [
+        "How does Js work ?",
+        "Difference between Var | Let | Const",
+        "What is the TDZ?",
+        "What is Hoisting?",
+        "Functions",
+        "Using This keyword",
+        "Explicit Binding",
+        "Javascript Asynchronous",
+        "Prototype",
+        "Modules in JavaScript",
+        "Classes",
+        "Memory Management in JavaScript",
+        "Using Dev Tools"
+      ]
+    },
+    {
+      "title": "Angular Introduction",
+      "topics": [
+        "What is Angular",
+        "Why Angular.",
+        "SPA (single page application).",
+        "Angular CLI",
+        "Setup a new Project",
+        "Create Your First App",
+        "Difference between the current angular version and before.",
+        "Project structure and explanation."
+      ]
+    },
+    {
+      "title": "Typescript",
+      "topics": [
+        "What is Typescript?",
+        "Why do we use typescript?",
+        "Difference between typescript and javascript.",
+        "Basic types, variables, and functions",
+        "Interfaces and classes",
+        "Communication between components using input, output, and viewchild.",
+        "Generic components."
+      ]
+    },
+    {
+      "title": "Components",
+      "topics": [
+        "What is Component in Angular?",
+        "Create Components using CLI.",
+        "Project structure.",
+        "What is a nesting Component?",
+        "Component Styles and Selectors.",
+        "Lifecycle hooks."
+      ]
+    },
+    {
+      "title": "Data Binding",
+      "topics": [
+        "What is Data binding?",
+        "String Interpolation",
+        "What are Binding Properties and Events",
+        "Splitting Application into Components",
+        "Two Way binding",
+        "What is Property Binding",
+        "Combine Forms with Data binding."
+      ]
+    },
+    {
+      "title": "Directives",
+      "topics": [
+        "What is Directives",
+        "Built-in directives ngIf, ngFor, ngStyle.",
+        "Creating custom directives.",
+        "Understanding Dependency Injection.",
+        "What are services?",
+        "Injecting services into components.",
+        "Sharing data between components using services."
+      ]
+    },
+    {
+      "title": "Forms",
+      "topics": [
+        "What is Reactive Forms",
+        "Syncing of HTML and Form",
+        "Form submission",
+        "Form validation",
+        "Form control name, form group, form array, form data."
+      ]
+    },
+    {
+      "title": "Routing and Navigation",
+      "topics": [
+        "What is Routing?",
+        "Navigation and its path",
+        "Route configuration",
+        "Config Query Parameters",
+       
+        "Protect Routes with canActivate",
+        "Define parameters in Routing",
+        "Observables",
+        "Nested Routing",
+        "Route Guards"
+      ]
+    },
+    {
+      "title": "Pipes",
+      "topics": [
+        "What are Pipes in Angular",
+        "Filter Pipe",
+        "async Pipes",
+        "How we use pipes"
+      ]
+    },
+    {
+      "title": "Modules",
+      "topics": [
+        "What is a Module in Angular?",
+        "What is Lazy Loading",
+        "What is Core Module",
+        "What are App Modules"
+      ]
+    },
+    {
+      "title": "Angular Material",
+      "topics": [
+        "Introduction to angular material.",
+        "Using pre-built components such as mat-buttons,mat-input,mat-table",
+        "Customizing themes and styles."
+      ]
+    },
+    {
+      "title": "HTTP Request",
+      "topics": [
+        "What is an HTTP request?",
+        "How it works, how to send requests, handling request headers",
+        "How to handle get and put methods",
+        "Catching HTTP errors."
+      ]
+    },
+    {
+      "title": "Deployment",
+      "topics": [
+        "Build an angular application for production.",
+        "Deploying to a server or cloud platform & Optimizing performance"
+      ]
+    },
+    {
+      "title": "NODE JS",
+      "topics": [
+        "Introduction",
+        "Who introduced NodeJs",
+        "Benefits",
+        "Node architecture",
+        "How NodeJs work",
+        "How to install NodeJs"
+      ]
+    },
+    {
+      "title": "JAVASCRIPT QUICK REFRESHMENT",
+      "topics": [
+        "Node Module System",
+        "Introduction to NPM",
+        "About NVM and how to use",
+        "How to create package.json",
+        "About package.json",
+        "Developing-time-dependencies"
+      ]
+    },
+    {
+      "title": "Express JS",
+      "topics": [
+        "Introduction",
+        "How to start server",
+        "Project Structure(MVC)",
+        "Routing",
+        "How to use Postman"
+      ]
+    },
+    {
+      "title": "HTTP Methods",
+      "topics": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "title": "Middleware",
+      "topics": [
+        "Application level middleware",
+        "Router level middleware",
+        "Built-in middleware",
+        "Error handling middleware",
+        "Third party middleware"
+      ]
+    },
+    {
+      "title": "MongoDB",
+      "topics": [
+        "How to create Model(schema)",
+        "Create operations",
+        "Read operations",
+        "Update operations",
+        "Delete operation",
+        "JWT",
+        "User Authentication",
+        "User Authorization",
+        "Deployment"
+      ]
+    }
+  ]
+    

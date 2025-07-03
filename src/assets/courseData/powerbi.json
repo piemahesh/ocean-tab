@@ -1,0 +1,133 @@
+[
+  {
+    "title": "Module 1: Introduction to Data Analytics and Power BI",
+    "topics": [
+      "Overview of Data Analytics",
+      "Types of Data Analytics (Descriptive, Diagnostic, Predictive, Prescriptive)",
+      "Importance and Applications of Power BI",
+      "Power BI Components and Interface Overview",
+      "Power BI Licensing and Deployment Options",
+      "Understanding Data Connectivity and Integration"
+    ]
+  },
+  {
+    "title": "Module 2: Data Shaping",
+    "topics": [
+      "Connecting to Different Data Sources (Excel, SQL Server, APIs, etc.)",
+      "Data Extraction Methods and Techniques",
+      "Cleaning and Transforming Data using Power Query",
+      "Data Profiling and Quality Checks",
+      "Merging and Appending Queries",
+      "Parameterizing Data Connections for Dynamic Loading",
+      "Handling Errors and Missing Data"
+    ]
+  },
+  {
+    "title": "Module 3: Enhancing Data Structure",
+    "topics": [
+      "Managing Tables and Relationships",
+      "Creating Hierarchies and Groups",
+      "Configuring Sorting, Formatting, and Data Types",
+      "Using Lookup Tables and Bridge Tables",
+      "Data Categorization and Default Summarization",
+      "Using Role-playing Dimensions in Data Models"
+    ]
+  },
+  {
+    "title": "Module 4: Designing the Data Model",
+    "topics": [
+      "Understanding Star and Snowflake Schemas",
+      "Defining Relationships and Cardinality",
+      "Best Practices for Normalization and Denormalization",
+      "Optimizing Data Models for Performance",
+      "Handling Many-to-Many Relationships",
+      "Working with Composite Models and DirectQuery Mode"
+    ]
+  },
+  {
+    "title": "Module 5: DAX (Data Analysis Expressions)",
+    "topics": [
+      "Introduction to DAX",
+      "Basic Functions and Calculations (SUM, AVERAGE, COUNT, etc.)",
+      "Creating Measures and Calculated Columns",
+      "Iterative Functions (SUMX, AVERAGEX, etc.)",
+      "Time Intelligence Functions (YTD, QTD, MTD, etc.)",
+      "Contexts in DAX (Row Context, Filter Context, and Evaluation Context)",
+      "Advanced DAX Functions (Ranking, Parent-Child Hierarchies, etc.)"
+    ]
+  },
+  {
+    "title": "Module 6: Optimizing Model Performance",
+    "topics": [
+      "Performance Tuning Best Practices",
+      "Managing Large Datasets with Aggregations",
+      "Data Compression and Partitioning Techniques",
+      "Query Reduction Techniques (Pushdown Computation, DirectQuery, etc.)",
+      "Optimizing DAX Queries for Faster Execution",
+      "Understanding Storage Modes (Import, DirectQuery, Dual)"
+    ]
+  },
+  {
+    "title": "Module 7: Reports and Accessibility",
+    "topics": [
+      "Building Interactive Reports with Drill-through and Bookmarks",
+      "Custom Visuals and Formatting Options",
+      "Using Conditional Formatting and Dynamic Titles",
+      "Implementing Row-Level Security (RLS) in Reports",
+      "Creating Custom Tooltips and Drillthrough Pages",
+      "Accessibility Features in Power BI (Keyboard Shortcuts, Narrator, etc.)"
+    ]
+  },
+  {
+    "title": "Module 8: Dashboards",
+    "topics": [
+      "Creating and Sharing Dashboards in Power BI Service",
+      "Pinning Reports, Visuals, and Live Data Tiles",
+      "Adding Interactive Filters and Buttons",
+      "Creating Mobile-Optimized Dashboards",
+      "Embedding Dashboards into Websites and Applications",
+      "Managing Dashboard Performance and Data Refreshes"
+    ]
+  },
+  {
+    "title": "Module 9: Paginated Reports",
+    "topics": [
+      "Introduction to Paginated Reports and Differences from Power BI Reports",
+      "Designing Layouts and Templates for Pixel-Perfect Reports",
+      "Exporting and Printing Reports (PDF, Excel, Word, etc.)",
+      "Using Parameters in Paginated Reports",
+      "Creating Linked Reports and Drill-through Reports",
+      "Subscriptions and Automated Report Delivery"
+    ]
+  },
+  {
+    "title": "Module 10: Performing Advanced Analytics",
+    "topics": [
+      "AI and Machine Learning Integrations (Cognitive Services, Azure ML)",
+      "Time Intelligence Calculations and Forecasting",
+      "Implementing What-If Analysis and Sensitivity Analysis",
+      "Using Statistical Functions in Power BI",
+      "Anomaly Detection and Pattern Recognition",
+      "Creating Custom AI Visuals (Key Influencers, Decomposition Tree)"
+    ]
+  },
+  {
+    "title": "Module 11: Managing Workspaces and Datasets",
+    "topics": [
+      "Managing Power BI Workspaces and Apps",
+      "Publishing, Updating, and Refreshing Datasets",
+      "Automating Data Refresh using Power BI Gateway",
+      "Implementing Dataflows for ETL Process",
+      "Access Permissions, Role-Based Security, and Governance",
+      "Monitoring Usage and Performance with Power BI Admin Portal"
+    ]
+  },
+  {
+    "title": "Module 12: Project",
+    "topics": [
+      "Dashboard Building Techniques (Best Practices)",
+      "Designing User-Centric Dashboards with UI/UX Considerations",
+      "Real-Time Data Integration for Dashboards (Streaming Data)"
+    ]
+  }
+]

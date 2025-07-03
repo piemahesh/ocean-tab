@@ -1,0 +1,111 @@
+[
+    {
+        "title": "INTRODUCTION",
+        "topics": [
+            "About UX and UI",
+            "Difference between UI and UX",
+            "UI and UX uses",
+            "UI Basic Tool Introduction",
+            "Learn Figma",
+            "Learn about Design system"
+        ]
+    },
+    {
+        "title": "UX RESEARCH",
+        "topics": [
+            "UX Fundamentals",
+            "Business Requirement Gathering",
+            "User Research",
+            "User Interview Techniques"
+        ]
+    },
+    {
+        "title": "DATA ANALYSIS",
+        "topics": [
+            "Research Data Analysis",
+            "Competitor Analysis",
+            "Heuristic Analysis"
+        ]
+    },
+    {
+        "title": "DESIGN STRATEGY/DIRECTION",
+        "topics": [
+            "Ideation (up to 3 techniques)",
+            "White boarding",
+            "Journey Maps",
+            "Motivation mapping",
+            "Empathy mapping process",
+            "Information Architecture",
+            "Navigation",
+            "Content through Card Sorting",
+            "Sitemaps",
+            "User Flows",
+            "Low Fidelity",
+            "Mid Fidelity",
+            "High Fidelity"
+        ]
+    },
+    {
+        "title": "UX PSYCHOLOGY",
+        "topics": [
+            "Heuristics Principles",
+            "UX Laws",
+            "UX Case Studies",
+            "Minimalism and Maximalism"
+        ]
+    },
+    {
+        "title": "UI TOOLS",
+        "topics": [
+            "Figma",
+            "Adobe XD",
+            "Figjam",
+            "Notion",
+            "Balsamiq"
+        ]
+    },
+    {
+        "title": "USER INTERACTION",
+        "topics": [
+            "Typography",
+            "Colour Theory",
+            "Visual Perception",
+            "UI Element (Menu, Tabs, Bottom tab bar, Buttons including “call to action“ or CTA)",
+            "UI Function",
+            "Accordion",
+            "Carousel",
+            "Breadcrumbs",
+            "Modals",
+            "Forms",
+            "Type of effects",
+            "Navigation",
+            "Gestalt Principles",
+            "UI Principles",
+            "Grid Lines",
+            "Responsive system",
+            "Prototyping",
+            "Wireframes",
+            "UI Screens",
+            "How to create components",
+            "How to create Variables",
+            "Select Matching Layers",
+            "How to create Tokens"
+
+        ]
+    },
+    {
+        "title": "USER TESTING",
+        "topics": [
+            "A/B Testing",
+            "Remote Usability Testing",
+            "Gorilla Testing"
+        ]
+    },
+    {
+        "title": "INTERVIEW PREPARATION",
+        "topics": [
+            "How to Build a Portfolio",
+            "Interview Question"
+        ]
+    }
+]

@@ -1,0 +1,179 @@
+[
+    {
+        "title": "GETTING STARTED WITH PYTHON",
+        "topics": [
+            "An Introduction to Python Programming",
+            "What is Python Programming?",
+            "Basic Python Syntax and First Program in Python",
+            "Install Python on Windows"
+        ]
+    },
+    {
+        "title": "PYTHON BASIC CONSTRUCTS",
+        "topics": [
+            "python First Program",
+            "Indentation in Python",
+            "Variables in Python",
+            "Python Keywords and Identifiers",
+            "Literals in Python",
+            "Python Comments",
+            "Operators in Python",
+            "Python Input and Output",
+            "Implicit Type Conversion in Python",
+            "Explicit Type Conversion in Python"
+        ]
+    },
+    {
+        "title": "PYTHON FLOW CONTROL",
+        "topics": [
+            "Control Flow Statements in Python",
+            "Python if…else Statement",
+            "Nested if-else",
+            "Switch case",
+            "While Loop in Python",
+            "For Loop in Python",
+            "Nested loops",
+            "For Else and While Else in Python",
+            "Break, Pass, and Continue Statement in Python"
+        ]
+    },
+    {
+        "title": "PYTHON STRING",
+        "topics": [
+            "Strings in Python",
+            "String Slicing in Python",
+            "String Methods Python",
+            "String Formatting in Python"
+        ]
+    },
+    {
+        "title": "LISTS",
+        "topics": [
+            "Introduction",
+            "Accessing list",
+            "Operations",
+            "Working with lists",
+            "Function and Methods"
+        ]
+    },
+    {
+        "title": "TUPLE",
+        "topics": [
+            "Introduction",
+            "Accessing tuples",
+            "Operations",
+            "Working",
+            "Function and Methods"
+        ]
+    },
+    {
+        "title": "SET",
+        "topics": [
+            "Accessing set",
+            "Set Method"
+        ]
+    },
+    {
+        "title": "DICTIONARIES",
+        "topics": [
+            "Introduction",
+            "Accessing values in dictionaries",
+            "Working with dictionaries",
+            "Properties",
+            "Functions"
+        ]
+    },
+    {
+        "title": "PYTHON FUNCTIONS",
+        "topics": [
+            "Functions in Python",
+            "Scope of Variable in Python",
+            "Types of Function Arguments in Python",
+            "*Args and **Kwargs in Python",
+            "Lambda and Anonymous Function in Python",
+            "Map, Filter and Reduce functions in Python",
+            "Scope in python",
+            "Recursion in Python"
+        ]
+    },
+    {
+        "title": "PYTHON EXCEPTION HANDLING",
+        "topics": [
+            "Python Exception Handling",
+            "User-defined Exception Handling"
+        ]
+    },
+    {
+        "title": "PYTHON FILE HANDLING",
+        "topics": [
+            "Opening and Closing Files in Python",
+            "How to Read a File in Python",
+            "How to Write a File in Python",
+            "How to Delete File in Python?",
+            "With Statement in Python"
+        ]
+    },
+    {
+        "title": "PYTHON MODULES AND PACKAGES",
+        "topics": [
+            "Modules in Python",
+            "Packages in Python and Import Statement",
+            "Python Collection Module",
+            "Python Datetime"
+        ]
+    },
+    {
+        "title": "REGULAR EXPRESSION",
+        "topics": [
+            "Introduction to Regular Expressions",
+            "Basic Patterns",
+            "Metacharacters and special sequences",
+            "Regular Expression methods"
+        ]
+    },
+    {
+        "title": "PYTHON OOPS",
+        "topics": [
+            "Class in Python: What is Python Class?",
+            "What is an Object in Python?",
+            "Inheritance in Python",
+            "Encapsulation in Python",
+            "Polymorphism in Python with Examples",
+            "Data Abstraction in Python",
+            "Iterators in Python"
+        ]
+    },
+    {
+        "title": "PYTHON DECORATORS",
+        "topics": [
+            "Decorator Definition",
+            "Decorator Function",
+            "Applying Decorators",
+            "Execution Order",
+            "Decorator Example",
+            "Built-in Decorators"
+        ]
+    },
+    {
+        "title": "DATABASE",
+        "topics": [
+            "Introduction to Database",
+            "Creating a Database in MongoDB",
+            "Creating Collection",
+            "Inserting Documents",
+            "Update Collection",
+            "Delete Document"
+        ]
+    },
+    {
+        "title": "GIT AND GITHUB",
+        "topics": [
+            "Introduction to Version Control",
+            "Introduction to Git",
+            "Installing Git",
+            "Basic Git Commands",
+            "Branching and Merging",
+            "Working with Remote Repositories on GitHuBuilt-in Decorators"
+        ]
+    }
+]

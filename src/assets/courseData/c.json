@@ -1,0 +1,112 @@
+[
+    {
+        "title": "INTRODUCTION",
+        "topics": [
+            "History of C",
+            "Structure of a C Program",
+            "Execution of C Program",
+            "Keyword & Identifier",
+            "Variables & Constants",
+            "Data Types",
+            "Input Statements in C",
+            "Output Statements in C"
+        ]
+    },
+    {
+        "title": "OPERATORS",
+        "topics": [
+            "Arithmetic Operators",
+            "Logical Operators",
+            "Relational Operators",
+            "Bitwise Operators",
+            "Unary Operators",
+            "Ternary Operators"
+        ]
+    },
+    {
+        "title": "CONDITIONAL STATEMENTS",
+        "topics": [
+            "If Statement",
+            "If Else Statement",
+            "Else If Statement",
+            "Nested If Statement",
+            "Switch Statement"
+        ]
+    },
+    {
+        "title": "LOOPING AND ITERATION",
+        "topics": [
+            "For Statement",
+            "While Statement",
+            "Do While Statement"
+        ]
+    },
+    {
+        "title": "ARRAYS",
+        "topics": [
+            "Single Dimensional Array",
+            "Multi-Dimensional Array"
+        ]
+    },
+    {
+        "title": "FUNCTIONS",
+        "topics": [
+            "Types of Functions",
+            "Pass by value",
+            "Pass by reference",
+            "Functions and Arrays",
+            "String Functions",
+            "Recursive Functions"
+        ]
+    },
+    {
+        "title": "STORAGE CLASS",
+        "topics": [
+            "Auto",
+            "Static",
+            "Extern",
+            "Register"
+        ]
+    },
+    {
+        "title": "STRUCTURES",
+        "topics": [
+            "Structure declaration",
+            "Nested structures",
+            "Arrays of structures",
+            "Pointers to structures",
+            "Structures and functions"
+        ]
+    },
+    {
+        "title": "POINTER",
+        "topics": [
+            "Understanding Pointers",
+            "Pointer expressions",
+            "Pointers and Arrays",
+            "Pointers and Character String",
+            "Pointers to Functions",
+            "Pointers and Structures"
+        ]
+    },
+    {
+        "title": "FILE HANDLING",
+        "topics": [
+            "File I/O",
+            "Opening a file",
+            "Reading from or writing to a file",
+            "Closing a file",
+            "Error Handling during IO Operation",
+            "Random Access to Files"
+        ]
+    },
+    {
+        "title": "DYNAMIC MEMORY ALLOCATION",
+        "topics": [
+            "Malloc()",
+            "Calloc()",
+            "Free()",
+            "Realloc()"
+        ]
+    }
+]

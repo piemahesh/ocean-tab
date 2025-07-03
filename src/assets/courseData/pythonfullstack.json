@@ -1,0 +1,602 @@
+[
+    {
+      "title": "Internet Introduction",
+      "topics": [
+        "Internet",
+        "How does the internet work?",
+        "What is HTTP?",
+        "What is a Domain Name?",
+        "What is hosting?",
+        "DNS and how it works?"
+      ]
+    },
+    {
+      "title": "HTML Introduction",
+      "topics": [
+        "History of browser",
+        "Why HTML?",
+        "Structure of Hypertext Markup language"
+      ]
+    },
+    {
+      "title": "Parts of HTML document",
+      "topics": [
+        "Head",
+        "Body"
+      ]
+    },
+    {
+      "title": "Tags",
+      "topics": [
+        "Paragraph",
+        "Heading",
+        "List (unordered, ordered, description list)",
+        "Layout elements",
+        "Exploring elements",
+        "Table"
+      ]
+    },
+    {
+      "title": "Form tags",
+      "topics": [
+        "Input Types",
+        "Text Area",
+        "Dropdown"
+      ]
+    },
+    {
+      "title": "CSS Introduction",
+      "topics": [
+        "Importance of CSS",
+        "Advantages",
+        "Structure of a CSS rule"
+      ]
+    },
+    {
+      "title": "CSS Types",
+      "topics": [
+        "Inline CSS",
+        "Internal css",
+        "External css"
+      ]
+    },
+    {
+      "title": "CSS Properties and Values",
+      "topics": [
+        "Display and visibility properties",
+        "Text related properties",
+        "Font related properties",
+        "Border related properties",
+        "Background related properties"
+      ]
+    },
+    {
+      "title": "Introduction of Selector"
+      
+    },
+    {
+      "title": "Types of selectors",
+      "topics": [
+        "Simple selectors",
+        "Combinator selectors",
+        "Pseudo class selectors",
+        "Pseudo elements selectors",
+        "Attribute selectors"
+      ]
+    },
+    {
+      "title": "Position",
+      "topics": [
+        "Static",
+        "Relative",
+        "Absolute",
+        "Sticky",
+        "Fixed"
+      ]
+    },
+    {
+      "title": "Flexbox Layout",
+      "topics": [
+        "Introduction",
+        "Basic and Terminology",
+        "Flexbox properties",
+        "Examples",
+        "Flexbox Tricks"
+      ]
+    },
+    {
+      "title": "Grid Layout",
+      "topics": [
+        "Introduction",
+        "Basic and Terminology",
+        "Grid properties",
+        "Examples",
+        "Grid Tricks"
+      ]
+    },
+    {
+      "title": "Media Query",
+      "topics": [
+        "Introduction",
+        "Using media queries",
+        "Examples"
+      ]
+    },
+    {
+      "title": "Keyframes",
+      "topics": [
+        "Introduction",
+        "Creating animations",
+        "Keyframes properties"
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "topics": [
+        "Introduction",
+        "CSS units",
+        "Methods",
+        "Tips & Tricks"
+      ]
+    },
+    {
+      "title": "Sass",
+      "topics": [
+        "Nesting",
+        "Variables",
+        "Partials and Imports",
+        "Mixins",
+        "Extend/Inheritance"
+      ]
+    },
+    {
+      "title": "Bootstrap",
+      "topics": [
+        "Introduction of Bootstrap",
+        "Bootstrap Introduction and Installation",
+        "How to use Documentation"
+      ]
+    },
+    {
+      "title": "Bootstrap concepts - Basic to Advanced",
+      "topics": [
+        "Bootstrap Progress Bar",
+        "Bootstrap Grid System",
+        "Bootstrap Buttons, Glyphicons, Tables",
+        "Bootstrap Vertical Forms, Horizontal Forms, Inline Forms",
+        "Bootstrap DropDowns and Responsive Tabs and Jumbotron",
+        "Bootstrap Alerts, Wells, Pagination and Pager"
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "topics": [
+        "Introduction to JavaScript",
+        "Different types of Javascript engine?",
+        "Where is Javascript used?",
+        "Difference between Javascript and Java?",
+        "Who introduced Javascript language?",
+        "Official name of Javascript?",
+        "What is ECMAScript?"
+      ]
+    },
+    {
+      "title": "Fundamentals of JavaScript",
+      "topics": [
+        "Basic syntax",
+        "JS in <head> or <body>",
+        "Comments",
+        "JS Outputs"
+      ]
+    },
+    {
+      "title": "Variables & Data Types",
+      "topics": [
+        "Variable Declarations",
+        "Variable Naming Rules",
+        "Variable Scopes",
+        "Reserved words"
+      ]
+    },
+    {
+      "title": "Operators",
+      "topics": [
+        "Arithmetic Operators",
+        "Assignment Operators",
+        "Comparison Operators",
+        "String Operators",
+        "Logical Operators",
+        "Bitwise Operators",
+        "Ternary Operators",
+        "Type Operators"
+      ]
+    },
+    {
+      "title": "Type Casting",
+      "topics": [
+        "Difference between Type conversion vs Type coercion",
+        "Explicit Type Casting",
+        "Implicit Type Casting"
+      ]
+    },
+    {
+      "title": "Conditional Statement",
+      "topics": [
+        "if else",
+        "else if",
+        "nested if",
+        "Switch"
+      ]
+    },
+    {
+      "title": "Looping Statement",
+      "topics": [
+        "For",
+        "While",
+        "DO While"
+      ]
+    },
+    {
+      "title": "Control Statement",
+      "topics": [
+        "Break",
+        "Continue"
+      ]
+    },
+    {
+      "title": "Strings",
+      "topics": [
+        "Length",
+        "IndexOf",
+        "LastindexOf",
+        "Substring",
+        "Substr",
+        "To uppercase",
+        "To lowercase",
+        "Slice"
+      ]
+    },
+    {
+      "title": "Number",
+      "topics": [
+        "Number properties",
+        "Number methods"
+      ]
+    },
+    {
+      "title": "Array",
+      "topics": [
+        "Introduction to array",
+        "Accessing elements",
+        "Array methods"
+      ]
+    },
+    {
+      "title": "Objects",
+      "topics": [
+        "Object definition",
+        "Object properties",
+        "Accessing properties and methods",
+        "Object methods"
+      ]
+    },
+    {
+      "title": "ES6 Concepts",
+      "topics": [
+        "Destructing",
+        "Spread operator",
+        "Rest operator"
+      ]
+    },
+    {
+      "title": "JS primitive type and reference type"
+
+    },
+    {
+      "title": "Function",
+      "topics": [
+        "Function Statement / Function Definition",
+        "Difference between arguments and parameters",
+        "Default Params/Rest Params",
+        "Function return",
+        "Function Expression",
+        "Anonymous function",
+        "Arrow function"
+      ]
+    },
+    {
+      "title": "Scopes",
+      "topics": [
+        "Global",
+        "Block",
+        "Script",
+        "Function / Local"
+      ]
+    },
+    {
+      "title": "Looping through array and object",
+      "topics": [
+        "Array iteration methods",
+        "Object iteration methods"
+      ]
+    },
+    {
+      "title": "Array iteration methods",
+      "topics": [
+        "For each",
+        "Map",
+        "Filter",
+        "Reduce",
+        "For of"
+      ]
+    },
+    {
+      "title": "Object iteration methods",
+      "topics": [
+        "Entries",
+        "Keys",
+        "Values",
+        "For in"
+      ]
+    },
+    {
+      "title": "Built-in-methods",
+      "topics": [
+        "Math",
+        "Dates"
+      ]
+    },
+    {
+      "title": "Regular expression"
+    },
+    {
+      "title": "Exception Handling",
+      "topics": [
+        "Try",
+        "Catch",
+        "Throw",
+        "Finally"
+      ]
+    },
+    {
+      "title": "Javascript Async",
+      "topics": [
+        "setTimeout",
+        "setInterval"
+      ]
+    },
+    {
+      "title": "Working with API",
+      "topics": [
+        "XMLHTTP Request",
+        "Fetch(CRUD)"
+      ]
+    },
+    {
+      "title": "Window object",
+      "topics": [
+        "About window object",
+        "DOM (Document object module)"
+      ]
+    },
+    {
+      "title": "DOM (Document object module)",
+      "topics": [
+        "HTML DOM elements",
+        "HTML Attributes",
+        "HTML Events",
+        "HTML Events Objects",
+        "Difference between HTML collections and Node List",
+        "HTML Styles"
+      ]
+    },
+    {
+      "title": "BOM (Browse Object Module)",
+      "topics": [
+        "Screen",
+        "Location",
+        "Popup alert",
+        "Cookies",
+        "History",
+        "Navigator",
+        "Timing"
+      ]
+    },
+    {
+      "title": "Getting Started with Python",
+      "topics": [
+        "An Introduction to Python Programming",
+        "What is Python Programming?",
+        "Basic Python Syntax and First Program in Python",
+        "Install Python on Windows"
+      ]
+    },
+    {
+      "title": "Python Basic Constructs",
+      "topics": [
+        "Python First Program",
+        "Indentation in Python",
+        "Variables in Python",
+        "Python Keywords and Identifiers",
+        "Literals in Python",
+        "Python Comments",
+        "Operators in Python",
+        "Python Input and Output",
+        "Implicit Type Conversion in Python",
+        "Explicit Type Conversion in Python"
+      ]
+    },
+    {
+      "title": "Python Flow Control",
+      "topics": [
+        "Control Flow Statements in Python",
+        "Python if…else Statement",
+        "Nested if-else",
+        "Switch case",
+        "While Loop in Python",
+        "For Loop in Python",
+        "Nested loops",
+        "For Else and While Else in Python",
+        "Break, Pass, and Continue Statement in Python"
+      ]
+    },
+    {
+      "title": "Python String",
+      "topics": [
+        "Strings in Python",
+        "String Slicing in Python",
+        "String Methods Python",
+        "String Formatting in Python"
+      ]
+    },
+    {
+      "title": "Lists",
+      "topics": [
+        "Introduction",
+        "Accessing list",
+        "Operations",
+        "Working with lists",
+        "Function and Methods"
+      ]
+    },
+    {
+      "title": "Tuple",
+      "topics": [
+        "Introduction",
+        "Accessing tuples",
+        "Operations",
+        "Working",
+        "Function and Methods"
+      ]
+    },
+    {
+      "title": "Set",
+      "topics": [
+        "Accessing set",
+        "Set Method"
+      ]
+    },
+    {
+      "title": "Dictionaries",
+      "topics": [
+        "Introduction",
+        "Accessing values in dictionaries",
+        "Working with dictionaries",
+        "Properties",
+        "Functions"
+      ]
+    },
+    {
+      "title": "Python Functions",
+      "topics": [
+        "Functions in Python",
+        "Scope of Variable in Python",
+        "Types of Function Arguments in Python",
+        "*Args and **Kwargs in Python",
+        "Lambda and Anonymous Function in Python",
+        "Map, Filter and Reduce functions in Python",
+        "Scope in python",
+        "Recursion in Python"
+      ]
+    },
+    {
+      "title": "Python Exception Handling",
+      "topics": [
+        "Python Exception Handling",
+        "User-defined Exception Handling"
+      ]
+    },
+    {
+      "title": "Python File Handling",
+      "topics": [
+        "Opening and Closing Files in Python",
+        "How to Read a File in Python",
+        "How to Write a File in Python",
+        "How to Delete File in Python?",
+        "With Statement in Python"
+      ]
+    },
+    {
+      "title": "Python Modules and Packages",
+      "topics": [
+        "Modules in Python",
+        "Packages in Python and Import Statement",
+        "Python Collection Module",
+        "Python Datetime"
+      ]
+    },
+    {
+      "title": "Regular Expression",
+      "topics": [
+        "Introduction to Regular Expressions",
+        "Basic Patterns",
+        "Metacharacters and special sequences",
+        "Regular Expression methods"
+      ]
+    },
+    {
+      "title": "Python OOPS",
+      "topics": [
+        "Class in Python: What is Python Class?",
+        "What is an Object in Python?",
+        "Inheritance in Python",
+        "Encapsulation in Python",
+        "Polymorphism in Python with Examples",
+        "Data Abstraction in Python",
+        "Iterators in Python"
+      ]
+    },
+    {
+      "title": "Python Decorators",
+      "topics": [
+        "Decorator Definition",
+        "Decorator Function",
+        "Applying Decorators",
+        "Execution Order",
+        "Decorator Example"
+      ]
+    },
+    {
+      "title": "Database",
+      "topics": [
+        "Introduction to Database",
+        "Creating a Database in MongoDB",
+        "Creating Collection",
+        "Inserting Documents",
+        "Update Collection",
+        "Delete Document"
+      ]
+    },
+    {
+      "title": "Git and GitHub",
+      "topics": [
+        "Introduction to Version Control",
+        "Introduction to Git",
+        "Installing Git",
+        "Basic Git Commands",
+        "Branching and Merging",
+        "Working with Remote Repositories on GitHub"
+      ]
+    },
+    {
+      "title": "Django",
+      "topics": [
+        "Introduction",
+        "Benefits",
+        "Environment Setup",
+        "Creating Simple Web Application",
+        "How to Create a Project Using Django?",
+        "Admin Interface",
+        "Views",
+        "URL Mapping",
+        "Template System",
+        "MongoDB - CRUD",
+        "Page Redirection",
+        "Handle Form Data",
+        "Sessions",
+        "Deployment",
+        "Live Project"
+      ]
+    }
+  ]
+  
