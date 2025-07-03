@@ -1,67 +1,11 @@
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { useState, useRef, type TouchEvent } from "react";
-// import { useMyContext } from "../context";
-// import { Home } from "../../Home";
-// import { Course } from "../../Course";
-// import { Gallery } from "../../Gallery";
-// import { Mentor } from "../../Mentor";
-// import { About } from "../../About";
-
-// export const MyCarousel: React.FC = () => {
-//   const { value } = useMyContext();
-//   const [slideIndex, setSlideIndex] = useState<number>(value);
-//   const touchStartX = useRef<number | null>(null);
-
-//   const handleTouchStart = (e: TouchEvent<HTMLElement>) => {
-//     touchStartX.current = e.touches[0].clientX;
-//   };
-
-//   const handleTouchEnd = (e: TouchEvent<HTMLElement>) => {
-//     if (touchStartX.current === null) return;
-//     const touchEndX = e.changedTouches[0].clientX;
-//     const deltaX = touchEndX - touchStartX.current;
-//     const threshold = window.innerWidth * 0.5;
-
-//     if (Math.abs(deltaX) > threshold) {
-//       if (deltaX > 0) {
-//         setSlideIndex((prev) => (prev - 1 + 5) % 5);
-//       } else {
-//         setSlideIndex((prev) => (prev + 1) % 5);
-//       }
-//     }
-
-//     touchStartX.current = null;
-//   };
-
-//   return (
-//     <section
-//       className="custom-carousel w-full"
-//       onTouchStart={handleTouchStart}
-//       onTouchEnd={handleTouchEnd}
-//     >
-//       <Carousel
-//         infiniteLoop={true}
-//         swipeable={false}
-//         showThumbs={false}
-//         selectedItem={slideIndex}
-//         onChange={(index: number) => setSlideIndex(index)}
-//       >
-//         {slideIndex === 0 && <Home />}
-//         {slideIndex === 1 && <Course />}
-//         {slideIndex === 2 && <Gallery />}
-//         {slideIndex === 3 && <Mentor />}
-//         {slideIndex === 4 && <About />}
-//       </Carousel>
-//     </section>
-//   );
-// };
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useEffect, useRef, useState, type TouchEvent } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { useSlide } from "../../../utils";
 
 export const MyCarousel: React.FC = () => {
+  const { isModalOpen } = useSlide(); // ← access modal status
   const location = useLocation();
   const navigate = useNavigate();
   const touchStartX = useRef<number | null>(null);
@@ -71,7 +15,7 @@ export const MyCarousel: React.FC = () => {
     // Scroll to top on route change
     setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 200);
+    }, 100);
   }, [pathname]);
   const pathToIndex = (pathname: string): number => {
     if (pathname === "/") return 0;
@@ -117,6 +61,7 @@ export const MyCarousel: React.FC = () => {
   };
 
   const handleTouchEnd = (e: TouchEvent<HTMLElement>) => {
+    if (isModalOpen) return;
     if (touchStartX.current === null) return;
     const touchEndX = e.changedTouches[0].clientX;
     const deltaX = touchEndX - touchStartX.current;
