@@ -8,6 +8,13 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "CEO, Managing Director",
     linkedIn: "https://www.linkedin.com/in/karthikbalaraman/",
     index: 1,
+    experience: 15,
+    skills: [
+      { skill: "Leadership", area: "Management" },
+      { skill: "Business Strategy", area: "Entrepreneurship" },
+      { skill: "Agile", area: "Project Management" },
+      { skill: "Scrum", area: "Project Management" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a6888a",
@@ -16,6 +23,13 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Technical Lead",
     linkedIn: "https://www.linkedin.com/in/brindakarthik/",
     index: 2,
+    experience: 10,
+    skills: [
+      { skill: "JavaScript", area: "Frontend Development" },
+      { skill: "React", area: "Frontend Framework" },
+      { skill: "Node.js", area: "Backend Development" },
+      { skill: "System Design", area: "Architecture" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a6888b",
@@ -24,6 +38,12 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Alumni",
     linkedIn: "https://www.linkedin.com/in/vijayakumarbhaskar/",
     index: 3,
+    experience: 3,
+    skills: [
+      { skill: "Java", area: "Backend Development" },
+      { skill: "Spring Boot", area: "Java Framework" },
+      { skill: "SQL", area: "Database" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a6888c",
@@ -32,6 +52,13 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Developer / Sr.Trainer",
     linkedIn: "https://www.linkedin.com/in/mohamed-ijass-0891a12b0/",
     index: 4,
+    experience: 8,
+    skills: [
+      { skill: "MongoDB", area: "Database" },
+      { skill: "Express.js", area: "Backend Framework" },
+      { skill: "React", area: "Frontend Framework" },
+      { skill: "Node.js", area: "Backend Development" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a6888d",
@@ -40,6 +67,13 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Developer / Trainer",
     linkedIn: "https://www.linkedin.com/in/anusuya-balakrishnan-260629230/",
     index: 5,
+    experience: 6,
+    skills: [
+      { skill: "HTML", area: "Frontend Basics" },
+      { skill: "CSS", area: "Styling" },
+      { skill: "JavaScript", area: "Frontend Development" },
+      { skill: "Bootstrap", area: "CSS Framework" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a6888e",
@@ -49,6 +83,13 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Developer / Trainer",
     linkedIn: "https://www.linkedin.com/in/vidhya-v-970253214/",
     index: 6,
+    experience: 5,
+    skills: [
+      { skill: "React", area: "Frontend Framework" },
+      { skill: "Redux", area: "State Management" },
+      { skill: "TypeScript", area: "Frontend Development" },
+      { skill: "Firebase", area: "Backend as a Service" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a6888f",
@@ -58,6 +99,13 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Developer / Trainer",
     linkedIn: "https://www.linkedin.com/in/mahi14/",
     index: 7,
+    experience: 4,
+    skills: [
+      { skill: "Flutter", area: "Mobile Development" },
+      { skill: "Firebase", area: "Backend as a Service" },
+      { skill: "Bloc", area: "State Management" },
+      { skill: "Clean Architecture", area: "Software Design" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a68890",
@@ -67,6 +115,12 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Admin",
     linkedIn: "https://www.linkedin.com/in/jayshree-srima/",
     index: 8,
+    experience: 7,
+    skills: [
+      { skill: "Team Coordination", area: "Operations" },
+      { skill: "Scheduling", area: "Administrative Tasks" },
+      { skill: "Documentation", area: "Office Management" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a68891",
@@ -76,6 +130,13 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Developer / Trainer",
     linkedIn: "https://www.linkedin.com/in/sangeetha-s-02a0bb1b6/",
     index: 9,
+    experience: 5,
+    skills: [
+      { skill: "Python", area: "Programming Language" },
+      { skill: "Data Science", area: "Analytics" },
+      { skill: "NumPy", area: "Scientific Computing" },
+      { skill: "Pandas", area: "Data Analysis" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a68892",
@@ -85,6 +146,12 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Developer / Trainer",
     index: 10,
     linkedIn: "https://www.linkedin.com/in/bhadresh-p-bb426024b/",
+    experience: 4,
+    skills: [
+      { skill: "Java", area: "Backend Development" },
+      { skill: "Angular", area: "Frontend Framework" },
+      { skill: "Node.js", area: "Backend Development" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a68896",
@@ -94,6 +161,12 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Developer / Trainer",
     linkedIn: "https://www.linkedin.com/in/raje-ammu-607bb0213/",
     index: 11,
+    experience: 3,
+    skills: [
+      { skill: "HTML", area: "Frontend Basics" },
+      { skill: "CSS", area: "Styling" },
+      { skill: "JavaScript", area: "Frontend Development" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a68893",
@@ -103,6 +176,12 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Data Analyst",
     linkedIn: "https://www.linkedin.com/in/ealanraj/",
     index: 12,
+    experience: 6,
+    skills: [
+      { skill: "Power BI", area: "Data Visualization" },
+      { skill: "Excel", area: "Spreadsheets" },
+      { skill: "SQL", area: "Database Querying" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a68894",
@@ -112,6 +191,13 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Data Analyst",
     linkedIn: "https://www.linkedin.com/in/varadharaja-perumal-g/",
     index: 13,
+    experience: 7,
+    skills: [
+      { skill: "Python", area: "Programming Language" },
+      { skill: "Power BI", area: "Data Visualization" },
+      { skill: "SQL", area: "Database Querying" },
+      { skill: "Data Cleaning", area: "Analytics" },
+    ],
   },
   {
     _id: "67624fccd5f5cffe13a68895",
@@ -121,5 +207,12 @@ export const MENTOR_DATA: MentorData[] = [
     designation: "Intern",
     linkedIn: "https://www.linkedin.com/in/aswin-g-91792a264/",
     index: 14,
+    experience: 1,
+    skills: [
+      { skill: "HTML", area: "Frontend Basics" },
+      { skill: "CSS", area: "Styling" },
+      { skill: "Git", area: "Version Control" },
+      { skill: "Figma", area: "UI/UX Design" },
+    ],
   },
 ];
