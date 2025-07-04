@@ -6,7 +6,7 @@ export const CourseCard: FC<CourseCardData> = (data) => {
   const { courseIcon, courseId, courseImg, courseName, description } = data;
 
   return (
-    <section className="w-[380px] group hover:scale-105 transition-all duration-500 ring-2 ring-primary shadow-lg shadow-primary/15  bg-white h-full max-h-fit flex flex-col items-center rounded-xl justify-center p-4 gap-2 card-shadow">
+    <section className="w-[330px] group hover:scale-105 transition-all duration-500 ring-2 ring-primary shadow-lg shadow-primary/15  bg-white h-full max-h-fit flex flex-col items-center rounded-xl justify-center p-4 gap-2 card-shadow">
       <div className="h-24 group-hover:scale-[1.1] transition-all duration-500 w-24 mb-5">
         <img
           className="object-contain h-full w-full"

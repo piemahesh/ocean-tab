@@ -50,7 +50,7 @@ export const ImageModal: React.FC<ModalProps> = ({
         className="relative"
         style={{
           width: animating ? originRect.width : "80vw",
-          height: animating ? originRect.height : "60vh",
+          height: animating ? originRect.height : "40vh",
           transform: animating
             ? `translate(${originRect.left}px, ${originRect.top}px)`
             : `translate(0, 0)`,
@@ -58,15 +58,15 @@ export const ImageModal: React.FC<ModalProps> = ({
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="h-full flex gap-2 w-full items-center justify-start p-4 bg-white/10 rounded-md">
-          <div className="min-w-1/2 max-w-1/2 h-full">
+        <div className="h-full max-h-fit grid grid-rows-2 grid-cols-2 max-lg:grid-cols-1 gap-2 w-full  p-4 bg-white/10 rounded-md">
+          <div className="h-full row-span-2 w-full">
             <img
               src={selectedImage.src}
               alt={selectedImage.alt}
-              className="w-full h-full object-contain rounded-lg"
+              className=" h-full object-contain w-full rounded-lg"
             />
           </div>
-          <div className=" w-full h-full max-w-full">
+          <div className=" w-full flex flex-col  items-center ">
             <h1 className=" bg-gradient-to-r from-white via-primary to-pink-500 text-transparent h-14 bg-clip-text text-4xl font-semibold ">
               {selectedImage.title}
             </h1>
