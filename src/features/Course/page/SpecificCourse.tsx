@@ -32,7 +32,7 @@ export const SpecificCourse = () => {
         <span className="inline-block text-grad">back</span>
       </div>
 
-      <main className=" flex max-w-5xl gap-4 p-2 justify-between items-center w-full">
+      <main className=" flex max-w-5xl max-sm:flex-col gap-4 p-2 justify-between items-center w-full">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
