@@ -14,6 +14,7 @@ html {
   --color-primary: #21d6cc;
   --color-secondary: #188bf5;
   --color-tertiary: #8843f8;
+  --font-ubuntu: "Ubuntu", sans-serif;
 }
 @layer utilities {
   .text-grad {
@@ -97,4 +98,23 @@ html {
     top: 80%;
     right: 60%;
   }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
