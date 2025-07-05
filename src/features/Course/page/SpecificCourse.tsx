@@ -4,20 +4,27 @@ import { motion } from "framer-motion";
 import { courses, courseSyllabus } from "../constant";
 import { CourseTopics } from "../component";
 import { BACK_ICON } from "../../../assets";
+import { vibrateDevice } from "../../../utils";
 
 export const SpecificCourse = () => {
+  const navigate = useNavigate();
+
   const { id } = useParams();
+  useEffect(() => {
+    setTimeout(() => {
+      vibrateDevice([5, 10, 5])
+    }, 500)
+    window.scrollTo(0, 0);
+  }, []);
   // const { setValue } = useMyContext();
   if (!id) return;
+
 
   const syllabus = courseSyllabus.find((course) => course.id === parseInt(id));
   const course = courses.find((course) => course.courseId == parseInt(id));
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
-  const navigate = useNavigate();
+
   const handleSubmit = () => {
     navigate(-1);
   };

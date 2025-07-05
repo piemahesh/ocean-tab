@@ -7,6 +7,7 @@ import {
 import type { FC } from "react";
 import { Link } from "react-router-dom";
 import type { CourseCardData } from "../../types";
+import { btnInteraction } from "../../../utils";
 
 export const CourseCard: FC<CourseCardData> = (data) => {
   const {
@@ -55,7 +56,7 @@ export const CourseCard: FC<CourseCardData> = (data) => {
       >
         {level}
       </span>
-<hr className="bg-gradient-to-l h-1 rounded-4xl border-none from-secondary via-tertiary to-primary" />
+      <hr className="bg-gradient-to-l h-1 rounded-4xl border-none from-secondary via-tertiary to-primary" />
       {/* Course Content */}
       <div className="p-6 space-y-4">
         {/* Header */}
@@ -99,6 +100,7 @@ export const CourseCard: FC<CourseCardData> = (data) => {
         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
           <div className="text-2xl font-bold text-gray-900">{price}</div>
           <Link
+            onClick={btnInteraction}
             to={`/course/${courseId}`}
             className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
           >

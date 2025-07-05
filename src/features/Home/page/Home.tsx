@@ -13,6 +13,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { BANNER, OCN_ICON } from "../../../assets";
+import { btnInteraction, vibrateDevice } from "../../../utils";
 
 export const Home = () => {
   const [currentStat, setCurrentStat] = useState(0);
@@ -143,6 +144,7 @@ export const Home = () => {
                   boxShadow: "0 20px 40px -12px rgba(59, 130, 246, 0.4)",
                 }}
                 whileTap={{ scale: 0.95 }}
+                onTap={()=>vibrateDevice(10)}
                 className="group bg-gradient-to-r from-secondary to-tertiary text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Start Your Journey
@@ -154,6 +156,7 @@ export const Home = () => {
                   backgroundColor: "rgba(59, 130, 246, 0.1)",
                 }}
                 whileTap={{ scale: 0.95 }}
+                onTap={btnInteraction}
                 className="group border-2 border-blue-300 text-blue-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center gap-2"
               >
                 <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />

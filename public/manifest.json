@@ -1,6 +1,6 @@
 {
     "name": "ocean academy",
-    "short_name": "oa connect",
+    "short_name": "Ocean Academy",
     "description": "ocean academy visistors app",
     "start_url": "/",
     "display": "standalone",
