@@ -48,7 +48,7 @@ export function MentorCard() {
   return (
     <>
       <div className=" p-6">
-        <div className="max-w-7xl mx-auto"> 
+        <div className="max-w-7xl mx-auto">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center"
             variants={container}
@@ -141,18 +141,22 @@ export function MentorCard() {
                       ))}
                     </article> */}
                     <article className="flex flex-wrap gap-3 mt-4">
-                      {mentor.skills.slice(0, 5).map(({ skill, area }, i) => (
+                      {mentor.skills.slice(0, 4).map(({ skill, area }, i) => (
                         <div
                           key={i}
                           className="flex items-center gap-2 px-2 py-1 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-secondary/30 shadow-sm backdrop-blur-sm hover:scale-[1.03] transition-all"
                         >
-                          <span className="text-primary font-semibold text-sm">{skill}</span>
-                          <span className="text-secondary text-xs bg-secondary/10 px-2 py-0.5 rounded-full">{area}</span>
+                          <span className="text-primary font-semibold text-sm">
+                            {skill}
+                          </span>
+                          <span className="text-secondary text-xs bg-secondary/10 px-2 py-0.5 rounded-full">
+                            {area}
+                          </span>
                         </div>
                       ))}
-                      {mentor.skills.length > 5 && (
+                      {mentor.skills.length > 4 && (
                         <div className="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-medium border border-secondary/30">
-                          +{mentor.skills.length - 5} more
+                          +{mentor.skills.length - 4} more
                         </div>
                       )}
                     </article>

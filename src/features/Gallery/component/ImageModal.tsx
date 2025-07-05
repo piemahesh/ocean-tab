@@ -1,105 +1,125 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import type { ImageModalProps } from "../types";
 import { createPortal } from "react-dom";
-import { useSlide } from "../../../utils";
 
-type Image = {
-  src: string;
-  alt?: string;
-  title: string;
-  subtitle: string;
-};
-
-type ModalProps = {
-  selectedImage: Image;
-  allImages: Image[];
-  originRect: DOMRect;
-  onClose: () => void;
-  onSelect: (img: Image) => void;
-};
-
-export const ImageModal: React.FC<ModalProps> = ({
+export const ImageModal: React.FC<ImageModalProps> = ({
   selectedImage,
   allImages,
-  originRect,
   onClose,
   onSelect,
 }) => {
-  const [animating, setAnimating] = useState(true);
-  const { setIsModalOpen } = useSlide();
-  // 🚫 Disable scroll on open, restore on close
+  const [animating, setAnimating] = useState<boolean>(true);
+  const currentIndex: number = allImages.findIndex(
+    (img) => img.src === selectedImage.src
+  );
+
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
-    setIsModalOpen(true);
+    setTimeout(() => setAnimating(false), 300);
+
     return () => {
-      setIsModalOpen(false);
       document.body.classList.remove("overflow-hidden");
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const nextImage = (): void => {
+    const nextIndex = (currentIndex + 1) % allImages.length;
+    onSelect(allImages[nextIndex]);
+  };
+
+  const prevImage = (): void => {
+    const prevIndex = (currentIndex - 1 + allImages.length) % allImages.length;
+    onSelect(allImages[prevIndex]);
+  };
+
+  const handleKeyDown = (e: KeyboardEvent): void => {
+    if (e.key === "ArrowRight") nextImage();
+    if (e.key === "ArrowLeft") prevImage();
+    if (e.key === "Escape") onClose();
+  };
 
   useEffect(() => {
-    setTimeout(() => setAnimating(false), 300);
-  }, []);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [currentIndex]);
 
   return createPortal(
-    <div
-      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center px-4"
-      onClick={onClose}
-    >
+    <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
       <div
-        className="relative"
-        style={{
-          width: animating ? originRect.width : "80vw",
-          height: animating ? originRect.height : "40vh",
-          transform: animating
-            ? `translate(${originRect.left}px, ${originRect.top}px)`
-            : `translate(0, 0)`,
-          transition: "all 300ms ease-in-out",
-        }}
-        onClick={(e) => e.stopPropagation()}
+        className={`relative bg-white rounded-2xl shadow-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden transition-all duration-500 ${
+          animating ? "scale-50 opacity-0" : "scale-100 opacity-100"
+        }`}
       >
-        <div className="h-full max-h-fit grid grid-rows-2 grid-cols-2 max-lg:grid-cols-1 gap-2 w-full  p-4 bg-white/10 rounded-md">
-          <div className="h-full row-span-2 w-full">
-            <img
-              src={selectedImage.src}
-              alt={selectedImage.alt}
-              className=" h-full object-contain w-full rounded-lg"
-            />
-          </div>
-          <div className=" w-full flex flex-col  items-center ">
-            <h1 className=" bg-gradient-to-r from-white via-primary to-pink-500 text-transparent h-14 bg-clip-text text-4xl font-semibold ">
-              {selectedImage.title}
-            </h1>
-            <p className="mt-3 text-white indent-2.5 text-justify">
-              {selectedImage.subtitle}
-            </p>
-          </div>
-        </div>
+        {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-0 right-0 text-white text-3xl p-2"
+          className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-gray-600 hover:bg-white hover:text-gray-800 transition-colors duration-200"
         >
           ×
         </button>
-      </div>
 
-      {/* Thumbnails */}
-      <div
-        className="mt-6 flex gap-2 w-full overflow-x-scroll border-white rounded-md border p-2 justify-center"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {allImages.map((img, i) => (
-          <img
-            key={i}
-            src={img.src}
-            onClick={() => onSelect(img)}
-            className={`w-20 h-20 object-contain rounded-md cursor-pointer border-2 ${
-              img.src === selectedImage.src
-                ? "border-white p-2"
-                : "border-transparent"
-            }`}
-          />
-        ))}
+        {/* Navigation buttons */}
+        <button
+          onClick={prevImage}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center text-gray-600 hover:bg-white hover:text-gray-800 transition-colors duration-200"
+        >
+          ←
+        </button>
+        <button
+          onClick={nextImage}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center text-gray-600 hover:bg-white hover:text-gray-800 transition-colors duration-200"
+        >
+          →
+        </button>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
+          {/* Image */}
+          <div className="relative bg-gray-100 flex items-center justify-center min-h-[400px]">
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="p-8 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+                {selectedImage.title}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                {selectedImage.subtitle}
+              </p>
+
+              {/* Image counter */}
+              <div className="text-sm text-gray-500 mb-6">
+                {currentIndex + 1} of {allImages.length}
+              </div>
+            </div>
+
+            {/* Thumbnails */}
+            <div className="flex gap-2 overflow-x-auto pb-2">
+              {allImages
+                .slice(Math.max(0, currentIndex - 2), currentIndex + 3)
+                .map((img, i) => {
+                  const actualIndex = Math.max(0, currentIndex - 2) + i;
+                  return (
+                    <img
+                      key={actualIndex}
+                      src={img.src}
+                      onClick={() => onSelect(img)}
+                      className={`w-16 h-16 object-cover rounded-lg cursor-pointer border-2 transition-all duration-200 ${
+                        img.src === selectedImage.src
+                          ? "border-blue-500 scale-110"
+                          : "border-transparent hover:border-gray-300"
+                      }`}
+                    />
+                  );
+                })}
+            </div>
+          </div>
+        </div>
       </div>
     </div>,
     document.body

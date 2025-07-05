@@ -1,2 +1,3 @@
-export * from "./GalleryImgs";
-export * from "./GalleryGrid";
+export * from "./CategoryButton";
+export * from "./ImageCard";
+export * from "./ImageModal";

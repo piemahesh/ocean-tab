@@ -119,7 +119,7 @@ export const About = () => {
                     ISO 9001:2008 Certified
                   </div>
                   <div className="bg-gray-100 text-gray-800 px-6 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                    Since 2007
+                    Since 2010
                   </div>
                 </div>
               </div>

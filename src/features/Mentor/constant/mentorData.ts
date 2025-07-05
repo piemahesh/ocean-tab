@@ -105,6 +105,9 @@ export const MENTOR_DATA: MentorData[] = [
       { skill: "Firebase", area: "Backend as a Service" },
       { skill: "Bloc", area: "State Management" },
       { skill: "Clean Architecture", area: "Software Design" },
+      { skill: "Firebase", area: "Backend as a Service" },
+      { skill: "Bloc", area: "State Management" },
+      { skill: "Clean Architecture", area: "Software Design" },
     ],
   },
   {

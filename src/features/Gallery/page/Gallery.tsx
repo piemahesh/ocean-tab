@@ -1,27 +1,99 @@
-import { BANNER, CSS_ICON, C_ICON, C_PLUS_ICON, DART_ICON, DJANGO_ICON, EXPRESS_ICON, FIGMA_ICON, FLUTTER_ICON, FRONTEND_ICON } from "../../../assets";
+import React, { useState } from "react";
+import type { Image } from "../types";
+import { CategoryButton, ImageCard, ImageModal } from "../component";
+import { galleryData } from "../constant";
 import { Header } from "../../shared";
-import { GalleryGrid } from "../component";
 
-export const Gallery = () => {
-  const images = [
-    { src: BANNER, alt: "angluar", title: "Techfest 2025", subtitle: "It's an awesome event showcasing the future of technology." },
-    { src: CSS_ICON, alt: "css", title: "CSS Mastery", subtitle: "Design visually stunning interfaces with style and grace." },
-    { src: C_ICON, alt: "c", title: "C Programming", subtitle: "Learn the backbone of all modern languages." },
-    { src: C_PLUS_ICON, alt: "c_plus", title: "C++ Power", subtitle: "Dive into object-oriented coding and system-level programming." },
-    { src: BANNER, alt: "angluar", title: "Tech Talk Angular", subtitle: "Modern web apps with robust architecture." },
-    { src: DART_ICON, alt: "dart", title: "Dart Essentials", subtitle: "The language behind Flutter — optimized for UI." },
-    { src: DJANGO_ICON, alt: "django", title: "Django Web Dev", subtitle: "Rapid web development with Python’s top framework." },
-    { src: EXPRESS_ICON, alt: "express", title: "Express.js", subtitle: "Build fast and minimal backend APIs with Node.js." },
-    { src: BANNER, alt: "angluar", title: "Angular Summit", subtitle: "Scalable, reactive, and enterprise-grade web development." },
-    { src: FIGMA_ICON, alt: "figma", title: "Figma Design", subtitle: "Collaborative UI/UX design in the browser." },
-    { src: FLUTTER_ICON, alt: "flutter", title: "Flutter Bootcamp", subtitle: "Build native mobile apps for iOS and Android." },
-    { src: FRONTEND_ICON, alt: "frontend", title: "Frontend Wizardry", subtitle: "Bring websites to life with HTML, CSS, and JS." },
-  ]
+export const Gallery: React.FC = () => {
+  const [activeCategory, setActiveCategory] =
+    useState<string>("Web Development");
+  const [selectedImage, setSelectedImage] = useState<Image | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const handleCategoryChange = (category: string): void => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setActiveCategory(category);
+      setIsLoading(false);
+    }, 300);
+  };
+
+  const allImages: Image[] = galleryData[activeCategory];
+
+  const handleImageSelect = (image: Image): void => {
+    setSelectedImage(image);
+  };
+
+  const handleModalClose = (): void => {
+    setSelectedImage(null);
+  };
+
   return (
-    <section className="relative">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      {/* Header */}
       <Header heading="Gallery" />
-      {/* <div className="absolute h-full w-full bg-black/35 backdrop-blur-xs"></div> */}
-      <GalleryGrid images={images} />
-    </section>
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Categories */}
+        <div className="flex flex-wrap gap-3 justify-center mb-12">
+          {Object.entries(galleryData).map(([category, images], index) => (
+            <div
+              key={category}
+              className="animate-fadeInUp"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <CategoryButton
+                category={category}
+                isActive={activeCategory === category}
+                onClick={() => handleCategoryChange(category)}
+                count={images.length}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="relative">
+          {isLoading && (
+            <div className="absolute inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-10 rounded-2xl">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
+            </div>
+          )}
+
+          <div
+            className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 transition-opacity duration-300 ${
+              isLoading ? "opacity-50" : "opacity-100"
+            }`}
+          >
+            {allImages.map((image, index) => (
+              <ImageCard
+                key={`${activeCategory}-${index}`}
+                image={image}
+                index={index}
+                onClick={() => handleImageSelect(image)}
+              />
+            ))}
+          </div>
+
+          {allImages.length === 0 && !isLoading && (
+            <div className="text-center py-12">
+              <div className="text-gray-400 text-lg">
+                No projects found matching your search.
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <ImageModal
+          selectedImage={selectedImage}
+          allImages={allImages}
+          onClose={handleModalClose}
+          onSelect={handleImageSelect}
+        />
+      )}
+    </div>
   );
 };
