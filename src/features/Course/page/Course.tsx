@@ -1,67 +1,8 @@
-// import { Header } from "../../shared";
-// import { motion } from "framer-motion";
-// import { courses } from "../constant";
-// import { CourseCard } from "../component";
-
 import { motion } from "framer-motion";
 import { BookOpen } from "lucide-react";
 import { CourseCard } from "../component";
 import { courses } from "../constant";
-// import { courses } from "../constant";
 
-// const container = {
-//   hidden: { opacity: 1, scale: 0 },
-//   visible: {
-//     opacity: 1,
-//     scale: 1,
-//     transition: {
-//       delayChildren: 0.1,
-//       staggerChildren: 0.2,
-//     },
-//   },
-// };
-
-// const item = {
-//   hidden: { y: 20, opacity: 0 },
-//   visible: {
-//     y: 0,
-//     opacity: 1,
-//   },
-// };
-
-// export const Course = () => {
-//   return (
-//     <main className=" overflow-hidden   w-screen p-4 bg-org relative">
-//       <Header heading="COURSES OFFERED IN" />
-//       <div className="absolute slide-ani-reverse -z-10 h-[600px]  rounded-full duration-800 bg-primary/30 backdrop:blur-3xl blur-3xl  w-[600px]"></div>
-//       <div className="absolute slide-ani h-[600px] -z-10 rounded-full duration-800 bg-secondary/30 backdrop:blur-3xl blur-3xl  w-[600px]"></div>
-//       <article className="flex flex-col ">
-//         <h1 className="text-xl  text-secondary/90 font-bold">
-//           Explore Our Career-Boosting Courses
-//         </h1>
-//         <p className="text-lg font-semibold text-tertiary/65">
-//           Master in-demand skills with hands-on training from industry experts.
-//           Whether you're starting fresh or upskilling, we have the right course
-//           for you.
-//         </p>
-//       </article>
-//       <motion.ul
-//         variants={container}
-//         initial="hidden"
-//         animate="visible"
-//         className="flex  mt-10 gap-x-6  gap-y-10 items-center flex-wrap justify-evenly pb-64"
-//       >
-//         {courses.map((course, index) => {
-//           return (
-//             <motion.li key={index} variants={item}>
-//               <CourseCard key={index} {...course} />
-//             </motion.li>
-//           );
-//         })}
-//       </motion.ul>
-//     </main>
-//   );
-// };
 
 const container = {
   hidden: { opacity: 0 },
@@ -109,7 +50,7 @@ export function Course() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
               Transform Your
-              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="block pb-3 bg-gradient-to-r from-tertiary via-secondary to-primary bg-clip-text text-transparent">
                 Career Today
               </span>
             </h1>
@@ -128,17 +69,17 @@ export function Course() {
             className="flex flex-wrap justify-center gap-8 text-center"
           >
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-gray-900">50K+</div>
+              <div className="text-3xl font-bold text-gray-900">10K+</div>
               <div className="text-sm text-gray-600">Students Enrolled</div>
             </div>
             <div className="space-y-2">
               <div className="text-3xl font-bold text-gray-900">4.8</div>
               <div className="text-sm text-gray-600">Average Rating</div>
             </div>
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <div className="text-3xl font-bold text-gray-900">95%</div>
               <div className="text-sm text-gray-600">Job Placement</div>
-            </div>
+            </div> */}
             <div className="space-y-2">
               <div className="text-3xl font-bold text-gray-900">24/7</div>
               <div className="text-sm text-gray-600">Support</div>
@@ -161,7 +102,7 @@ export function Course() {
         </motion.div>
 
         {/* CTA Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -184,7 +125,7 @@ export function Course() {
               </button>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </main>
   );

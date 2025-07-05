@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MENTOR_DATA } from "../constant";
 import { BOTTOM_TRIANGLE, FACULTY_TOP } from "../../../assets";
 import { MentorModal } from "./MentorModal";
+import type { MentorData } from "../../types";
 
 // Animation variants
 const container = {
@@ -31,10 +32,10 @@ const item = {
 };
 
 export function MentorCard() {
-  const [selectedMentor, setSelectedMentor] = useState<any>(null);
+  const [selectedMentor, setSelectedMentor] = useState<MentorData | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = (mentor: any) => {
+  const openModal = (mentor: MentorData) => {
     setSelectedMentor(mentor);
     setIsModalOpen(true);
   };
@@ -46,22 +47,8 @@ export function MentorCard() {
 
   return (
     <>
-      <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-6">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
-              Meet Our Mentors
-            </h1>
-            <p className="text-gray-600 text-lg">
-              Click on any mentor card to learn more about their expertise
-            </p>
-          </motion.div>
-
+      <div className=" p-6">
+        <div className="max-w-7xl mx-auto"> 
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center"
             variants={container}
@@ -86,7 +73,7 @@ export function MentorCard() {
               >
                 <motion.div
                   key={index}
-                  className="shadow-2xl border border-tertiary/30 shadow-primary/40 w-[300px] p-2 rounded-md overflow-hidden relative bg-white"
+                  className=" border border-tertiary/30  min-h-[470px] w-[300px] p-2 rounded-md overflow-hidden relative bg-white"
                   variants={item}
                   layoutId={`card-${mentor.mentorName}`}
                   transition={{ duration: 0.5 }}
@@ -131,14 +118,14 @@ export function MentorCard() {
                         Experience
                       </span>
                       <div className="text-secondary font-semibold text-xl">
-                        4
+                        {mentor.experience}
                       </div>
                     </article>
                     <article className="flex w-full items-center justify-center">
                       <span className="text-grad italic">Expertise in</span>
                     </article>
                     <div className="h-1 rounded-full w-full bg-grad"></div>
-                    <article className="flex flex-wrap gap-3 mt-4">
+                    {/* <article className="flex flex-wrap gap-3 mt-4">
                       {mentor.skills.map(({ skill, area }, i) => (
                         <div
                           key={i}
@@ -152,6 +139,22 @@ export function MentorCard() {
                           </span>
                         </div>
                       ))}
+                    </article> */}
+                    <article className="flex flex-wrap gap-3 mt-4">
+                      {mentor.skills.slice(0, 5).map(({ skill, area }, i) => (
+                        <div
+                          key={i}
+                          className="flex items-center gap-2 px-2 py-1 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-secondary/30 shadow-sm backdrop-blur-sm hover:scale-[1.03] transition-all"
+                        >
+                          <span className="text-primary font-semibold text-sm">{skill}</span>
+                          <span className="text-secondary text-xs bg-secondary/10 px-2 py-0.5 rounded-full">{area}</span>
+                        </div>
+                      ))}
+                      {mentor.skills.length > 5 && (
+                        <div className="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-medium border border-secondary/30">
+                          +{mentor.skills.length - 5} more
+                        </div>
+                      )}
                     </article>
                   </main>
                 </motion.div>

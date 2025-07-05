@@ -1,11 +1,11 @@
 export interface CourseCardData {
-  courseId: string;
+  courseId: number;
   courseName: string;
   courseIcon: string;
   courseImg: string;
   description: string;
   duration: string;
-  students: string;
+  students: number;
   rating: number;
   level: string;
   price: string;

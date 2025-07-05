@@ -9,14 +9,14 @@ export const MyCarousel: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const touchStartX = useRef<number | null>(null);
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
 
-  useEffect(() => {
-    // Scroll to top on route change
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100);
-  }, [pathname]);
+  // useEffect(() => {
+  //   // Scroll to top on route change
+  //   setTimeout(() => {
+  //     window.scrollTo(0, 0);
+  //   }, 100);
+  // }, [pathname]);
   const pathToIndex = (pathname: string): number => {
     if (pathname === "/") return 0;
     if (pathname === "/course") return 1;

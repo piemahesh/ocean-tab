@@ -3,14 +3,8 @@ import {
   Clock,
   Users,
   Star,
-  Award,
-  Smartphone,
-  Globe,
-  Database,
-  Palette,
-  Code,
 } from "lucide-react";
-import type { FC, ReactNode } from "react";
+import type { FC } from "react";
 import { Link } from "react-router-dom";
 import type { CourseCardData } from "../../types";
 
@@ -48,35 +42,36 @@ export const CourseCard: FC<CourseCardData> = (data) => {
       className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 w-full max-w-sm mx-auto"
     >
       {/* Course Image */}
-      <div className="h-48 p-6 bg-gradient-to-br from-gray-50 to-white">
+      <div className="h-48 p-6 flex items-center justify-center bg-gradient-to-br from-gray-100 to-white">
         <div className="h-24 w-24">
-          <img src={courseImg} alt="" />
+          <img src={courseImg} className="w-full h-full object-contain" alt="" />
         </div>
       </div>
 
+      <span
+        className={`px-3 py-1 absolute top-2 right-2 rounded-full text-xs font-medium ${getLevelColor(
+          level
+        )}`}
+      >
+        {level}
+      </span>
+<hr className="bg-gradient-to-l h-1 rounded-4xl border-none from-secondary via-tertiary to-primary" />
       {/* Course Content */}
       <div className="p-6 space-y-4">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 overflow-hidden">
+            <div className="h-8 w-8 overflow-hidden">
               <img
                 className="w-full object-contain h-full"
                 src={courseIcon}
                 alt="courseIcon"
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+            <h3 className="text-xl font-bold text-gray-700 group-hover:text-blue-600 transition-colors">
               {courseName}
             </h3>
           </div>
-          <span
-            className={`px-3 py-1 rounded-full text-xs font-medium ${getLevelColor(
-              level
-            )}`}
-          >
-            {level}
-          </span>
         </div>
 
         {/* Description */}
