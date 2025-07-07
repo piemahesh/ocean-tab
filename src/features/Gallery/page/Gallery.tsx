@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import type { Image } from "../types";
 import { CategoryButton, ImageCard, ImageModal } from "../component";
-import { galleryData } from "../constant";
+import { OCEAN_GALLERY_DATA } from "../constant";
 import { Header } from "../../shared";
 
 export const Gallery: React.FC = () => {
   const [activeCategory, setActiveCategory] =
-    useState<string>("Web Development");
+    useState<string>("SFM APP Launch");
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -18,7 +18,7 @@ export const Gallery: React.FC = () => {
     }, 300);
   };
 
-  const allImages: Image[] = galleryData[activeCategory];
+  const allImages: Image[] = OCEAN_GALLERY_DATA[activeCategory];
 
   const handleImageSelect = (image: Image): void => {
     setSelectedImage(image);
@@ -36,31 +36,37 @@ export const Gallery: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Categories */}
         <div className="flex flex-wrap gap-3 justify-center mb-12">
-          {Object.entries(galleryData).map(([category, images], index) => (
-            <div
-              key={category}
-              className="animate-fadeInUp"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CategoryButton
-                category={category}
-                isActive={activeCategory === category}
-                onClick={() => handleCategoryChange(category)}
-                count={images.length}
-              />
-            </div>
-          ))}
+          {Object.entries(OCEAN_GALLERY_DATA).map(
+            ([category, images], index) => (
+              <div
+                key={category}
+                className="animate-fadeInUp"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CategoryButton
+                  category={category}
+                  isActive={activeCategory === category}
+                  onClick={() => handleCategoryChange(category)}
+                  count={images.length}
+                />
+              </div>
+            )
+          )}
         </div>
 
         {/* Gallery Grid */}
-        <div className="relative">
+        <div className="relative " key={activeCategory}>
           {isLoading && (
-            <div className="absolute inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-10 rounded-2xl">
+            <div
+              key={activeCategory}
+              className="absolute inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-10 rounded-2xl"
+            >
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
             </div>
           )}
 
           <div
+            key={activeCategory}
             className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 transition-opacity duration-300 ${
               isLoading ? "opacity-50" : "opacity-100"
             }`}

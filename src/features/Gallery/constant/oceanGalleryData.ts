@@ -1,3 +1,11 @@
+import {
+  COLLEGE_INVITES_GALLERY,
+  IWCCT_GALLERY,
+  LEGACY_GALLERY,
+  SFM_GALLERY,
+  TECHFEST_GALLERY,
+  THIRU_SPOKEN,
+} from "../../../assets";
 import type { GalleryData, Image } from "../types";
 
 // Mock image data - replace with your actual images
@@ -32,4 +40,11 @@ export const galleryData: GalleryData = {
   "Block chain": generateMockImages("Blockchain", 14),
 };
 
-export const OCEAN_GALLERY_DATA: GalleryData = {};
+export const OCEAN_GALLERY_DATA: GalleryData = {
+  "TechFest 2025": TECHFEST_GALLERY,
+  "College Invites": COLLEGE_INVITES_GALLERY,
+  "IWCCT 2017": IWCCT_GALLERY,
+  "Ocean Legacy": LEGACY_GALLERY,
+  "SFM APP Launch": SFM_GALLERY,
+  "SPOKEN ENGLISH": THIRU_SPOKEN,
+};
