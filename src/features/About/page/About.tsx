@@ -1,4 +1,3 @@
-
 import { Header } from "../../shared";
 import { useState, useEffect } from "react";
 
@@ -65,7 +64,7 @@ export const About = () => {
                     <img
                       src="https://img.freepik.com/free-photo/silhouette-confident-businesspeople_1098-1768.jpg?semt=ais_hybrid&w=740"
                       alt="Ocean Academy Team"
-                      className="w-full h-64 lg:h-80 object-cover rounded-xl transform transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-64 object-top lg:h-80 object-cover rounded-xl transform transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent rounded-xl"></div>
                   </div>
@@ -114,7 +113,7 @@ export const About = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-4 pt-4">
+                <div className="flex  items-center justify-center flex-wrap gap-4">
                   <div className="bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                     ISO 9001:2008 Certified
                   </div>
@@ -163,8 +162,10 @@ export const About = () => {
                   : "translate-y-10 opacity-0"
               }`}
             >
-              <h3 className="text-3xl lg:text-4xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-l from-25% from-tertiary to-primary mb-6">
+              <h3
+                className="text-3xl lg:text-4xl font-bold text-transparent bg-clip-text 
+              bg-gradient-to-l from-25% from-tertiary to-primary mb-6"
+              >
                 Our Mission
               </h3>
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 shadow-xl">

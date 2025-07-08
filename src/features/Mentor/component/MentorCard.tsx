@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MENTOR_DATA } from "../constant";
-import { BOTTOM_TRIANGLE, FACULTY_TOP } from "../../../assets";
 import { MentorModal } from "./MentorModal";
 import type { MentorData } from "../../types";
 
@@ -57,111 +56,84 @@ export function MentorCard() {
           >
             {MENTOR_DATA.map((mentor, index) => (
               <motion.div
-                key={`mentor-${index}`}
+                key={index}
+                layoutId={`mentor-card-${mentor.mentorName}`}
                 className="group cursor-pointer"
                 variants={item}
                 whileHover={{
                   y: -8,
-                  transition: {
-                    type: "spring" as const,
-                    stiffness: 300,
-                    damping: 20,
-                  },
+                  transition: { type: "spring", stiffness: 300, damping: 20 },
                 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => openModal(mentor)}
               >
-                <motion.div
-                  key={index}
-                  className=" border border-tertiary/30  min-h-[470px] w-[300px] p-2 rounded-md overflow-hidden relative bg-white"
-                  variants={item}
-                  layoutId={`card-${mentor.mentorName}`}
-                  transition={{ duration: 0.5 }}
-                >
-                  <div className="h-28 w-28 absolute left-0 top-0">
-                    <img src={FACULTY_TOP} alt="icon" />
-                  </div>
+                <div className="relative w-80 min-h-[370px] bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+                  {/* Background decorative elements */}
+                  <div className="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-br-full opacity-10"></div>
+                  <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-pink-400 to-orange-400 rounded-tl-full opacity-10"></div>
 
-                  <motion.div
-                    layoutId={`image-${mentor.mentorName}`}
-                    className="h-28 m-auto w-28 border border-tertiary rounded-full overflow-hidden z-10 relative"
-                  >
-                    <img
-                      className="h-full w-full object-top object-cover"
-                      src={mentor.profilePicture}
-                      alt={mentor.mentorName}
-                    />
-                  </motion.div>
-                  <div className="h-28 w-28 absolute right-0 -bottom-6">
-                    <img src={BOTTOM_TRIANGLE} alt="icon" />
-                  </div>
+                  <div className="p-6">
+                    {/* Profile Image */}
+                    <motion.div
+                      layoutId={`mentor-image-${mentor.mentorName}`}
+                      className="relative mx-auto mb-4"
+                    >
+                      <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-purple-300 mx-auto relative">
+                        <img
+                          src={mentor.profilePicture}
+                          alt={mentor.mentorName}
+                          className="w-full h-full object-cover object-top"
+                        />
+                      </div>
+                      <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-500 rounded-full border-2 border-white"></div>
+                    </motion.div>
 
-                  <main className="flex flex-col gap-1 items-start">
-                    <article className="flex items-center justify-center gap-4">
-                      <span className="text-primary text-xl font-semibold">
-                        Name
-                      </span>
-                      <div className="text-secondary font-semibold text-xl">
-                        {mentor?.mentorName}
+                    {/* Content */}
+                    <div className="text-center space-y-3">
+                      <motion.h3
+                        layoutId={`mentor-name-${mentor.mentorName}`}
+                        className="text-xl font-bold text-gray-800"
+                      >
+                        {mentor.mentorName}
+                      </motion.h3>
+                      <motion.p
+                        layoutId={`mentor-designation-${mentor.mentorName}`}
+                        className="text-blue-600 font-medium"
+                      >
+                        {mentor.designation}
+                      </motion.p>
+                      {/* <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                        <span className="font-semibold">Experience:</span>
+                        <span>{mentor.experience}</span>
+                      </div> */}
+                    </div>
+
+                    {/* Skills Preview */}
+                    <div className="mt-4">
+                      <div className="w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mb-3"></div>
+                      <div className="flex flex-wrap gap-2 justify-center">
+                        {mentor.skills.slice(0, 3).map((skill, i) => (
+                          <span
+                            key={i}
+                            className="px-1 py-1 flex  justify-between text-xs bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 rounded-full font-medium"
+                          >
+                            <span className="text-tertiary bg-tertiary/10 px-2 rounded-2xl ">
+                              {skill.skill}
+                            </span>
+                            <span className="text-secondary bg-secondary/10  px-2  rounded-full">
+                              {skill.area}
+                            </span>
+                          </span>
+                        ))}
+                        {mentor.skills.length > 3 && (
+                          <span className="px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full font-medium">
+                            +{mentor.skills.length - 3} more
+                          </span>
+                        )}
                       </div>
-                    </article>
-                    <article className="flex items-center justify-center gap-4">
-                      <span className="text-primary text-xl font-semibold">
-                        Role
-                      </span>
-                      <div className="text-secondary font-semibold text-xl">
-                        {mentor?.designation}
-                      </div>
-                    </article>
-                    <article className="flex items-center justify-center gap-4">
-                      <span className="text-primary text-xl font-semibold">
-                        Experience
-                      </span>
-                      <div className="text-secondary font-semibold text-xl">
-                        {mentor.experience}
-                      </div>
-                    </article>
-                    <article className="flex w-full items-center justify-center">
-                      <span className="text-grad italic">Expertise in</span>
-                    </article>
-                    <div className="h-1 rounded-full w-full bg-grad"></div>
-                    {/* <article className="flex flex-wrap gap-3 mt-4">
-                      {mentor.skills.map(({ skill, area }, i) => (
-                        <div
-                          key={i}
-                          className="flex items-center gap-2 px-2 py-1 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-secondary/30 shadow-sm backdrop-blur-sm hover:scale-[1.03] transition-all"
-                        >
-                          <span className="text-primary font-semibold text-sm">
-                            {skill}
-                          </span>
-                          <span className="text-secondary text-xs bg-secondary/10 px-2 py-0.5 rounded-full">
-                            {area}
-                          </span>
-                        </div>
-                      ))}
-                    </article> */}
-                    <article className="flex flex-wrap gap-3 mt-4">
-                      {mentor.skills.slice(0, 4).map(({ skill, area }, i) => (
-                        <div
-                          key={i}
-                          className="flex items-center gap-2 px-2 py-1 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-secondary/30 shadow-sm backdrop-blur-sm hover:scale-[1.03] transition-all"
-                        >
-                          <span className="text-primary font-semibold text-sm">
-                            {skill}
-                          </span>
-                          <span className="text-secondary text-xs bg-secondary/10 px-2 py-0.5 rounded-full">
-                            {area}
-                          </span>
-                        </div>
-                      ))}
-                      {mentor.skills.length > 4 && (
-                        <div className="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-medium border border-secondary/30">
-                          +{mentor.skills.length - 4} more
-                        </div>
-                      )}
-                    </article>
-                  </main>
-                </motion.div>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </motion.div>

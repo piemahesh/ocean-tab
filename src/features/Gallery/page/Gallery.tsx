@@ -3,8 +3,10 @@ import type { Image } from "../types";
 import { CategoryButton, ImageCard, ImageModal } from "../component";
 import { OCEAN_GALLERY_DATA } from "../constant";
 import { Header } from "../../shared";
+import { useSlide } from "../../../utils";
 
 export const Gallery: React.FC = () => {
+  const { setIsModalOpen } = useSlide();
   const [activeCategory, setActiveCategory] =
     useState<string>("SFM APP Launch");
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
@@ -22,10 +24,12 @@ export const Gallery: React.FC = () => {
 
   const handleImageSelect = (image: Image): void => {
     setSelectedImage(image);
+    setIsModalOpen(true);
   };
 
   const handleModalClose = (): void => {
     setSelectedImage(null);
+    setIsModalOpen(false);
   };
 
   return (

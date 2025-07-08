@@ -61,13 +61,13 @@ export const ImageModal: React.FC<ImageModalProps> = ({
         {/* Navigation buttons */}
         <button
           onClick={prevImage}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center text-gray-600 hover:bg-white hover:text-gray-800 transition-colors duration-200"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-slate-200/40 rounded-full flex items-center justify-center text-gray-600 hover:bg-white hover:text-gray-800 transition-colors duration-200"
         >
           ←
         </button>
         <button
           onClick={nextImage}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center text-gray-600 hover:bg-white hover:text-gray-800 transition-colors duration-200"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-slate-200/40 rounded-full flex items-center justify-center text-gray-600 hover:bg-white hover:text-gray-800 transition-colors duration-200"
         >
           →
         </button>

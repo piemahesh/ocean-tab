@@ -140,7 +140,7 @@ export function MentorModal({ mentor, isOpen, onClose }: MentorModalProps) {
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: 0.1 }}
                 >
-                  <div className="w-32 h-32 rounded-full overflow-hidden border border-tertiary mx-auto relative">
+                  <div className="w-32 h-32 rounded-full overflow-hidden  border-4 border-purple-300 mx-auto relative">
                     <img
                       src={mentor.profilePicture}
                       alt={mentor.mentorName}
