@@ -12,18 +12,15 @@ export const SpecificCourse = () => {
   const { id } = useParams();
   useEffect(() => {
     setTimeout(() => {
-      vibrateDevice([5, 10, 5])
-    }, 500)
+      vibrateDevice([5, 10, 5]);
+    }, 500);
     window.scrollTo(0, 0);
   }, []);
   // const { setValue } = useMyContext();
   if (!id) return;
 
-
   const syllabus = courseSyllabus.find((course) => course.id === parseInt(id));
   const course = courses.find((course) => course.courseId == parseInt(id));
-
-
 
   const handleSubmit = () => {
     navigate(-1);

@@ -48,7 +48,7 @@ import img47 from "./47.jpg";
 import img48 from "./48.jpg";
 import img49 from "./49.jpg";
 import img50 from "./50.jpg";
-import type { Image } from "../../../features";
+import type { Image } from "../../../features/Photos";
 
 export const TECHFEST_GALLERY: Image[] = [
   {

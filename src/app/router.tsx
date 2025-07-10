@@ -7,10 +7,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Home } from "../features/Home";
 import { Course, SpecificCourse } from "../features/Course";
-import { Gallery } from "../features/Gallery";
 import { Mentor } from "../features/Mentor";
 import { About } from "../features/About";
-import { MyCarousel } from "../features";
+import { AlbumGallery, MyCarousel, SpecificAlbum } from "../features";
 
 export const routes = createBrowserRouter([
   {
@@ -19,7 +18,14 @@ export const routes = createBrowserRouter([
     children: [
       { path: "", element: <Home /> },
       { path: "course", element: <Course /> },
-      { path: "gallery", element: <Gallery /> },
+      {
+        path: "gallery",
+        element: <AlbumGallery />,
+      },
+      {
+        path: "gallery/:albumId",
+        element: <SpecificAlbum />,
+      },
       { path: "mentor", element: <Mentor /> },
       { path: "about", element: <About /> },
     ],

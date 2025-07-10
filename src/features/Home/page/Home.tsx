@@ -21,7 +21,7 @@ export const Home = () => {
   const stats = [
     { number: "15+", label: "Years of Excellence", icon: Award },
     { number: "10K+", label: "Students Trained", icon: Users },
-    { number: "50+", label: "Industry Partners", icon: Globe },
+    { number: "10+", label: "International Workshop", icon: Globe },
     { number: "95%", label: "Success Rate", icon: Star },
   ];
 
@@ -98,7 +98,7 @@ export const Home = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl font-ubuntu md:text-6xl font-bold text-secondary text-shadow-primary"
           >
-            Ocean Academy
+            ocean academy
           </motion.h1>
         </motion.div>
 
@@ -144,7 +144,7 @@ export const Home = () => {
                   boxShadow: "0 20px 40px -12px rgba(59, 130, 246, 0.4)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                onTap={()=>vibrateDevice(10)}
+                onTap={() => vibrateDevice(10)}
                 className="group bg-gradient-to-r from-secondary to-tertiary text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Start Your Journey
@@ -221,9 +221,9 @@ export const Home = () => {
                   alt="Ocean Academy Students"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
+                {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
                   <Play className="w-6 h-6 text-blue-600" />
-                </div>
+                </div> */}
               </div>
             </motion.div>
 

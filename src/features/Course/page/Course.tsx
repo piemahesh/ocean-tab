@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { BookOpen } from "lucide-react";
 import { CourseCard } from "../component";
 import { courses } from "../constant";
-
+import { Header } from "../../shared";
+import { useEffect, useState } from "react";
 
 const container = {
   hidden: { opacity: 0 },
@@ -29,14 +30,27 @@ const item = {
 } as const;
 
 export function Course() {
+  const [currentStat, setCurrentStat] = useState(0);
+  const stats = [
+    { label: "Students Enrolled", info: "10K+" },
+    { label: "Average Rating", info: "4.8" },
+    { label: "Support", info: "24/7" },
+  ];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentStat((prev) => (prev + 1) % stats.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
+      <Header heading="Trending Courses" />
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-200/30 to-purple-200/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-200/30 to-pink-200/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
       {/* Header */}
-      <div className="relative z-10 container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div className="relative z-10 container mx-auto px-4 py-6 sm:px-6 lg:px-8">
         <div className="text-center space-y-6 mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -68,22 +82,21 @@ export function Course() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-wrap justify-center gap-8 text-center"
           >
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-gray-900">10K+</div>
-              <div className="text-sm text-gray-600">Students Enrolled</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-gray-900">4.8</div>
-              <div className="text-sm text-gray-600">Average Rating</div>
-            </div>
-            {/* <div className="space-y-2">
-              <div className="text-3xl font-bold text-gray-900">95%</div>
-              <div className="text-sm text-gray-600">Job Placement</div>
-            </div> */}
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-gray-900">24/7</div>
-              <div className="text-sm text-gray-600">Support</div>
-            </div>
+            {stats.map((content, i) => (
+              <div
+                key={i}
+                className={`text-center min-w-[150px] p-6 rounded-2xl backdrop-blur-sm border shadow-lg ${
+                  currentStat === i
+                    ? "bg-gradient-to-r from-blue-500/10 to-purple-500/10 border-blue-300 shadow-blue-200"
+                    : "bg-white/70 border-white/50 hover:border-blue-200"
+                } transition-all duration-500`}
+              >
+                <div className="text-3xl font-bold text-gray-700">
+                  {content.info}
+                </div>
+                <div className="text-sm text-gray-600">{content.label}</div>
+              </div>
+            ))}
           </motion.div>
         </div>
 
@@ -102,7 +115,7 @@ export function Course() {
         </motion.div>
 
         {/* CTA Section */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -125,7 +138,7 @@ export function Course() {
               </button>
             </div>
           </div>
-        </motion.div> */}
+        </motion.div>
       </div>
     </main>
   );

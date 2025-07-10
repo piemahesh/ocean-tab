@@ -115,7 +115,7 @@ export function MentorCard() {
                         {mentor.skills.slice(0, 3).map((skill, i) => (
                           <span
                             key={i}
-                            className="px-1 py-1 flex  justify-between text-xs bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 rounded-full font-medium"
+                            className="px-1 py-1 flex  justify-between text-xs border border-gray-300/40 text-blue-700 rounded-full font-medium"
                           >
                             <span className="text-tertiary bg-tertiary/10 px-2 rounded-2xl ">
                               {skill.skill}

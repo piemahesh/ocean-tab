@@ -7,7 +7,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ heading }) => {
   return (
-    <header className="relative w-full mt-2 flex flex-col items-center justify-center">
+    <header className="relative w-full pt-4 flex flex-col items-center justify-center">
       <motion.div
         initial={{ opacity: 0, scale: 0.1, rotate: 60 }}
         animate={{ opacity: 1, scale: 1, rotate: 0 }}
