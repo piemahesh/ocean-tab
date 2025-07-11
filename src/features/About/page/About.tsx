@@ -1,3 +1,4 @@
+import { ABOUT_IMG } from "../../../assets";
 import { Header } from "../../shared";
 import { useState, useEffect } from "react";
 
@@ -49,22 +50,22 @@ export const About = () => {
         {/* Hero Section */}
         <section className="mt-8 lg:mt-16">
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div className="grid lg:grid-cols-2  gap-8 lg:gap-16 max-lg:items-center">
               {/* Image Section */}
               <div
-                className={`relative transform transition-all duration-1000 ${
+                className={`relative transform  transition-all duration-1000 ${
                   isVisible
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-20 opacity-0"
                 }`}
               >
                 <div className="relative group">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-2xl blur opacity-15 group-hover:opacity-25 transition duration-1000"></div>
+                  <div className="absolute -inset-4 bg-gradient-to-r from-purple-600/60 to-cyan-600 rounded-2xl blur opacity-15 group-hover:opacity-25 transition duration-1000"></div>
                   <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-2 border border-gray-200 shadow-xl">
                     <img
-                      src="https://img.freepik.com/free-photo/silhouette-confident-businesspeople_1098-1768.jpg?semt=ais_hybrid&w=740"
+                      src={ABOUT_IMG}
                       alt="Ocean Academy Team"
-                      className="w-full h-64 object-top lg:h-80 object-cover rounded-xl transform transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-96  aspect-square lg:h-80 object-cover rounded-xl transform transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent rounded-xl"></div>
                   </div>
@@ -73,7 +74,7 @@ export const About = () => {
 
               {/* Content Section */}
               <div
-                className={`space-y-6 transform transition-all duration-1000 delay-300 ${
+                className={`space-y-6  transform transition-all duration-1000 delay-300 ${
                   textVisible
                     ? "translate-x-0 opacity-100"
                     : "translate-x-20 opacity-0"

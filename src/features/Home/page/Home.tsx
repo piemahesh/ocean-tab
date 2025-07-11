@@ -12,8 +12,9 @@ import {
   Play,
   ChevronRight,
 } from "lucide-react";
-import { BANNER, OCN_ICON } from "../../../assets";
+import { OCN_ICON } from "../../../assets";
 import { btnInteraction, vibrateDevice } from "../../../utils";
+import { ImageVideo } from "../..";
 
 export const Home = () => {
   const [currentStat, setCurrentStat] = useState(0);
@@ -83,14 +84,6 @@ export const Home = () => {
             whileHover={{ scale: 1.05, rotate: 5 }}
             className="relative group"
           >
-            {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity" />
-            <div className="relative h-24 w-24 bg-white rounded-2xl p-2 shadow-xl border border-white/50">
-              <img
-                className="h-full w-full object-contain"
-                src={OCN_ICON}
-                alt="Ocean Academy Logo"
-              />
-            </div> */}
             <div className="relative h-24 w-24 p-[3px] rounded-2xl bg-gradient-to-tr from-[#d7d7d7] via-[#a0a0a0] to-[#e2e2e2] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
               <div className="h-full w-full rounded-2xl bg-white flex items-center justify-center">
                 <img
@@ -127,25 +120,9 @@ export const Home = () => {
                   Transform Your Career Today
                 </span>
               </div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative mb-4 w-full  max-lg:block hidden "
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                <div className="relative overflow-hidden rounded-3xl border border-white/50 backdrop-blur-sm shadow-2xl">
-                  <img
-                    src={BANNER}
-                    className="w-full h-96 object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                    alt="Ocean Academy Students"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
-                  <Play className="w-6 h-6 text-blue-600" />
-                </div> */}
-                </div>
-              </motion.div>
+              <div className="relative mb-4 w-full  max-lg:block hidden ">
+                <ImageVideo />
+              </div>
               <h2 className="text-5xl md:text-6xl  font-bold text-gray-900 leading-tight mb-6">
                 Shape Your
                 <span className="block bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">
@@ -234,26 +211,10 @@ export const Home = () => {
           </div>
 
           {/* Right Content - Image & Features */}
-          <div className="space-y-8">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative max-lg:hidden group"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-              <div className="relative overflow-hidden rounded-3xl border border-white/50 backdrop-blur-sm shadow-2xl">
-                <img
-                  src={BANNER}
-                  className="w-full h-96 object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  alt="Ocean Academy Students"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
-                  <Play className="w-6 h-6 text-blue-600" />
-                </div> */}
-              </div>
-            </motion.div>
+          <div className="space-y-8 ">
+            <div className="max-lg:hidden">
+              <ImageVideo />
+            </div>
 
             {/* Features */}
             <div className="space-y-4">
