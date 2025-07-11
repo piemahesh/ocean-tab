@@ -83,13 +83,22 @@ export const Home = () => {
             whileHover={{ scale: 1.05, rotate: 5 }}
             className="relative group"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity" />
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity" />
             <div className="relative h-24 w-24 bg-white rounded-2xl p-2 shadow-xl border border-white/50">
               <img
                 className="h-full w-full object-contain"
                 src={OCN_ICON}
                 alt="Ocean Academy Logo"
               />
+            </div> */}
+            <div className="relative h-24 w-24 p-[3px] rounded-2xl bg-gradient-to-tr from-[#d7d7d7] via-[#a0a0a0] to-[#e2e2e2] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+              <div className="h-full w-full rounded-2xl bg-white flex items-center justify-center">
+                <img
+                  className="h-5/6 w-5/6 object-contain"
+                  src={OCN_ICON}
+                  alt="Ocean Academy Logo"
+                />
+              </div>
             </div>
           </motion.div>
           <motion.h1
@@ -103,28 +112,47 @@ export const Home = () => {
         </motion.div>
 
         {/* Hero Content */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 max-lg:items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex flex-col items-center w-full"
             >
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 rounded-full px-4 py-2 mb-6">
+              <div className="inline-flex w-fit items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 rounded-full px-4 py-2 mb-6">
                 <Sparkles className="w-4 h-4 text-blue-600" />
                 <span className="text-md font-medium text-gray-700">
                   Transform Your Career Today
                 </span>
               </div>
-
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="relative mb-4 w-full  max-lg:block hidden "
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
+                <div className="relative overflow-hidden rounded-3xl border border-white/50 backdrop-blur-sm shadow-2xl">
+                  <img
+                    src={BANNER}
+                    className="w-full h-96 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    alt="Ocean Academy Students"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
+                  <Play className="w-6 h-6 text-blue-600" />
+                </div> */}
+                </div>
+              </motion.div>
               <h2 className="text-5xl md:text-6xl  font-bold text-gray-900 leading-tight mb-6">
                 Shape Your
                 <span className="block bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">
                   Digital Future
                 </span>
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
+              <p className="text-xl text-gray-600 leading-relaxed max-lg:max-w-full  max-w-2xl">
                 Transform your career with industry-ready skills. Join thousands
                 of students who've launched successful careers through our
                 innovative programs and expert mentorship.
@@ -180,7 +208,7 @@ export const Home = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                     whileHover={{ scale: 1.05, y: -2 }}
-                    className={`text-center p-6 rounded-2xl backdrop-blur-sm border shadow-lg ${
+                    className={`text-center min-w-32 p-6 rounded-2xl backdrop-blur-sm border shadow-lg ${
                       currentStat === index
                         ? "bg-gradient-to-r from-blue-500/10 to-purple-500/10 border-blue-300 shadow-blue-200"
                         : "bg-white/70 border-white/50 hover:border-blue-200"
@@ -211,7 +239,7 @@ export const Home = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative group"
+              className="relative max-lg:hidden group"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
               <div className="relative overflow-hidden rounded-3xl border border-white/50 backdrop-blur-sm shadow-2xl">

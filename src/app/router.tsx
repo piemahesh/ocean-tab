@@ -22,13 +22,13 @@ export const routes = createBrowserRouter([
         path: "gallery",
         element: <AlbumGallery />,
       },
-      {
-        path: "gallery/:albumId",
-        element: <SpecificAlbum />,
-      },
       { path: "mentor", element: <Mentor /> },
       { path: "about", element: <About /> },
     ],
   },
   { path: "/course/:id", element: <SpecificCourse /> },
+  {
+    path: "gallery/:albumId",
+    element: <SpecificAlbum />,
+  },
 ]);

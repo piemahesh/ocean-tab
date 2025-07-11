@@ -24,7 +24,7 @@ export const SpecificAlbum = () => {
 
   const handleCloseModal = () => {
     setSelectedImageIndex(null);
-    setIsModalOpen(true);
+    setIsModalOpen(false);
   };
 
   const handleBackToAlbums = () => {
