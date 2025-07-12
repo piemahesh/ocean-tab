@@ -1,13 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { CourseTopics } from "../component";
+import { CourseTopics, Tabs } from "../component";
 import { BACK_ICON } from "../../../assets";
 import { vibrateDevice } from "../../../utils";
 import { OCEAN_COURSES } from "../../../constants";
 
+export type CourseOptions =
+  | "overview"
+  | "syllabus"
+  | "salary"
+  | "growth"
+  | "career"
+  | string;
+
 export const SpecificCourse = () => {
   const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState<CourseOptions>("overview");
 
   const { id } = useParams();
   useEffect(() => {
@@ -84,6 +93,24 @@ export const SpecificCourse = () => {
 
       <div className="absolute slide-ani-reverse z-10 h-[300px]  rounded-full duration-800 bg-primary/30 backdrop:blur-3xl blur-3xl  w-[300px]"></div>
       <div className="absolute slide-ani h-[200px] z-10 rounded-full duration-800 bg-secondary/30 backdrop:blur-3xl blur-3xl  w-[200px]"></div>
+
+      <div className="max-w-7xl mx-auto px-4 py-6">
+        <div className="bg-white rounded-xl shadow-sm p-2 mb-8">
+          <div className="flex flex-wrap gap-2">
+            <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+          </div>
+        </div>
+      </div>
+      <motion.div
+        key={activeTab}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        className="bg-white rounded-xl shadow-sm p-6"
+      >
+        {activeTab == ""}
+      </motion.div>
+
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transitionDelay: 2 }}

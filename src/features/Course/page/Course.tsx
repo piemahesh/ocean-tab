@@ -36,6 +36,7 @@ export function Course() {
     { label: "Average Rating", info: "4.8" },
     { label: "Support", info: "24/7" },
   ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentStat((prev) => (prev + 1) % stats.length);
