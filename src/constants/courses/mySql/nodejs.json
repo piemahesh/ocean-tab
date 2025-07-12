@@ -1,0 +1,73 @@
+[
+    {
+        "title": "NODE JS",
+        "topics": [
+            "Introduction",
+            "Who introduced NodeJs",
+            "Benefits",
+            "Node architecture",
+            "How NodeJs work",
+            "How to install NodeJs"
+        ]
+    },
+    {
+        "title": "JAVASCRIPT QUICK REFRESHMENT"
+    },
+    {
+        "title":  "Node Module System",
+        "topics": [
+            "os",
+            "fs",
+            "events",
+            "Http",
+            "Introduction to NPM",
+            "About NVM and how to use",
+            "How to create package.json",
+            "About package.json",
+            "Developing-time-dependencies"
+        ]
+    },
+    {
+        "title": "Express JS",
+        "topics": [
+            "Introduction",
+            "How to start server",
+            "Project Structure(MVC)",
+            "Routing",
+            "How to use Postman"
+        ]
+    },
+    {
+        "title": "HTTP Methods",
+        "topics": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+        ]
+    },
+    {
+        "title": "Middleware",
+        "topics": [
+            "Application level middleware",
+            "Router level middleware",
+            "Built-in middleware",
+            "Error handling middleware",
+            "Third party middleware"
+        ]
+    },
+    {
+        "title": "MongoDB",
+        "topics": [
+            "How to create Model(schema)",
+            "Create operations",
+            "Read operations",
+            "Update operations",
+            "Delete operation",
+            "JWT",
+            "User Authentication",
+            "User Authorization",
+            "Deployment"
+        ]
+    }
+]

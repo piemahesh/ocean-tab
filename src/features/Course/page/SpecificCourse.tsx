@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { courses, courseSyllabus } from "../constant";
 import { CourseTopics } from "../component";
 import { BACK_ICON } from "../../../assets";
 import { vibrateDevice } from "../../../utils";
+import { OCEAN_COURSES } from "../../../constants";
 
 export const SpecificCourse = () => {
   const navigate = useNavigate();
@@ -19,8 +19,11 @@ export const SpecificCourse = () => {
   // const { setValue } = useMyContext();
   if (!id) return;
 
-  const syllabus = courseSyllabus.find((course) => course.id === parseInt(id));
-  const course = courses.find((course) => course.courseId == parseInt(id));
+  const course = OCEAN_COURSES.find(
+    (course) => course.courseId === parseInt(id)
+  );
+
+  if (!course) return;
 
   const handleSubmit = () => {
     navigate(-1);
@@ -89,7 +92,7 @@ export const SpecificCourse = () => {
         viewport={{ once: true }}
       >
         <motion.ul className=" flex flex-col gap-4 mt-8">
-          {syllabus?.syllabus.map((topic, i) => {
+          {course.syllabus.map((topic, i) => {
             return (
               <motion.li
                 key={i}

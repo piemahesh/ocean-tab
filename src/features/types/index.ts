@@ -1,3 +1,7 @@
+export interface SyllabusData {
+  title: string;
+  topics?: string[];
+}
 export interface CourseCardData {
   courseId: number;
   courseName: string;
@@ -9,9 +13,10 @@ export interface CourseCardData {
   rating: number;
   level: string;
   price: string;
+  syllabus: SyllabusData[];
 }
 
-interface SkillData {
+export interface SkillData {
   skill: string;
   area: string;
 }

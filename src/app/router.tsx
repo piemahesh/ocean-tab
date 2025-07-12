@@ -10,6 +10,7 @@ import { Course, SpecificCourse } from "../features/Course";
 import { Mentor } from "../features/Mentor";
 import { About } from "../features/About";
 import { AlbumGallery, MyCarousel, SpecificAlbum } from "../features";
+import { Demo } from "../features/Demo/Check";
 
 export const routes = createBrowserRouter([
   {
@@ -30,5 +31,9 @@ export const routes = createBrowserRouter([
   {
     path: "gallery/:albumId",
     element: <SpecificAlbum />,
+  },
+  {
+    path: "/check",
+    element: <Demo />,
   },
 ]);

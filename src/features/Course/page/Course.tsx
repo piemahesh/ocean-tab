@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { BookOpen } from "lucide-react";
 import { CourseCard } from "../component";
-import { courses } from "../constant";
 import { Header } from "../../shared";
 import { useEffect, useState } from "react";
+import { OCEAN_COURSES } from "../../../constants";
 
 const container = {
   hidden: { opacity: 0 },
@@ -107,7 +107,7 @@ export function Course() {
           animate="visible"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
         >
-          {courses.map((course) => (
+          {OCEAN_COURSES.map((course) => (
             <motion.div key={course.courseId} variants={item}>
               <CourseCard {...course} />
             </motion.div>
