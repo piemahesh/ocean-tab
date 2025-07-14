@@ -9,6 +9,7 @@ import {
   YAxis,
 } from "recharts";
 import type { GrowthData, InsightData } from "../../../types";
+import { GLASS_DOOR_IMG } from "../../../assets";
 
 interface CourseGrowthProps {
   growthData: GrowthData[];
@@ -18,10 +19,22 @@ interface CourseGrowthProps {
 export const CourseGrowth: FC<CourseGrowthProps> = (data) => {
   const { growthData, marketInsights } = data;
   return (
-    <div className="bg-gradient-to-tl from-tertiary/10 via-primary/5 to-secondary/10 p-2 rounded-2xl">
+    <div className="bg-gradient-to-tl relative from-tertiary/10 via-primary/5 to-secondary/10 p-2 rounded-2xl">
       <h2 className="text-2xl text-grad font-bold mb-6">
         Growth Opportunities
       </h2>
+      <div className="absolute p-2 flex items-center justify-between gap-1.5 rounded-md bg-green-200/20 border border-green-300 right-2 top-2">
+        <div className="h-6">
+          <img
+            className="h-full w-full object-contain"
+            src={GLASS_DOOR_IMG}
+            alt="glassdoor img"
+          />
+        </div>
+        <p className="text-xs text-green-600 font-semibold font-sans">
+          powered by glassdoor
+        </p>
+      </div>
       <div className="grid lg:grid-cols-2 gap-6">
         <div>
           <h3 className="text-lg text-secondary font-semibold mb-4">

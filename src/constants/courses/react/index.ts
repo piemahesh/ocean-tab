@@ -26,7 +26,7 @@ export const REACT_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 90,
+  completionRate: 99,
   growthData: [
     { year: 2020, demand: 75, salary: 500000 },
     { year: 2021, demand: 82, salary: 580000 },

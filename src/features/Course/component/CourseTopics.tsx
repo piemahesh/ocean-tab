@@ -51,7 +51,7 @@ export const CourseTopics: FC<CourseTopicProps> = ({ title, topics }) => {
       <motion.h3
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.2 }}
         className="text-xl font-bold text-gray-700 mb-6"
       >
         {title}
@@ -77,7 +77,7 @@ export const CourseTopics: FC<CourseTopicProps> = ({ title, topics }) => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: "some" }}
               transition={{
-                duration: 0.3,
+                duration: 0.4,
                 delay: i * 0.1,
                 type: "spring",
                 stiffness: 200,
@@ -104,3 +104,20 @@ export const CourseTopics: FC<CourseTopicProps> = ({ title, topics }) => {
     </motion.div>
   );
 };
+// export const CourseTopics: FC<SyllabusData> = ({ title, topics }) => {
+//   return (
+//     <div className="w-full bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+//       <div className="flex justify-between items-start mb-3">
+//         <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+//       </div>
+//       <div className="space-y-2">
+//         <p className="text-gray-700 font-medium">Topics covered:</p>
+//         <ul className="list-disc list-inside text-gray-600 space-y-1">
+//           {topics?.map((topic, index) => (
+//             <li key={index}>{topic}</li>
+//           ))}
+//         </ul>
+//       </div>
+//     </div>
+//   );
+// };

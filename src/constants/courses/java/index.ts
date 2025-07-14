@@ -26,7 +26,7 @@ export const JAVA_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 76,
+  completionRate: 98,
   growthData: [
     { year: 2020, demand: 72, salary: 580000 },
     { year: 2021, demand: 76, salary: 640000 },

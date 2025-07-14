@@ -26,7 +26,7 @@ export const FRONTEND_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 79,
+  completionRate: 99,
   growthData: [
     { year: 2020, demand: 68, salary: 520000 },
     { year: 2021, demand: 75, salary: 590000 },

@@ -26,7 +26,7 @@ export const FLUTTER_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 82,
+  completionRate: 98,
   growthData: [
     { year: 2020, demand: 45, salary: 580000 },
     { year: 2021, demand: 62, salary: 680000 },

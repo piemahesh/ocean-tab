@@ -26,7 +26,7 @@ export const MEAN_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 74,
+  completionRate: 94,
   growthData: [
     { year: 2020, demand: 62, salary: 650000 },
     { year: 2021, demand: 70, salary: 720000 },

@@ -26,7 +26,7 @@ export const ANGULAR_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 78,
+  completionRate: 97,
   growthData: [
     { year: 2020, demand: 65, salary: 550000 },
     { year: 2021, demand: 72, salary: 620000 },

@@ -26,7 +26,7 @@ export const UI_UX_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 82,
+  completionRate: 98,
   growthData: [
     { year: 2020, demand: 68, salary: 400000 },
     { year: 2021, demand: 75, salary: 480000 },

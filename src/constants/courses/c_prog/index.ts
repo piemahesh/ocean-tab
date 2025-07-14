@@ -26,7 +26,7 @@ export const C_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 85,
+  completionRate: 95,
   growthData: [
     { year: 2020, demand: 55, salary: 480000 },
     { year: 2021, demand: 58, salary: 520000 },

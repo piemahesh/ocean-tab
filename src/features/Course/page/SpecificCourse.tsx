@@ -30,9 +30,9 @@ export const SpecificCourse = () => {
     setTimeout(() => {
       vibrateDevice([5, 10, 5]);
     }, 500);
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
-  // const { setValue } = useMyContext();
+
   if (!id) return;
 
   const course = OCEAN_COURSES.find(
@@ -50,6 +50,7 @@ export const SpecificCourse = () => {
     marketInsights,
     careerPaths,
     hiringCompanies,
+    duration,
   } = course;
 
   const handleSubmit = () => {
@@ -69,13 +70,13 @@ export const SpecificCourse = () => {
         <span className="inline-block text-grad">back</span>
       </div>
 
-      <main className="flex flex-col max-w-5xl  m-auto items-center text-white">
-        <main className=" flex  max-sm:flex-col gap-4 p-2 justify-between items-center w-full">
+      <main className="flex  flex-col max-w-5xl  m-auto items-center text-white">
+        <main className=" flex max-sm:flex-col gap-4 mb-6 justify-between items-start w-full">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="h-fit w-64 p-2 rounded-xl border shadow-2xs shadow-tertiary/35 border-tertiary/20 bg-white "
+            className="h-fit w-64 p-2  rounded-xl border shadow-2xs shadow-tertiary/35 border-tertiary/20 bg-white "
           >
             <img
               className="h-full w-full object-contain"
@@ -87,7 +88,7 @@ export const SpecificCourse = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className=" bg-white w-full p-4 min-h-56  border border-tertiary/20 rounded-xl shadow-2xs shadow-tertiary/35"
+            className=" bg-white w-full p-4 border border-tertiary/20 rounded-xl shadow-2xs shadow-tertiary/35"
           >
             <article className="flex items-center justify-start gap-4">
               <div className="h-8 w-8">
@@ -99,8 +100,8 @@ export const SpecificCourse = () => {
             </article>
             <article className="flex mt-4 items-center">
               <p className=" text-xl font-bold text-tertiary">
-                <span className=" text-secondary">Course duration: </span>6
-                months
+                <span className=" text-secondary">Course duration: </span>
+                {duration}
               </p>
             </article>
             <article className="flex mt-4 gap-1.5 items-center">

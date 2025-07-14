@@ -26,7 +26,7 @@ export const MERN_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 87,
+  completionRate: 97,
   growthData: [
     { year: 2020, demand: 65, salary: 450000 },
     { year: 2021, demand: 72, salary: 520000 },

@@ -26,7 +26,7 @@ export const MY_SQL_COURSE: CourseData = {
     offline: true,
     hybrid: true,
   },
-  completionRate: 85,
+  completionRate: 98,
   growthData: [
     { year: 2020, demand: 70, salary: 400000 },
     { year: 2021, demand: 75, salary: 450000 },
