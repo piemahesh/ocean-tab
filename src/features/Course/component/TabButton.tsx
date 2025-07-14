@@ -19,10 +19,10 @@ export const TabButton: FC<TabButtonProps> = ({
   return (
     <button
       onClick={() => setActiveTab(id)}
-      className={`flex items-center gap-2 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
+      className={`flex items-center border gap-2 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
         activeTab === id
-          ? "bg-grad bg-gradient-to-tr opacity-80 text-white shadow-lg"
-          : "text-gray-600 hover:bg-gray-100"
+          ? "bg-grad bg-gradient-to-tr opacity-80 border-transparent text-white shadow-lg"
+          : "text-gray-600  border-tertiary/30 hover:bg-gray-100"
       }`}
     >
       <Icon size={18} />

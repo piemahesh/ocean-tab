@@ -69,13 +69,13 @@ export const SpecificCourse = () => {
         <span className="inline-block text-grad">back</span>
       </div>
 
-      <main className="flex flex-col max-w-5xl m-auto items-center text-white">
+      <main className="flex flex-col max-w-5xl  m-auto items-center text-white">
         <main className=" flex  max-sm:flex-col gap-4 p-2 justify-between items-center w-full">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="h-64 w-64 "
+            className="h-fit w-64 p-2 rounded-xl border shadow-2xs shadow-tertiary/35 border-tertiary/20 bg-white "
           >
             <img
               className="h-full w-full object-contain"
@@ -87,7 +87,7 @@ export const SpecificCourse = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className=" bg-white w-full p-4 rounded-md shadow-2xs shadow-tertiary/35"
+            className=" bg-white w-full p-4 min-h-56  border border-tertiary/20 rounded-xl shadow-2xs shadow-tertiary/35"
           >
             <article className="flex items-center justify-start gap-4">
               <div className="h-8 w-8">
@@ -118,13 +118,13 @@ export const SpecificCourse = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className=" bg-white w-full rounded-2xl mb-6 "
+          className=" bg-white w-full border shadow-2xs shadow-gray-400/35 border-gray-500/20 rounded-2xl mb-6 "
         >
           <CourseExtend {...course} />
         </motion.div>
 
-        <div className="absolute slide-ani-reverse -z-10 h-[300px]  rounded-full duration-800 bg-primary/30 backdrop:blur-3xl blur-3xl  w-[300px]"></div>
-        <div className="absolute slide-ani h-[200px] -z-10 rounded-full duration-800 bg-secondary/30 backdrop:blur-3xl blur-3xl  w-[200px]"></div>
+        {/* <div className="absolute slide-ani-reverse -z-10 h-[300px]  rounded-full duration-800 bg-primary/30 backdrop:blur-3xl blur-3xl  w-[300px]"></div>
+        <div className="absolute slide-ani h-[200px] -z-10 rounded-full duration-800 bg-secondary/30 backdrop:blur-3xl blur-3xl  w-[200px]"></div> */}
 
         <div className="w-full  mx-auto  mb-6 ">
           <div className="bg-white rounded-xl shadow-sm p-2">
@@ -183,7 +183,7 @@ export const SpecificCourse = () => {
               return (
                 <motion.li
                   key={i}
-                  initial={{ opacity: 0, scale: 0.1 }}
+                  initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   whileTap={{ scale: 1.1 }}
                   viewport={{ once: true, amount: "some" }}
