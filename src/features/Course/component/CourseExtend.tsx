@@ -45,10 +45,10 @@ export const CourseExtend: FC<CourseData> = ({
   };
 
   return (
-    <div className="w-full mx-auto">
-      <div className=" rounded-2xl shadow-xl border border-gray-100 overflow-hidden  flex flex-col">
+    <div className="w-full rounded-2xl overflow-hidden bg-white mx-auto">
+      <div className="  shadow-xl border border-gray-100 overflow-hidden  flex flex-col">
         {/* Header Section */}
-        <div className="bg-gradient-to-r from-slate-50 to-blue-50 p-4 border-b border-gray-100">
+        <div className="bg-gradient-to-r from-white to-blue-100 p-4 border-b border-gray-100">
           <div className="flex justify-between items-start mb-2">
             <div>
               <div className="flex items-center gap-1 mb-1">
@@ -164,8 +164,8 @@ export const CourseExtend: FC<CourseData> = ({
         </div>
 
         {/* Footer */}
-        <div className="bg-gray-50 px-4 py-3 border-t border-gray-100">
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors text-sm">
+        <div className="bg-white px-4 py-3 border-t border-gray-100">
+          <button className="w-full bg-gradient-to-l from-primary to-secondary text-white py-2 px-4 rounded-lg font-medium transition-colors text-sm">
             Enroll Now
           </button>
         </div>

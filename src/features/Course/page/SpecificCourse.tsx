@@ -56,7 +56,7 @@ export const SpecificCourse = () => {
     navigate(-1);
   };
   return (
-    <section className="flex flex-col  m-auto items-center text-white">
+    <section className="flex flex-col  m-auto p-2 items-center text-white">
       <div
         onClick={handleSubmit}
         className="self-start p-3 hover:cursor-pointer"
@@ -98,7 +98,7 @@ export const SpecificCourse = () => {
               </h2>
             </article>
             <article className="flex mt-4 items-center">
-              <p className=" text-xl font-bold text-primary">
+              <p className=" text-xl font-bold text-tertiary">
                 <span className=" text-secondary">Course duration: </span>6
                 months
               </p>

@@ -10,7 +10,7 @@ export const CourseTopics: FC<CourseTopicProps> = ({ title, topics }) => {
       <h3 className="text-xl font-semibold text-secondary mb-3">{title}</h3>
       <ul className="list-disc list-inside space-y-1 text-gray-700">
         {topics?.map((topic, i) => (
-          <li className="text-gray-500" key={i}>
+          <li className="text-gray-500 text-lg" key={i}>
             {topic}
           </li>
         ))}
