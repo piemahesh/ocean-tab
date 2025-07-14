@@ -8,19 +8,25 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import type { SalaryByExperience } from "../../../types";
+import type { SalaryByExperience, StatsData } from "../../../types";
 
-export const CourseSalary: FC<SalaryByExperience[]> = (data) => {
+interface CourseSalaryProps {
+  salaryStatistics: StatsData[];
+  salaryByExperience: SalaryByExperience[];
+}
+
+export const CourseSalary: FC<CourseSalaryProps> = (data) => {
+  const { salaryByExperience, salaryStatistics } = data;
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-6">Salary Insights</h2>
+    <div className="bg-gradient-to-bl from-tertiary/10 via-primary/5 to-secondary/10 p-2 rounded-2xl">
+      <h2 className="text-2xl text-grad font-bold mb-6">Salary Insights</h2>
       <div className="grid lg:grid-cols-2 gap-6">
         <div>
-          <h3 className="text-lg font-semibold mb-4">
+          <h3 className="text-lg text-secondary font-semibold mb-4">
             Salary by Experience Level
           </h3>
           <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={data}>
+            <BarChart data={salaryByExperience}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="experience" />
               <YAxis />
@@ -32,33 +38,17 @@ export const CourseSalary: FC<SalaryByExperience[]> = (data) => {
           </ResponsiveContainer>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-4">Key Salary Statistics</h3>
+          <h3 className="text-lg text-tertiary font-semibold mb-4">
+            Key Salary Statistics
+          </h3>
           <div className="space-y-4">
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <h4 className="font-semibold text-blue-800">
-                Average Salary in India
-              </h4>
-              <p className="text-2xl font-bold text-blue-600">₹6.42 LPA</p>
-              <p className="text-sm text-blue-600">
-                Based on current market data
-              </p>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg">
-              <h4 className="font-semibold text-green-800">
-                Top Earners (90th percentile)
-              </h4>
-              <p className="text-2xl font-bold text-green-600">₹14.8 LPA</p>
-              <p className="text-sm text-green-600">
-                Experienced professionals
-              </p>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg">
-              <h4 className="font-semibold text-purple-800">
-                Entry Level Range
-              </h4>
-              <p className="text-2xl font-bold text-purple-600">₹2.5-4.2 LPA</p>
-              <p className="text-sm text-purple-600">Fresh graduates</p>
-            </div>
+            {salaryStatistics.map((stat) => (
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-800">{stat.title}</h4>
+                <p className="text-2xl font-bold text-blue-600">{stat.lpa}</p>
+                <p className="text-sm text-blue-600">{stat.subtitle}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

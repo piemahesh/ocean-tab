@@ -21,7 +21,7 @@ export const TabButton: FC<TabButtonProps> = ({
       onClick={() => setActiveTab(id)}
       className={`flex items-center gap-2 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
         activeTab === id
-          ? "bg-blue-600 text-white shadow-lg"
+          ? "bg-grad bg-gradient-to-tr opacity-80 text-white shadow-lg"
           : "text-gray-600 hover:bg-gray-100"
       }`}
     >

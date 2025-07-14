@@ -1,6 +1,6 @@
 import {
   BookOpen,
-  Target,
+  // Target,
   DollarSign,
   TrendingUp,
   Briefcase,
@@ -11,7 +11,7 @@ import type { CourseOptions } from "../page";
 
 const tabs = [
   { id: "overview", label: "Overview", icon: BookOpen },
-  { id: "syllabus", label: "Syllabus", icon: Target },
+  // { id: "syllabus", label: "Syllabus", icon: Target },
   { id: "salary", label: "Salary Insights", icon: DollarSign },
   { id: "growth", label: "Growth Opportunities", icon: TrendingUp },
   { id: "career", label: "Career Paths", icon: Briefcase },
