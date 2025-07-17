@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  Clock,
-  Users,
-  Star,
-} from "lucide-react";
+import { Clock, Users, Star } from "lucide-react";
 import type { FC } from "react";
 import { Link } from "react-router-dom";
 import type { CourseCardData } from "../../types";
@@ -32,7 +28,7 @@ export const CourseCard: FC<CourseCardData> = (data) => {
       case "Advanced":
         return "bg-red-100 text-red-800";
       default:
-        return "bg-gray-100 text-gray-800";
+        return "bg-blue-100 text-blue-800";
     }
   };
 
@@ -45,7 +41,11 @@ export const CourseCard: FC<CourseCardData> = (data) => {
       {/* Course Image */}
       <div className="h-48 p-6 flex items-center justify-center bg-gradient-to-br from-gray-100 to-white">
         <div className="h-24 w-24">
-          <img src={courseImg} className="w-full h-full object-contain" alt="" />
+          <img
+            src={courseImg}
+            className="w-full h-full object-contain"
+            alt=""
+          />
         </div>
       </div>
 

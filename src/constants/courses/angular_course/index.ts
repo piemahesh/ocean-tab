@@ -3,7 +3,6 @@ import type { CourseData } from "../../../types";
 import ANGULAR_SYLLABUS from "./angular_data.json";
 
 export const ANGULAR_COURSE: CourseData = {
-  index: 1,
   courseImg: ANGULAR_ICON,
   courseName: "ANGULAR",
   courseIcon: WEB_ICON,

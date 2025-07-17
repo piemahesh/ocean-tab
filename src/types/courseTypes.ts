@@ -48,7 +48,6 @@ export interface CourseData {
   rating: number;
   level: string;
   price: string;
-  index: number;
   syllabus: SyllabusData[];
   avgSalary: AvgSalaryData;
   availability: CourseAvailability;

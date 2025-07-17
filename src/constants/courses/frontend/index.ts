@@ -3,11 +3,10 @@ import type { CourseData } from "../../../types";
 import FRONTEND_SYLLABUS from "./frontenddevelopment.json";
 
 export const FRONTEND_COURSE: CourseData = {
-  index: 5,
   courseImg: FRONTEND_ICON,
   courseName: "FRONTEND DEV",
   courseIcon: WEB_ICON,
-  courseId: 5,
+  courseId: 6,
   description:
     "Master the art of building modern, responsive, and interactive websites using core technologies like HTML, CSS, JavaScript, and frameworks such as React and Angular. Learn UI/UX principles and create dynamic user experiences optimized for all devices.",
   rating: 4.8,

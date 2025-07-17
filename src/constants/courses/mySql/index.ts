@@ -3,11 +3,10 @@ import type { CourseData } from "../../../types";
 import MY_SQL_SYLLABUS from "./nodejs.json";
 
 export const MY_SQL_COURSE: CourseData = {
-  index: 9,
   courseImg: MYSQL_ICON,
   courseName: "MYSQL",
   courseIcon: MOBILE_DEV_ICON,
-  courseId: 9,
+  courseId: 12,
   description:
     "Learn MySQL, one of the most popular relational database management systems used worldwide. Understand how to design schemas, write complex SQL queries, and manage structured data efficiently for any application.",
   rating: 4.7,

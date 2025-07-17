@@ -3,11 +3,10 @@ import type { CourseData } from "../../../types";
 import UI_UX_SYLLABUS from "./ui&ux.json";
 
 export const UI_UX_COURSE: CourseData = {
-  index: 11,
   courseImg: FIGMA_ICON,
   courseName: "FIGMA",
   courseIcon: MOBILE_DEV_ICON,
-  courseId: 11,
+  courseId: 19,
   description:
     "Master UI/UX design using Figma, the industry-leading collaborative design tool. Learn how to create wireframes, prototypes, and design systems that bring your digital products to life with intuitive and accessible user experiences.",
   rating: 4.8,

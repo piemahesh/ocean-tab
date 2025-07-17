@@ -3,11 +3,10 @@ import type { CourseData } from "../../../types";
 import REACT_SYLLABUS from "./reactjs.json";
 
 export const REACT_COURSE: CourseData = {
-  index: 10,
   courseImg: REACT_ICON,
   courseName: "REACT",
   courseIcon: MOBILE_DEV_ICON,
-  courseId: 10,
+  courseId: 17,
   description:
     "Dive into React, the popular JavaScript library from Meta for building dynamic and component-based user interfaces. Understand virtual DOM, hooks, state management, and how to build high-performing web and mobile applications with ease.",
   rating: 4.9,

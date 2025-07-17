@@ -3,11 +3,10 @@ import type { CourseData } from "../../../types";
 import MERN_SYLLABUS from "./mernstack.json";
 
 export const MERN_COURSE: CourseData = {
-  index: 8,
   courseImg: MERN_ICON,
   courseName: "MERN STACK",
   courseIcon: MOBILE_DEV_ICON,
-  courseId: 8,
+  courseId: 11,
   description:
     "Master the MERN stack — MongoDB, Express.js, React, and Node.js — to build powerful full-stack web applications. Learn to create RESTful APIs, manage frontend and backend integration, and deploy production-ready apps.",
   rating: 4.9,

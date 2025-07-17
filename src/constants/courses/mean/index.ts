@@ -3,11 +3,10 @@ import type { CourseData } from "../../../types";
 import MEAN_SYLLABUS from "./meanstack.json";
 
 export const MEAN_COURSE: CourseData = {
-  index: 7,
   courseImg: MEAN_ICON,
   courseName: "MEAN STACK",
   courseIcon: MOBILE_DEV_ICON,
-  courseId: 7,
+  courseId: 10,
   description:
     "Become a full-stack developer with the MEAN stack — MongoDB, Express.js, Angular, and Node.js. Learn how to develop complete web applications from backend APIs to dynamic frontends using a single JavaScript-based ecosystem.",
   rating: 4.8,

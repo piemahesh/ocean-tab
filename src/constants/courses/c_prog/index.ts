@@ -3,7 +3,6 @@ import type { CourseData } from "../../../types";
 import C_SYLLABUS from "./c.json";
 
 export const C_COURSE: CourseData = {
-  index: 3,
   courseImg: C_ICON,
   courseName: "C",
   courseIcon: MOBILE_DEV_ICON,

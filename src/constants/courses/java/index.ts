@@ -3,11 +3,10 @@ import type { CourseData } from "../../../types";
 import JAVA_SYLLABUS from "./java.json";
 
 export const JAVA_COURSE: CourseData = {
-  index: 6,
   courseImg: JAVA_ICON,
   courseName: "JAVA",
   courseIcon: MOBILE_DEV_ICON,
-  courseId: 6,
+  courseId: 7,
   description:
     "Learn Java, a versatile and object-oriented programming language used in enterprise systems, Android development, and backend APIs. Gain expertise in OOP principles, exception handling, multithreading, and build robust applications.",
   rating: 4.8,

@@ -3,11 +3,10 @@ import type { CourseData } from "../../../types";
 import FLUTTER_SYLLABUS from "./flutter.json";
 
 export const FLUTTER_COURSE: CourseData = {
-  index: 4,
   courseImg: FLUTTER_ICON,
   courseName: "FLUTTER",
   courseIcon: MOBILE_DEV_ICON,
-  courseId: 4,
+  courseId: 5,
   description:
     "Build beautiful, natively compiled mobile, web, and desktop apps using Flutter and Dart. Learn widget-based architecture, state management, and create cross-platform apps with a single codebase and smooth UI animations.",
   rating: 4.9,
