@@ -10,7 +10,7 @@ export const MEAN_COURSE: CourseData = {
   description:
     "Become a full-stack developer with the MEAN stack — MongoDB, Express.js, Angular, and Node.js. Learn how to develop complete web applications from backend APIs to dynamic frontends using a single JavaScript-based ecosystem.",
   rating: 4.8,
-  duration: "4 Months",
+  duration: "6 Months",
   students: 1000,
   level: "Advanced",
   price: "₹32,000",

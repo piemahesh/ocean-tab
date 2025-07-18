@@ -10,8 +10,8 @@ export const ANGULAR_COURSE: CourseData = {
   description:
     "Learn Angular, a powerful TypeScript-based framework developed by Google for building scalable and high-performance single-page applications. Explore component-driven architecture, routing, services, and state management in real-world projects.",
   rating: 4.7,
-  duration: "2.5 Months",
-  students: 950,
+  duration: "1 Month",
+  students: 250,
   level: "Intermediate",
   price: "₹10,000",
   syllabus: ANGULAR_SYLLABUS,

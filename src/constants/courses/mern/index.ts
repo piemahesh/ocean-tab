@@ -10,7 +10,7 @@ export const MERN_COURSE: CourseData = {
   description:
     "Master the MERN stack — MongoDB, Express.js, React, and Node.js — to build powerful full-stack web applications. Learn to create RESTful APIs, manage frontend and backend integration, and deploy production-ready apps.",
   rating: 4.9,
-  duration: "4 Months",
+  duration: "6 Months",
   students: 1400,
   level: "Advanced",
   price: "₹32,000",

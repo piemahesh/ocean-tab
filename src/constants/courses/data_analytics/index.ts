@@ -4,17 +4,17 @@ import DATA_ANALYST_SYLLABUS from "./data_analytics.json";
 
 export const DATA_ANALYTICS_COURSE: CourseData = {
   courseImg: DATA_ANALYST_ICON,
-  courseName: "data analytics",
+  courseName: "DATA ANALYTICS",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 4,
   syllabus: DATA_ANALYST_SYLLABUS,
   description:
     "Master data analytics with industry-leading tools including Power BI, Tableau, SQL, and Excel. Learn to transform raw data into actionable insights through hands-on projects and real-world scenarios.",
-  duration: "4-6 months",
-  students: 12500,
-  rating: 4.7,
+  duration: "5-6 months",
+  students: 200,
+  rating: 4.9,
   level: "Beginner to Intermediate",
-  price: "₹49,999",
+  price: "₹36,000",
   avgSalary: {
     fresher: "₹4.5 LPA",
     experienced: "₹12 LPA",

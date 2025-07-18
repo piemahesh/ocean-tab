@@ -4,17 +4,17 @@ import PYTHON_SYLLABUS from "./python.json";
 
 export const PYTHON_COURSE: CourseData = {
   courseImg: PYTHON_ICON,
-  courseName: "Python",
+  courseName: "PYTHON",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 15,
   syllabus: PYTHON_SYLLABUS,
   description:
     "Master Python programming from basics to advanced concepts. Learn data structures, algorithms, web development, automation, and prepare for a career in software development.",
   duration: "3-4 months",
-  students: 22400,
+  students: 2400,
   rating: 4.8,
   level: "Beginner to Intermediate",
-  price: "₹39,999",
+  price: "₹16,000",
   avgSalary: {
     fresher: "₹4.2 LPA",
     experienced: "₹14 LPA",

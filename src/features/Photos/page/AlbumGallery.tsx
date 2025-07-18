@@ -9,7 +9,7 @@ export const AlbumGallery: React.FC = () => {
     navigate(`/gallery/${id}`);
   };
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Header */}
       <Header heading="Gallery" />
 

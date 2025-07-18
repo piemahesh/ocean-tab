@@ -10,8 +10,8 @@ export const REACT_COURSE: CourseData = {
   description:
     "Dive into React, the popular JavaScript library from Meta for building dynamic and component-based user interfaces. Understand virtual DOM, hooks, state management, and how to build high-performing web and mobile applications with ease.",
   rating: 4.9,
-  duration: "2.5 Months",
-  students: 1300,
+  duration: "1 Month",
+  students: 1800,
   level: "Advanced",
   price: "₹8,000",
   syllabus: REACT_SYLLABUS,

@@ -4,17 +4,17 @@ import PYTHON_FULLSTACK_SYLLABUS from "./pythonfullstack.json";
 
 export const PYTHON_FULLSTACK_COURSE: CourseData = {
   courseImg: PYTHON_FULLSTACK_ICON,
-  courseName: "Python Fullstack",
+  courseName: "PYTHON FULLSTACK",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 16,
   syllabus: PYTHON_FULLSTACK_SYLLABUS,
   description:
     "Complete Python Full Stack development course covering Django/Flask, React.js, databases, and deployment. Build end-to-end web applications from scratch.",
-  duration: "6-7 months",
-  students: 16800,
+  duration: "5-6 months",
+  students: 2210,
   rating: 4.7,
   level: "Intermediate to Advanced",
-  price: "₹64,999",
+  price: "₹32,000",
   avgSalary: {
     fresher: "₹5.5 LPA",
     experienced: "₹18 LPA",

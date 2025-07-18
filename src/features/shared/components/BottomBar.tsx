@@ -131,7 +131,7 @@ export const BottomNavBar = ({
   ];
 
   return (
-    <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 w-full max-w-[400px] z-50">
+    <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-full max-w-[400px] z-50">
       <div className="relative bg-white shadow-xl rounded-full h-16 flex items-center justify-between px-4">
         {navItems.map((item, i) => {
           const Icon = item.icon;

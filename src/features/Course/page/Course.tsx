@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { BookOpen } from "lucide-react";
 import { CourseCard } from "../component";
-import { Header } from "../../shared";
+import { GoToTopButton, Header, MainBgElements } from "../../shared";
 import { useEffect, useState } from "react";
 import { OCEAN_COURSES } from "../../../constants";
 
@@ -45,8 +45,9 @@ export function Course() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
+    <main className="min-h-screen pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
       <Header heading="Trending Courses" />
+      <MainBgElements />
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-200/30 to-purple-200/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-200/30 to-pink-200/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
@@ -142,6 +143,7 @@ export function Course() {
           </div>
         </motion.div>
       </div>
+      <GoToTopButton />
     </main>
   );
 }

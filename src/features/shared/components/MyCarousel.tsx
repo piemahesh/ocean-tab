@@ -74,7 +74,7 @@ export const MyCarousel: React.FC = () => {
 
   return (
     <section
-      className="w-full h-full overflow-hidden relative bg-white"
+      className="w-full h-full  overflow-hidden relative bg-white"
       {...swipeHandlers}
     >
       <AnimatePresence custom={direction} mode="wait">

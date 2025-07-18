@@ -4,17 +4,17 @@ import POWER_BI_SYLLABUS from "./powerbi.json";
 
 export const POWER_BI_COURSE: CourseData = {
   courseImg: POWER_BI_ICON,
-  courseName: "C",
+  courseName: "POWER BI",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 14,
   syllabus: POWER_BI_SYLLABUS,
   description:
     "Become a Power BI expert with comprehensive training in data modeling, DAX, advanced visualizations, and business intelligence solutions for enterprise environments.",
-  duration: "3-4 months",
-  students: 11200,
-  rating: 4.6,
+  duration: "1-2 months",
+  students: 50,
+  rating: 4.9,
   level: "Beginner to Advanced",
-  price: "₹34,999",
+  price: "₹16,000",
   avgSalary: {
     fresher: "₹4.8 LPA",
     experienced: "₹13 LPA",

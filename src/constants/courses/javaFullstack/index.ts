@@ -4,17 +4,17 @@ import JAVA_FULLSTACK_SYALLABUS from "./javafullstack.json";
 
 export const JAVA_FULLSTACK_COURSE: CourseData = {
   courseImg: JAVA_FULLSTACK_ICON,
-  courseName: "Java Fullstack",
+  courseName: "JAVA FULLSTACK",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 8,
   syllabus: JAVA_FULLSTACK_SYALLABUS,
   description:
     "Comprehensive Java Full Stack development course covering core Java, advanced concepts, SQL database management, JSP, Servlets, and modern frameworks like Spring Boot.",
-  duration: "6-8 months",
-  students: 18700,
+  duration: "6-7 months",
+  students: 1700,
   rating: 4.6,
   level: "Beginner to Advanced",
-  price: "₹59,999",
+  price: "₹36,000",
   avgSalary: {
     fresher: "₹5.2 LPA",
     experienced: "₹15 LPA",

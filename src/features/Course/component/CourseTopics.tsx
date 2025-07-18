@@ -61,7 +61,7 @@ export const CourseTopics: FC<CourseTopicProps> = ({ title, topics }) => {
       <motion.div className="space-y-3">
         {topics?.map((topic, i) => (
           <motion.div
-            key={i}
+            key={topic + i}
             variants={itemVariants}
             whileHover={{
               scale: 1.02,
@@ -73,11 +73,9 @@ export const CourseTopics: FC<CourseTopicProps> = ({ title, topics }) => {
             {/* Animated Color Indicator */}
             <motion.div
               initial={{ scale: 0, opacity: 0.1 }}
-              animate={{ scale: 1 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: "some" }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{
-                duration: 0.4,
+                duration: 0.8,
                 delay: i * 0.1,
                 type: "spring",
                 stiffness: 200,

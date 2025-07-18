@@ -10,8 +10,8 @@ export const FRONTEND_COURSE: CourseData = {
   description:
     "Master the art of building modern, responsive, and interactive websites using core technologies like HTML, CSS, JavaScript, and frameworks such as React and Angular. Learn UI/UX principles and create dynamic user experiences optimized for all devices.",
   rating: 4.8,
-  duration: "3 Months",
-  students: 1200,
+  duration: "2-3 Months",
+  students: 3200,
   level: "Advanced",
   price: "₹16,000",
   syllabus: FRONTEND_SYLLABUS,

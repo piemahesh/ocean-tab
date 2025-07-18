@@ -10,7 +10,7 @@ export const FLUTTER_COURSE: CourseData = {
   description:
     "Build beautiful, natively compiled mobile, web, and desktop apps using Flutter and Dart. Learn widget-based architecture, state management, and create cross-platform apps with a single codebase and smooth UI animations.",
   rating: 4.9,
-  duration: "2.5 Months",
+  duration: "2.5-3 Months",
   students: 1250,
   level: "Advanced",
   price: "₹25,000",

@@ -11,7 +11,7 @@ export const C_COURSE: CourseData = {
     "Begin your programming journey with C, the foundational language for system software, embedded systems, and low-level development. Understand memory management, data structures, and write efficient, high-performance code.",
   rating: 4.6,
   duration: "2 Months",
-  students: 1100,
+  students: 3100,
   level: "Beginner",
   price: "₹12,000",
   syllabus: C_SYLLABUS,
