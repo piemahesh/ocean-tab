@@ -4,3 +4,4 @@ export * from "./WhatsAppBtn";
 export * from "./BottomBar";
 export * from "./GoToTopButton";
 export * from "./MainBgElements";
+export * from "./ThemeSwitcher";

@@ -1,20 +1,20 @@
-import { MOBILE_DEV_ICON, MYSQL_ICON } from "../../../assets";
+import { MOBILE_DEV_ICON, SQL_ICON } from "../../../assets";
 import type { CourseData } from "../../../types";
-import MY_SQL_SYLLABUS from "./nodejs.json";
+import SQL_SYLLABUS from "./nodejs.json";
 
-export const MY_SQL_COURSE: CourseData = {
-  courseImg: MYSQL_ICON,
-  courseName: "MYSQL",
+export const SQL_COURSE: CourseData = {
+  courseImg: SQL_ICON,
+  courseName: "SQL",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 12,
   description:
-    "Learn MySQL, one of the most popular relational database management systems used worldwide. Understand how to design schemas, write complex SQL queries, and manage structured data efficiently for any application.",
+    "Learn SQL, one of the most popular relational database management systems used worldwide. Understand how to design schemas, write complex SQL queries, and manage structured data efficiently for any application.",
   rating: 4.7,
-  duration: "2 Months",
+  duration: "1 Month",
   students: 1050,
   level: "Intermediate",
   price: "₹8,000",
-  syllabus: MY_SQL_SYLLABUS,
+  syllabus: SQL_SYLLABUS,
   avgSalary: {
     fresher: "₹4 LPA",
     experienced: "₹10 LPA",
@@ -50,7 +50,7 @@ export const MY_SQL_COURSE: CourseData = {
     { title: "Backend Developer", growth: "High", salary: "₹6-11 LPA" },
   ],
   whatYouLearn: [
-    "MySQL installation and configuration",
+    "SQL installation and configuration",
     "Database design and normalization",
     "SQL query optimization",
     "Backup and recovery strategies",

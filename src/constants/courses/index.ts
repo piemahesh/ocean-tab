@@ -10,7 +10,7 @@ import { JAVA_FULLSTACK_COURSE } from "./javaFullstack";
 import { JAVASCRIPT_COURSE } from "./js";
 import { MEAN_COURSE } from "./mean";
 import { MERN_COURSE } from "./mern";
-import { MY_SQL_COURSE } from "./mySql";
+import { SQL_COURSE } from "./sql";
 import { POWER_BI_COURSE } from "./powerBi";
 import { PYTHON_COURSE } from "./python";
 import { PYTHON_FULLSTACK_COURSE } from "./pythonFullstack";
@@ -34,7 +34,7 @@ export const OCEAN_COURSES: CourseData[] = [
   JAVASCRIPT_COURSE,
   C_COURSE,
   C_PLUS_COURSE,
-  MY_SQL_COURSE,
+  SQL_COURSE,
 ];
 
 OCEAN_COURSES.map((course) => {

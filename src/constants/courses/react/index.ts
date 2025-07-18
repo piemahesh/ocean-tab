@@ -13,7 +13,7 @@ export const REACT_COURSE: CourseData = {
   duration: "1 Month",
   students: 1800,
   level: "Advanced",
-  price: "₹8,000",
+  price: "₹10,000",
   syllabus: REACT_SYLLABUS,
   avgSalary: {
     fresher: "₹5 LPA",

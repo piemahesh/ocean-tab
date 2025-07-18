@@ -10,7 +10,7 @@ export const C_PLUS_COURSE: CourseData = {
   description:
     "Enhance your programming skills with C++, an object-oriented extension of C used in game development, competitive programming, and real-time systems. Learn about classes, inheritance, polymorphism, and STL (Standard Template Library).",
   rating: 4.7,
-  duration: "2-2.5 Months",
+  duration: "1-1.5 Months",
   students: 3980,
   level: "Intermediate",
   price: "₹12,000",
