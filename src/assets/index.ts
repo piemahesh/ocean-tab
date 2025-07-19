@@ -4,3 +4,4 @@ export * from "./navIcons";
 export * from "./galleries";
 export * from "./sketches";
 export * from "./sounds";
+export * from "./whatsApp";
