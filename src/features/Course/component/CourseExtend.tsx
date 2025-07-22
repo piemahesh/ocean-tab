@@ -10,17 +10,19 @@ import {
 } from "lucide-react";
 import type { FC } from "react";
 import type { CourseData } from "../../../types";
+import { WhatsAppButton } from "./StudentModal";
 
-export const CourseExtend: FC<CourseData> = ({
-  avgSalary,
-  rating,
-  duration,
-  students,
-  level,
-  price,
-  availability,
-  completionRate,
-}) => {
+export const CourseExtend: FC<CourseData> = (data) => {
+  const {
+    avgSalary,
+    rating,
+    duration,
+    students,
+    level,
+    price,
+    availability,
+    completionRate,
+  } = data;
   const renderStars = (rating: number) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -164,8 +166,9 @@ export const CourseExtend: FC<CourseData> = ({
         </div>
 
         {/* Footer */}
-        <div className="bg-white px-4 py-3 border-t border-gray-100">
-          <button className="w-full bg-gradient-to-l from-primary to-secondary text-white py-2 px-4 rounded-lg font-medium transition-colors text-sm">
+        <div className="bg-white flex gap-2.5 px-4 py-3 border-t border-gray-100">
+          <WhatsAppButton {...data} />
+          <button className="w-full  bg-gradient-to-l py-3 px-6 from-primary to-secondary text-white  rounded-lg font-medium transition-colors text-sm">
             Enroll Now
           </button>
         </div>

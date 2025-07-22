@@ -7,3 +7,4 @@ export * from "./CourseSalary";
 export * from "./TabButton";
 export * from "./Tabs";
 export * from "./CourseExtend";
+export * from "./StudentModal";
