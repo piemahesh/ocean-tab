@@ -7,7 +7,7 @@ export const ThemeSwitcher = () => {
   const handleTheme = () => {
     setTimeout(() => {
       toggleTheme();
-    }, 500);
+    }, 50);
   };
 
   return (

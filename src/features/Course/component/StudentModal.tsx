@@ -1,9 +1,11 @@
-import { useState, type FC } from "react";
+import { useEffect, useState, type FC } from "react";
 import { X, User, Phone, Globe, AlertCircle } from "lucide-react";
 import { getCookie, setCookie } from "../../../utils";
 import { createPortal } from "react-dom";
 import { SEND_GREETING, SEND_SYLLABUS } from "../services";
 import type { CourseData } from "../../../types";
+import { WHATS_APP_ICON } from "../../../assets";
+import { showErrorToast, showSuccessToast } from "../../shared";
 
 interface CountryCode {
   code: string;
@@ -67,19 +69,21 @@ export const StudentModal: FC<StudentModalProps> = ({
       setCookie("customerData", JSON.stringify(formData), 10);
       setIsLoading(true);
 
-      const phoneNumber = formData.countryCode + formData.phoneNumber;
+      const phoneNumber = formData.phoneNumber;
       const studentName = formData.name;
 
       await Promise.all([
         await SEND_GREETING({
           phoneNumber,
           studentName,
+          countryCode: formData.countryCode,
         }),
         await SEND_SYLLABUS({
           courseName,
           phoneNumber,
           studentName,
           syllabusLink,
+          countryCode: formData.countryCode,
         }),
       ]).finally(() => {
         console.log("Submitted:", formData);
@@ -212,16 +216,53 @@ export const StudentModal: FC<StudentModalProps> = ({
 
 export const WhatsAppButton: FC<CourseData> = (data) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [count, setCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
+  const syllabusLink =
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/offlineSyllabus%2FC%2B%2B-syllabus.pdf?alt=media&token=8d67c5fd-2803-4723-a0b0-ceb42ea805c6";
+  useEffect(() => {
+    if (isLoading) {
+      const interval = setInterval(() => {
+        setCount((prev) => (prev + 1) % WHATS_APP_ICON.length);
+      }, 300); // Change image every 300 milliseconds
+      return () => clearInterval(interval);
+    }
+  }, [isLoading]);
 
   const handleButtonClick = async () => {
-    const customer = getCookie("customerData");
-    const courseName = data.courseName.replaceAll(" ", "");
-    if (customer) {
-      console.log("Customer data found:", JSON.parse(customer));
-      await SEND_SYLLABUS({ courseName });
-      // Proceed with WhatsApp logic
-    } else {
-      setIsModalOpen(true);
+    try {
+      const customer = JSON.parse(getCookie("customerData") || "{}");
+      if (customer.name && customer.phoneNumber) {
+        console.log("Customer data found:", customer);
+        setIsLoading(true);
+        const { success, message } = await SEND_SYLLABUS({
+          courseName: data.courseName,
+          phoneNumber: customer.phoneNumber,
+          studentName: customer.name,
+          syllabusLink,
+          countryCode: customer.countryCode,
+        });
+        if (!success) {
+          showErrorToast(
+            message || "Failed to send syllabus. Please try again."
+          );
+        } else {
+          showSuccessToast(message || "Syllabus sent successfully! 📚");
+          setIsModalOpen(false);
+        }
+
+        // Proceed with WhatsApp logic
+      } else {
+        setIsModalOpen(true);
+      }
+    } catch (error) {
+      console.error("Error sending syllabus:", error);
+    } finally {
+      setIsLoading(false);
+      setTimeout(() => {
+        setIsLoading(false);
+        setCount(0);
+      }, 3000);
     }
   };
 
@@ -229,8 +270,13 @@ export const WhatsAppButton: FC<CourseData> = (data) => {
     <>
       <button
         onClick={handleButtonClick}
-        className="bg-amber-200 text-amber-700 px-4 py-2 rounded-xl"
+        className="bg-gradient-to-r relative max-w-xl  py-3 px-6 from-green-600 to-green-500/60 font-semibold h-fit w-full  text-white rounded-lg"
       >
+        <img
+          className="absolute h-[4.5rem] left-4.5 top-1/2 -translate-y-1/2 -translate-x-1/2"
+          src={isLoading ? WHATS_APP_ICON[count] : WHATS_APP_ICON[0]}
+          alt=""
+        />
         Send Syllabus to WhatsApp
       </button>
 
@@ -238,7 +284,7 @@ export const WhatsAppButton: FC<CourseData> = (data) => {
         createPortal(
           <StudentModal
             courseName={data.courseName}
-            syllabusLink={""}
+            syllabusLink={syllabusLink}
             setIsModalOpen={setIsModalOpen}
           />,
           document.body

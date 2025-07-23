@@ -5,3 +5,5 @@ export * from "./BottomBar";
 export * from "./GoToTopButton";
 export * from "./MainBgElements";
 export * from "./ThemeSwitcher";
+export * from "./ToasterProvider";
+export * from "./ToastComponent";

@@ -1,6 +1,7 @@
 interface GreetingData {
   studentName: string;
   phoneNumber: string;
+  countryCode: string;
 }
 
 interface SyllabusData extends GreetingData {
@@ -36,6 +37,7 @@ export const SEND_SYLLABUS = async (data: SyllabusData) => {
     });
     return await response.json();
   } catch (error) {
+    console.log(error);
     throw error;
   }
 };
