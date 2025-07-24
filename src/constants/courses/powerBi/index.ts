@@ -7,6 +7,8 @@ export const POWER_BI_COURSE: CourseData = {
   courseName: "POWER BI",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 14,
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FPower_bi_syllabus.pdf?alt=media&token=e74051bd-a933-4aa7-86fa-58be4bdd19bd",
   syllabus: POWER_BI_SYLLABUS,
   description:
     "Become a Power BI expert with comprehensive training in data modeling, DAX, advanced visualizations, and business intelligence solutions for enterprise environments.",

@@ -66,13 +66,13 @@ export const StudentModal: FC<StudentModalProps> = ({
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      setCookie("customerData", JSON.stringify(formData), 10);
+      setCookie("customerData", JSON.stringify(formData), 15);
       setIsLoading(true);
 
       const phoneNumber = formData.phoneNumber;
       const studentName = formData.name;
 
-      await Promise.all([
+      const [_, { success, message }] = await Promise.all([
         await SEND_GREETING({
           phoneNumber,
           studentName,
@@ -90,6 +90,11 @@ export const StudentModal: FC<StudentModalProps> = ({
         setIsLoading(false);
         setIsModalOpen(false);
       });
+      if (!success) {
+        showErrorToast(message || "Failed to send syllabus. Please try again.");
+      } else {
+        showSuccessToast(message || "Syllabus sent successfully! 📚");
+      }
     }
   };
 
@@ -218,8 +223,6 @@ export const WhatsAppButton: FC<CourseData> = (data) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [count, setCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
-  const syllabusLink =
-    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/offlineSyllabus%2FC%2B%2B-syllabus.pdf?alt=media&token=8d67c5fd-2803-4723-a0b0-ceb42ea805c6";
   useEffect(() => {
     if (isLoading) {
       const interval = setInterval(() => {
@@ -239,7 +242,7 @@ export const WhatsAppButton: FC<CourseData> = (data) => {
           courseName: data.courseName,
           phoneNumber: customer.phoneNumber,
           studentName: customer.name,
-          syllabusLink,
+          syllabusLink: data.syllabusLink,
           countryCode: customer.countryCode,
         });
         if (!success) {
@@ -270,7 +273,7 @@ export const WhatsAppButton: FC<CourseData> = (data) => {
     <>
       <button
         onClick={handleButtonClick}
-        className="bg-gradient-to-r relative max-w-xl  py-3 px-6 from-green-600 to-green-500/60 font-semibold h-fit w-full  text-white rounded-lg"
+        className="bg-gradient-to-r relative max-w-md  py-3 px-6 from-green-600 to-green-500/70 font-semibold h-fit w-full  text-white rounded-lg"
       >
         <img
           className="absolute h-[4.5rem] left-4.5 top-1/2 -translate-y-1/2 -translate-x-1/2"
@@ -284,7 +287,7 @@ export const WhatsAppButton: FC<CourseData> = (data) => {
         createPortal(
           <StudentModal
             courseName={data.courseName}
-            syllabusLink={syllabusLink}
+            syllabusLink={data.syllabusLink}
             setIsModalOpen={setIsModalOpen}
           />,
           document.body

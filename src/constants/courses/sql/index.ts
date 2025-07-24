@@ -14,6 +14,8 @@ export const SQL_COURSE: CourseData = {
   students: 1050,
   level: "Intermediate",
   price: "₹8,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FSQL-syllabus%20(1).pdf?alt=media&token=51174435-cba5-400e-95fd-7b811355f573",
   syllabus: SQL_SYLLABUS,
   avgSalary: {
     fresher: "₹4 LPA",

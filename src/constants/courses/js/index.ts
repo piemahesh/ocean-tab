@@ -7,6 +7,8 @@ export const JAVASCRIPT_COURSE: CourseData = {
   courseName: "JAVASCRIPT",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 9,
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FJavascript%20Syllabus.pdf?alt=media&token=f7186a90-9955-47db-9b32-b26c121fc94f",
   syllabus: JAVASCRIPT_SYLLABUS,
   description:
     "Master JavaScript from fundamentals to advanced concepts including ES6+, React, Node.js, and modern frameworks. Build dynamic web applications and become a full-stack JavaScript developer.",

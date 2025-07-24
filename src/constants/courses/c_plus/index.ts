@@ -14,6 +14,8 @@ export const C_PLUS_COURSE: CourseData = {
   students: 3980,
   level: "Intermediate",
   price: "₹12,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FC%2B%2B-syllabus.pdf?alt=media&token=dfc246ef-e24b-4c90-888b-c1746060f6c4",
   syllabus: C_PLUS_SYLLABUS,
   avgSalary: {
     fresher: "₹4 LPA",

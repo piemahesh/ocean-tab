@@ -7,6 +7,8 @@ export const PYTHON_COURSE: CourseData = {
   courseName: "PYTHON",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 15,
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FPython%20syllabus.pdf?alt=media&token=3b4b420b-99c2-4902-9aca-a3a3fe570895",
   syllabus: PYTHON_SYLLABUS,
   description:
     "Master Python programming from basics to advanced concepts. Learn data structures, algorithms, web development, automation, and prepare for a career in software development.",

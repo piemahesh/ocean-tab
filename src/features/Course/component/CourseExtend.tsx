@@ -166,7 +166,7 @@ export const CourseExtend: FC<CourseData> = (data) => {
         </div>
 
         {/* Footer */}
-        <div className="bg-white items-center justify-center flex gap-2.5 px-4 py-3 border-t border-gray-100">
+        <div className="bg-white items-center justify-end flex gap-2.5 px-4 py-3 border-t border-gray-100">
           <WhatsAppButton {...data} />
           {/* <button className="w-full h-fit  bg-gradient-to-l py-3 px-6 font-semibold from-primary to-secondary text-white  rounded-lg  transition-colors ">
             Enroll Now

@@ -14,6 +14,8 @@ export const FLUTTER_COURSE: CourseData = {
   students: 1250,
   level: "Advanced",
   price: "₹25,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FFlutter%20syllabus.pdf?alt=media&token=d58efa54-64c0-4679-be46-63032744a4bd",
   syllabus: FLUTTER_SYLLABUS,
   avgSalary: {
     fresher: "₹5 LPA",

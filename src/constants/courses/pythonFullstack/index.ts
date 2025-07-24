@@ -7,6 +7,8 @@ export const PYTHON_FULLSTACK_COURSE: CourseData = {
   courseName: "PYTHON FULLSTACK",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 16,
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FPython%20Full%20Stack%20Syllabus%20.Pdf?alt=media&token=43133b48-fc31-4628-83e8-ac0a40a3c7dd",
   syllabus: PYTHON_FULLSTACK_SYLLABUS,
   description:
     "Complete Python Full Stack development course covering Django/Flask, React.js, databases, and deployment. Build end-to-end web applications from scratch.",

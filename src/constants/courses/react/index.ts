@@ -14,6 +14,8 @@ export const REACT_COURSE: CourseData = {
   students: 1800,
   level: "Advanced",
   price: "₹10,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FReact%20Syllabus.pdf?alt=media&token=a9538ae6-85c7-4b0c-94e2-5bd42e8ded09",
   syllabus: REACT_SYLLABUS,
   avgSalary: {
     fresher: "₹5 LPA",

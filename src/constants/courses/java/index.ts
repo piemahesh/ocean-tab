@@ -14,6 +14,8 @@ export const JAVA_COURSE: CourseData = {
   students: 1150,
   level: "Intermediate",
   price: "₹16,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FJava%20Syllabus.pdf?alt=media&token=4a032c70-7dd0-40ca-90c2-3054f6b5b198",
   syllabus: JAVA_SYLLABUS,
   avgSalary: {
     fresher: "₹4.5 LPA",

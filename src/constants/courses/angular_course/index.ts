@@ -14,6 +14,8 @@ export const ANGULAR_COURSE: CourseData = {
   students: 250,
   level: "Intermediate",
   price: "₹10,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FAngular%20Syllabus%20.pdf?alt=media&token=ca2a514f-273b-483a-805e-89e5e644f692",
   syllabus: ANGULAR_SYLLABUS,
   avgSalary: {
     fresher: "₹4.5 LPA",

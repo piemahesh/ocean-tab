@@ -7,6 +7,8 @@ export const DATA_ANALYTICS_COURSE: CourseData = {
   courseName: "DATA ANALYTICS",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 4,
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FData_Analytics_Syllabus.pdf?alt=media&token=02391dcc-c135-4e43-b511-1543d6938901",
   syllabus: DATA_ANALYST_SYLLABUS,
   description:
     "Master data analytics with industry-leading tools including Power BI, Tableau, SQL, and Excel. Learn to transform raw data into actionable insights through hands-on projects and real-world scenarios.",

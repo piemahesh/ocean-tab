@@ -14,6 +14,8 @@ export const UI_UX_COURSE: CourseData = {
   students: 850,
   level: "Intermediate",
   price: "₹22,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FUI-UX-syllabus.pdf?alt=media&token=59fe1050-fc94-4d50-a929-91536d8f71b4",
   syllabus: UI_UX_SYLLABUS,
   avgSalary: {
     fresher: "₹4 LPA",

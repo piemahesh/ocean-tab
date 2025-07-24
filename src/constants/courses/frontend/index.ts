@@ -14,6 +14,8 @@ export const FRONTEND_COURSE: CourseData = {
   students: 3200,
   level: "Advanced",
   price: "₹16,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FFront%20End%20Development%20Syllabus.pdf?alt=media&token=b114c19e-0611-4f79-bb53-43eb13169ca6",
   syllabus: FRONTEND_SYLLABUS,
   avgSalary: {
     fresher: "₹4.2 LPA",

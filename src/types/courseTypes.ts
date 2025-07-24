@@ -60,4 +60,5 @@ export interface CourseData {
   salaryStatistics: StatsData[];
   marketInsights: InsightData[];
   hiringCompanies: string[];
+  syllabusLink: string;
 }

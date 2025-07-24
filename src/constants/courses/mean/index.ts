@@ -14,6 +14,8 @@ export const MEAN_COURSE: CourseData = {
   students: 1000,
   level: "Advanced",
   price: "₹32,000",
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FMEAN%20Stack%20Syllabus%20.pdf?alt=media&token=e52d6740-1be3-4b91-ac1d-a8146b6d8177",
   syllabus: MEAN_SYLLABUS,
   avgSalary: {
     fresher: "₹5.5 LPA",

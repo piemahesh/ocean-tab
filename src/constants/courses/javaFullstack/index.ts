@@ -7,6 +7,8 @@ export const JAVA_FULLSTACK_COURSE: CourseData = {
   courseName: "JAVA FULLSTACK",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 8,
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FJAVA%20Full%20Stack%20Syllabus.pdf?alt=media&token=b0117cdc-4073-4dfe-bff2-03b08cafeee8",
   syllabus: JAVA_FULLSTACK_SYALLABUS,
   description:
     "Comprehensive Java Full Stack development course covering core Java, advanced concepts, SQL database management, JSP, Servlets, and modern frameworks like Spring Boot.",
