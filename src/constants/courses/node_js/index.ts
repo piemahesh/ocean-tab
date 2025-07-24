@@ -7,6 +7,8 @@ export const NODE_JS_COURSE: CourseData = {
   courseName: "Node Js",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 13,
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FNode-syllabus.pdf?alt=media&token=84cebb34-0d71-426a-953d-56512cf3e9f3",
   syllabus: NODE_JS_SYLLABUS,
   description:
     "Learn server-side JavaScript development with Node.js. Master Express.js, MongoDB, REST APIs, and build scalable web applications and microservices.",

@@ -7,6 +7,8 @@ export const SELENIUM_COURSE: CourseData = {
   courseName: "Selenium Java",
   courseIcon: MOBILE_DEV_ICON,
   courseId: 18,
+  syllabusLink:
+    "https://firebasestorage.googleapis.com/v0/b/oceanlivereact.appspot.com/o/ocean_assets%2Ffinal_syllabus%2FSelenium-syllabus.pdf?alt=media&token=3a35d838-46d7-444b-8c5e-44975a3ac615",
   syllabus: SELENIUM_SYLLABUS,
   description:
     "Master automated testing with Selenium WebDriver and Java. Learn test frameworks, CI/CD integration, and become a certified automation testing professional.",
